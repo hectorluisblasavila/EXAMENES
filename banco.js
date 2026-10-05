@@ -2479,6 +2479,657 @@ const bancoPreguntas = [
       "Porque sirven solamente para jugar"
     ],
     correcta: 0
+  },
+
+    {
+    id: 181,
+    curso: "Matemática",
+    tema: "Área con cuadrículas",
+    pregunta: "Observa la figura: 🟦🟦🟦🟦 🟦🟦🟦🟦 🟦🟦🟦🟦. Si cada cuadradito representa 1 cm², ¿cuál es el área?",
+    opciones: [
+      "8 cm²",
+      "10 cm²",
+      "12 cm²",
+      "16 cm²"
+    ],
+    correcta: 2
+  },
+  {
+    id: 182,
+    curso: "Matemática",
+    tema: "Área con cuadrículas",
+    pregunta: "Observa la figura: 🟩🟩🟩 🟩🟩🟩 🟩🟩🟩 🟩🟩🟩. Cada cuadradito representa 1 cm². ¿Cuál es el área?",
+    opciones: [
+      "7 cm²",
+      "9 cm²",
+      "12 cm²",
+      "15 cm²"
+    ],
+    correcta: 2
+  },
+  {
+    id: 183,
+    curso: "Matemática",
+    tema: "Área con cuadrículas",
+    pregunta: "Un cuadrado está formado por 5 cuadritos de largo y 5 de ancho. Si cada cuadrito mide 1 cm², ¿cuál es su área?",
+    opciones: [
+      "10 cm²",
+      "20 cm²",
+      "25 cm²",
+      "30 cm²"
+    ],
+    correcta: 2
+  },
+  {
+    id: 184,
+    curso: "Matemática",
+    tema: "Área con cuadrículas",
+    pregunta: "Un rectángulo tiene 7 cuadritos de largo y 3 cuadritos de ancho. ¿Cuántos cuadritos forman toda su superficie?",
+    opciones: [
+      "10",
+      "18",
+      "21",
+      "24"
+    ],
+    correcta: 2
+  },
+  {
+    id: 185,
+    curso: "Matemática",
+    tema: "Área con cuadrículas",
+    pregunta: "Una figura ocupa 18 cuadraditos iguales. Si cada cuadradito representa 1 cm², ¿cuál es su área?",
+    opciones: [
+      "8 cm²",
+      "16 cm²",
+      "18 cm²",
+      "20 cm²"
+    ],
+    correcta: 2
+  },
+  {
+    id: 186,
+    curso: "Matemática",
+    tema: "Área del cuadrado",
+    pregunta: "Un cuadrado tiene 6 cm de lado. ¿Cuál es su área?",
+    opciones: [
+      "12 cm²",
+      "24 cm²",
+      "30 cm²",
+      "36 cm²"
+    ],
+    correcta: 3
+  },
+  {
+    id: 187,
+    curso: "Matemática",
+    tema: "Área del cuadrado",
+    pregunta: "Un cuadrado tiene 8 cm de lado. ¿Cuál es su área?",
+    opciones: [
+      "16 cm²",
+      "32 cm²",
+      "64 cm²",
+      "72 cm²"
+    ],
+    correcta: 2
+  },
+  {
+    id: 188,
+    curso: "Matemática",
+    tema: "Área del cuadrado",
+    pregunta: "Si un cuadrado tiene un lado de 4 cm, ¿cuál es su área?",
+    opciones: [
+      "8 cm²",
+      "12 cm²",
+      "16 cm²",
+      "20 cm²"
+    ],
+    correcta: 2
+  },
+  {
+    id: 189,
+    curso: "Matemática",
+    tema: "Área del rectángulo",
+    pregunta: "Un rectángulo mide 9 cm de largo y 4 cm de ancho. ¿Cuál es su área?",
+    opciones: [
+      "13 cm²",
+      "26 cm²",
+      "36 cm²",
+      "40 cm²"
+    ],
+    correcta: 2
+  },
+  {
+    id: 190,
+    curso: "Matemática",
+    tema: "Área del rectángulo",
+    pregunta: "Un rectángulo mide 7 cm de largo y 5 cm de ancho. ¿Cuál es su área?",
+    opciones: [
+      "12 cm²",
+      "24 cm²",
+      "35 cm²",
+      "40 cm²"
+    ],
+    correcta: 2
+  },
+  {
+    id: 191,
+    curso: "Matemática",
+    tema: "Área del rectángulo",
+    pregunta: "Una cartulina rectangular mide 10 cm de largo y 3 cm de ancho. ¿Cuál es su área?",
+    opciones: [
+      "13 cm²",
+      "20 cm²",
+      "30 cm²",
+      "33 cm²"
+    ],
+    correcta: 2
+  },
+  {
+    id: 192,
+    curso: "Matemática",
+    tema: "Unidades de superficie",
+    pregunta: "¿Cuál es una unidad utilizada para medir superficies pequeñas?",
+    opciones: [
+      "Centímetro cuadrado",
+      "Kilogramo",
+      "Litro",
+      "Metro"
+    ],
+    correcta: 0
+  },
+  {
+    id: 193,
+    curso: "Matemática",
+    tema: "Unidades de superficie",
+    pregunta: "¿Cómo se escribe correctamente un centímetro cuadrado?",
+    opciones: [
+      "cm",
+      "cm²",
+      "cm³",
+      "cml"
+    ],
+    correcta: 1
+  },
+  {
+    id: 194,
+    curso: "Matemática",
+    tema: "Unidades de superficie",
+    pregunta: "Si una figura tiene un área de 24 centímetros cuadrados, ¿cuál es la forma correcta de escribirlo?",
+    opciones: [
+      "24 cm",
+      "24 cm²",
+      "24 kg",
+      "24 L"
+    ],
+    correcta: 1
+  },
+  {
+    id: 195,
+    curso: "Matemática",
+    tema: "Área de polígonos",
+    pregunta: "¿Qué debemos encontrar cuando calculamos el área de una figura?",
+    opciones: [
+      "La cantidad de superficie que ocupa",
+      "La cantidad de lados solamente",
+      "La longitud de un solo lado",
+      "El número de vértices"
+    ],
+    correcta: 0
+  },
+  {
+    id: 196,
+    curso: "Matemática",
+    tema: "Área de polígonos",
+    pregunta: "Una figura está formada por 20 cuadraditos iguales. ¿Cuál es su área si cada cuadradito representa 1 cm²?",
+    opciones: [
+      "10 cm²",
+      "15 cm²",
+      "20 cm²",
+      "25 cm²"
+    ],
+    correcta: 2
+  },
+  {
+    id: 197,
+    curso: "Matemática",
+    tema: "Área de polígonos",
+    pregunta: "Si una figura ocupa 30 cuadraditos y cada uno representa 1 cm², ¿cuál es su área?",
+    opciones: [
+      "20 cm²",
+      "25 cm²",
+      "30 cm²",
+      "35 cm²"
+    ],
+    correcta: 2
+  },
+  {
+    id: 198,
+    curso: "Matemática",
+    tema: "Área de figuras compuestas",
+    pregunta: "Una figura está formada por un rectángulo de 4 cm² y otro de 6 cm². ¿Cuál es el área total?",
+    opciones: [
+      "8 cm²",
+      "10 cm²",
+      "12 cm²",
+      "24 cm²"
+    ],
+    correcta: 1
+  },
+  {
+    id: 199,
+    curso: "Matemática",
+    tema: "Área de figuras compuestas",
+    pregunta: "Una figura está formada por dos partes: una tiene 8 cm² y otra 7 cm². ¿Cuál es el área total?",
+    opciones: [
+      "13 cm²",
+      "14 cm²",
+      "15 cm²",
+      "16 cm²"
+    ],
+    correcta: 2
+  },
+  {
+    id: 200,
+    curso: "Matemática",
+    tema: "Área de figuras compuestas",
+    pregunta: "Un patio tiene una parte de 12 m² y otra parte de 8 m². ¿Cuál es el área total del patio?",
+    opciones: [
+      "18 m²",
+      "20 m²",
+      "22 m²",
+      "24 m²"
+    ],
+    correcta: 1
+  },
+  {
+    id: 201,
+    curso: "Matemática",
+    tema: "Área del triángulo",
+    pregunta: "¿Qué elementos necesitamos conocer para calcular el área de un triángulo?",
+    opciones: [
+      "La base y la altura",
+      "Solo un lado",
+      "Solo los vértices",
+      "El perímetro"
+    ],
+    correcta: 0
+  },
+  {
+    id: 202,
+    curso: "Matemática",
+    tema: "Área del triángulo",
+    pregunta: "Un triángulo tiene una base de 6 cm y una altura de 4 cm. ¿Cuál es su área?",
+    opciones: [
+      "10 cm²",
+      "12 cm²",
+      "20 cm²",
+      "24 cm²"
+    ],
+    correcta: 1
+  },
+  {
+    id: 203,
+    curso: "Matemática",
+    tema: "Área del triángulo",
+    pregunta: "Un triángulo tiene base de 8 cm y altura de 5 cm. ¿Cuál es su área?",
+    opciones: [
+      "20 cm²",
+      "30 cm²",
+      "40 cm²",
+      "45 cm²"
+    ],
+    correcta: 0
+  },
+  {
+    id: 204,
+    curso: "Matemática",
+    tema: "Área del triángulo",
+    pregunta: "Un triángulo tiene una base de 10 cm y una altura de 6 cm. ¿Cuál es su área?",
+    opciones: [
+      "20 cm²",
+      "30 cm²",
+      "40 cm²",
+      "60 cm²"
+    ],
+    correcta: 1
+  },
+  {
+    id: 205,
+    curso: "Matemática",
+    tema: "Área del triángulo",
+    pregunta: "Si un triángulo tiene base 4 cm y altura 3 cm, ¿cuál es su área?",
+    opciones: [
+      "6 cm²",
+      "7 cm²",
+      "12 cm²",
+      "14 cm²"
+    ],
+    correcta: 0
+  },
+  {
+    id: 206,
+    curso: "Matemática",
+    tema: "Fracciones",
+    pregunta: "En la fracción 3/8, ¿qué número es el numerador?",
+    opciones: [
+      "3",
+      "8",
+      "11",
+      "5"
+    ],
+    correcta: 0
+  },
+  {
+    id: 207,
+    curso: "Matemática",
+    tema: "Fracciones",
+    pregunta: "En la fracción 5/9, ¿qué número es el denominador?",
+    opciones: [
+      "5",
+      "9",
+      "14",
+      "4"
+    ],
+    correcta: 1
+  },
+  {
+    id: 208,
+    curso: "Matemática",
+    tema: "Fracciones homogéneas",
+    pregunta: "¿Cuál de estas parejas está formada por fracciones homogéneas?",
+    opciones: [
+      "2/7 y 5/7",
+      "2/5 y 3/8",
+      "1/4 y 2/9",
+      "3/6 y 4/7"
+    ],
+    correcta: 0
+  },
+  {
+    id: 209,
+    curso: "Matemática",
+    tema: "Fracciones homogéneas",
+    pregunta: "¿Qué tienen en común las fracciones homogéneas?",
+    opciones: [
+      "Tienen el mismo numerador",
+      "Tienen el mismo denominador",
+      "Siempre son iguales",
+      "Siempre tienen denominador 10"
+    ],
+    correcta: 1
+  },
+  {
+    id: 210,
+    curso: "Matemática",
+    tema: "Suma de fracciones",
+    pregunta: "¿Cuánto es 2/8 + 3/8?",
+    opciones: [
+      "5/8",
+      "5/16",
+      "6/8",
+      "1/8"
+    ],
+    correcta: 0
+  },
+  {
+    id: 211,
+    curso: "Matemática",
+    tema: "Suma de fracciones",
+    pregunta: "¿Cuánto es 1/7 + 4/7?",
+    opciones: [
+      "5/7",
+      "5/14",
+      "4/7",
+      "3/7"
+    ],
+    correcta: 0
+  },
+  {
+    id: 212,
+    curso: "Matemática",
+    tema: "Suma de fracciones",
+    pregunta: "¿Cuánto es 3/9 + 2/9?",
+    opciones: [
+      "5/9",
+      "5/18",
+      "6/9",
+      "1/9"
+    ],
+    correcta: 0
+  },
+  {
+    id: 213,
+    curso: "Matemática",
+    tema: "Resta de fracciones",
+    pregunta: "¿Cuánto es 7/8 - 3/8?",
+    opciones: [
+      "3/8",
+      "4/8",
+      "5/8",
+      "10/8"
+    ],
+    correcta: 1
+  },
+  {
+    id: 214,
+    curso: "Matemática",
+    tema: "Resta de fracciones",
+    pregunta: "¿Cuánto es 6/10 - 2/10?",
+    opciones: [
+      "2/10",
+      "3/10",
+      "4/10",
+      "8/10"
+    ],
+    correcta: 2
+  },
+  {
+    id: 215,
+    curso: "Matemática",
+    tema: "Resta de fracciones",
+    pregunta: "¿Cuánto es 7/9 - 4/9?",
+    opciones: [
+      "2/9",
+      "3/9",
+      "4/9",
+      "11/9"
+    ],
+    correcta: 1
+  },
+  {
+    id: 216,
+    curso: "Matemática",
+    tema: "Comparación de fracciones",
+    pregunta: "¿Cuál fracción es mayor?",
+    opciones: [
+      "2/8",
+      "5/8",
+      "3/8",
+      "1/8"
+    ],
+    correcta: 1
+  },
+  {
+    id: 217,
+    curso: "Matemática",
+    tema: "Comparación de fracciones",
+    pregunta: "¿Cuál fracción es menor?",
+    opciones: [
+      "6/10",
+      "3/10",
+      "8/10",
+      "9/10"
+    ],
+    correcta: 1
+  },
+  {
+    id: 218,
+    curso: "Matemática",
+    tema: "Fracciones equivalentes",
+    pregunta: "¿Cuál fracción es equivalente a 1/2?",
+    opciones: [
+      "2/4",
+      "2/3",
+      "3/5",
+      "1/3"
+    ],
+    correcta: 0
+  },
+  {
+    id: 219,
+    curso: "Matemática",
+    tema: "Fracciones equivalentes",
+    pregunta: "¿Cuál fracción es equivalente a 2/3?",
+    opciones: [
+      "3/5",
+      "4/6",
+      "5/8",
+      "2/6"
+    ],
+    correcta: 1
+  },
+  {
+    id: 220,
+    curso: "Matemática",
+    tema: "Fracciones",
+    pregunta: "Una pizza fue dividida en 8 partes iguales y Ana comió 3 partes. ¿Qué fracción de la pizza comió?",
+    opciones: [
+      "3/8",
+      "5/8",
+      "3/5",
+      "8/3"
+    ],
+    correcta: 0
+  },
+  {
+    id: 221,
+    curso: "Matemática",
+    tema: "Adición",
+    pregunta: "¿Cuánto es 2 345 + 1 204?",
+    opciones: [
+      "3 449",
+      "3 549",
+      "3 649",
+      "3 749"
+    ],
+    correcta: 1
+  },
+  {
+    id: 222,
+    curso: "Matemática",
+    tema: "Adición",
+    pregunta: "¿Cuánto es 7 658 + 2 791?",
+    opciones: [
+      "9 449",
+      "10 449",
+      "10 349",
+      "11 449"
+    ],
+    correcta: 1
+  },
+  {
+    id: 223,
+    curso: "Matemática",
+    tema: "Sustracción",
+    pregunta: "¿Cuánto es 8 500 - 1 700?",
+    opciones: [
+      "6 600",
+      "6 700",
+      "6 800",
+      "7 000"
+    ],
+    correcta: 2
+  },
+  {
+    id: 224,
+    curso: "Matemática",
+    tema: "Sustracción",
+    pregunta: "¿Cuánto es 6 340 - 2 120?",
+    opciones: [
+      "4 120",
+      "4 220",
+      "4 320",
+      "4 420"
+    ],
+    correcta: 1
+  },
+  {
+    id: 225,
+    curso: "Matemática",
+    tema: "Multiplicación",
+    pregunta: "¿Cuánto es 24 × 5?",
+    opciones: [
+      "100",
+      "110",
+      "120",
+      "125"
+    ],
+    correcta: 2
+  },
+  {
+    id: 226,
+    curso: "Matemática",
+    tema: "Multiplicación",
+    pregunta: "¿Cuánto es 36 × 4?",
+    opciones: [
+      "124",
+      "134",
+      "144",
+      "154"
+    ],
+    correcta: 2
+  },
+  {
+    id: 227,
+    curso: "Matemática",
+    tema: "Multiplicación",
+    pregunta: "Una caja tiene 8 lápices. ¿Cuántos lápices hay en 7 cajas iguales?",
+    opciones: [
+      "48",
+      "54",
+      "56",
+      "64"
+    ],
+    correcta: 2
+  },
+  {
+    id: 228,
+    curso: "Matemática",
+    tema: "División",
+    pregunta: "¿Cuánto es 85 ÷ 5?",
+    opciones: [
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    correcta: 2
+  },
+  {
+    id: 229,
+    curso: "Matemática",
+    tema: "División",
+    pregunta: "¿Cuánto es 680 ÷ 5?",
+    opciones: [
+      "126",
+      "136",
+      "146",
+      "156"
+    ],
+    correcta: 1
+  },
+  {
+    id: 230,
+    curso: "Matemática",
+    tema: "División",
+    pregunta: "¿Cuánto es 3 400 ÷ 5?",
+    opciones: [
+      "580",
+      "620",
+      "680",
+      "700"
+    ],
+    correcta: 2
   }
 
 

@@ -1,1848 +1,1833 @@
-const STORAGE_KEY = "aula_estudio_v1";
+// =====================================================
+// AULA DE EVALUACIONES
+// APP.JS
+// =====================================================
 
-const defaultData = {
+const USUARIO_HIJA = "hija";
+const CLAVE_HIJA = "1234";
 
-  users: [
-    {
-      username: "hija",
-      password: "1234",
-      name: "Mi hija",
-      role: "student"
-    },
-    {
-      username: "admin",
-      password: "admin123",
-      name: "Administrador",
-      role: "admin"
-    }
-  ],
+const USUARIO_ADMIN = "admin";
+const CLAVE_ADMIN = "admin123";
 
-  subjects: [
+const CANTIDAD_EXAMEN = 20;
 
-    {
-      id: "mat",
-      name: "Matemática",
-      icon: "🔢",
+let cursoActual = "";
+let examenActual = [];
+let examenAnterior = [];
+let respuestasUsuario = [];
+let preguntaActual = 0;
 
-      topics: [
 
-        {
-          id: "fra",
-          name: "Fracciones",
+// =====================================================
+// INICIO
+// =====================================================
 
-          questions: [
+document.addEventListener("DOMContentLoaded", () => {
+    mostrarLogin();
+});
 
-            {
-              id: "q1",
 
-              text: "¿Cuál de estas fracciones representa la mitad?",
+// =====================================================
+// UTILIDADES
+// =====================================================
 
-              options: [
-                "1/3",
-                "1/2",
-                "2/3",
-                "3/4",
-                "4/5"
-              ],
+function mezclar(array) {
+    const copia = [...array];
 
-              answer: 1
-            },
-
-            {
-              id: "q2",
-
-              text: "¿Cuántas partes iguales tiene una fracción con denominador 4?",
-
-              options: [
-                "2",
-                "3",
-                "4",
-                "5",
-                "8"
-              ],
-
-              answer: 2
-            },
-
-            {
-              id: "q3",
-
-              text: "¿Cuál fracción es mayor?",
-
-              options: [
-                "1/4",
-                "1/5",
-                "1/6",
-                "1/8",
-                "1/10"
-              ],
-
-              answer: 0
-            }
-
-          ]
-        }
-
-      ]
+    for (let i = copia.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copia[i], copia[j]] = [copia[j], copia[i]];
     }
 
-  ],
-
-  attempts: []
-};
-
-
-let data = loadData();
-
-let currentUser = null;
-
-let exam = null;
-
-
-
-function loadData() {
-
-  const saved = localStorage.getItem(STORAGE_KEY);
-
-  if (!saved) {
-    return structuredClone(defaultData);
-  }
-
-  try {
-    return JSON.parse(saved);
-  }
-
-  catch {
-    return structuredClone(defaultData);
-  }
+    return copia;
 }
 
 
-
-function saveData() {
-
-  localStorage.setItem(
-    STORAGE_KEY,
-    JSON.stringify(data)
-  );
-
-}
-
-
-
-function escapeHtml(str) {
-
-  return String(str).replace(
-    /[&<>"']/g,
-
-    c => ({
-      "&": "&amp;",
-      "<": "&lt;",
-      ">": "&gt;",
-      '"': "&quot;",
-      "'": "&#039;"
-    }[c])
-  );
-
-}
-
-
-
-function shuffle(arr) {
-
-  const copy = [...arr];
-
-  for (
-    let i = copy.length - 1;
-    i > 0;
-    i--
-  ) {
-
-    const j =
-      Math.floor(Math.random() * (i + 1));
-
-    [copy[i], copy[j]] =
-      [copy[j], copy[i]];
-
-  }
-
-  return copy;
-}
-
-
-
-function getSubject(id) {
-
-  return data.subjects.find(
-    subject => subject.id === id
-  );
-
-}
-
-
-
-function getTopic(subjectId, topicId) {
-
-  const subject =
-    getSubject(subjectId);
-
-  return subject?.topics.find(
-    topic => topic.id === topicId
-  );
-
-}
-
-
-
-function appShell(content) {
-
-  return `
-
-    <header class="app-header">
-
-      <div class="header-inner">
-
-        <div class="brand">
-
-          <div class="brand-icon">
-            📚
-          </div>
-
-          <div>
-
-            <h1>
-              Aula de Estudio
-            </h1>
-
-            <p>
-              ${currentUser
-                ? escapeHtml(currentUser.name)
-                : "Aprender, practicar y mejorar"}
-            </p>
-
-          </div>
-
-        </div>
-
-        ${
-          currentUser
-          ?
-          `<button
-            class="btn btn-secondary"
-            onclick="logout()">
-            Cerrar sesión
-          </button>`
-          :
-          ""
-        }
-
-      </div>
-
-    </header>
-
-    <main class="container">
-
-      ${content}
-
-    </main>
-
-  `;
-}
-
-
-
-function renderLogin() {
-
-  document.getElementById("app").innerHTML = `
-
-    <div class="container">
-
-      <div class="card login-card">
-
-        <div class="login-avatar">
-          👩‍🎓
-        </div>
-
-        <h2>
-          Bienvenida a tu aula
-        </h2>
-
-        <p class="muted">
-          Ingresa para comenzar tus evaluaciones.
-        </p>
-
-
-        <form onsubmit="login(event)">
-
-          <div class="form-group">
-
-            <label>
-              Usuario
-            </label>
-
-            <input
-              id="username"
-              class="input"
-              required
-              placeholder="Usuario">
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label>
-              Contraseña
-            </label>
-
-            <input
-              id="password"
-              type="password"
-              class="input"
-              required
-              placeholder="Contraseña">
-
-          </div>
-
-
-          <button
-            class="btn btn-primary"
-            style="width:100%">
-
-            Ingresar
-
-          </button>
-
-        </form>
-
-
-        <p class="muted small">
-
-          Demo:
-          <b>hija</b>
-          /
-          <b>1234</b>
-
-        </p>
-
-      </div>
-
-    </div>
-
-  `;
-}
-
-
-
-function login(event) {
-
-  event.preventDefault();
-
-  const username =
-    document.getElementById("username")
-      .value.trim();
-
-  const password =
-    document.getElementById("password")
-      .value;
-
-  const user =
-    data.users.find(
-      u =>
-        u.username === username &&
-        u.password === password
-    );
-
-
-  if (!user) {
-
-    alert(
-      "Usuario o contraseña incorrectos."
-    );
-
-    return;
-  }
-
-
-  currentUser = user;
-
-
-  if (user.role === "admin") {
-
-    renderAdmin();
-
-  } else {
-
-    renderDashboard();
-
-  }
-
-}
-
-
-
-function logout() {
-
-  currentUser = null;
-
-  exam = null;
-
-  renderLogin();
-
-}
-
-
-
-function renderDashboard() {
-
-  const attempts =
-    data.attempts.filter(
-      a =>
-        a.username ===
-        currentUser.username
-    );
-
-
-  const best =
-    attempts.length
-      ? Math.max(
-          ...attempts.map(a => a.score)
+function obtenerCursos() {
+    return [
+        ...new Set(
+            bancoPreguntas.map(p => p.curso)
         )
-      : 0;
-
-
-  document.getElementById("app").innerHTML =
-    appShell(`
-
-      <div class="card">
-
-        <h2>
-          Hola,
-          ${escapeHtml(currentUser.name)}
-          👋
-        </h2>
-
-        <p class="muted">
-          Elige un curso y luego un tema.
-        </p>
-
-
-        <div
-          class="dashboard-grid"
-          style="margin-top:20px">
-
-
-          <div class="stat">
-
-            <div class="muted">
-              Evaluaciones
-            </div>
-
-            <div class="stat-value">
-              ${attempts.length}
-            </div>
-
-          </div>
-
-
-          <div class="stat">
-
-            <div class="muted">
-              Mejor puntuación
-            </div>
-
-            <div class="stat-value">
-              ${best}/20
-            </div>
-
-          </div>
-
-
-          <div class="stat">
-
-            <div class="muted">
-              Temas disponibles
-            </div>
-
-            <div class="stat-value">
-
-              ${
-                data.subjects.reduce(
-                  (total, subject) =>
-                    total + subject.topics.length,
-                  0
-                )
-              }
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <div class="subject-grid">
-
-        ${
-          data.subjects.map(subject => `
-
-            <div
-              class="subject-card"
-              onclick="showTopics('${subject.id}')">
-
-              <div class="subject-icon">
-                ${subject.icon}
-              </div>
-
-              <h3>
-                ${escapeHtml(subject.name)}
-              </h3>
-
-              <div class="muted">
-                ${subject.topics.length}
-                tema(s)
-              </div>
-
-            </div>
-
-          `).join("")
-        }
-
-      </div>
-
-
-      <div
-        class="card"
-        style="margin-top:20px">
-
-        <h3>
-          Últimos resultados
-        </h3>
-
-        ${
-          renderHistory(
-            attempts
-              .slice(-5)
-              .reverse()
-          )
-        }
-
-      </div>
-
-    `);
-
+    ];
 }
 
 
+function obtenerPreguntasCurso(curso) {
+    return bancoPreguntas.filter(
+        p => p.curso === curso
+    );
+}
 
-function renderHistory(attempts) {
 
-  if (!attempts.length) {
+function obtenerTemasCurso(curso) {
+
+    return [
+        ...new Set(
+            obtenerPreguntasCurso(curso)
+                .map(p => p.tema)
+        )
+    ];
+}
+
+
+function obtenerPreguntasUsadas(curso) {
+
+    const usuario =
+        localStorage.getItem("usuarioActual");
+
+    const clave =
+        `usadas_${usuario}_${curso}`;
+
+    return JSON.parse(
+        localStorage.getItem(clave) || "[]"
+    );
+}
+
+
+function guardarPreguntasUsadas(curso, ids) {
+
+    const usuario =
+        localStorage.getItem("usuarioActual");
+
+    const clave =
+        `usadas_${usuario}_${curso}`;
+
+    localStorage.setItem(
+        clave,
+        JSON.stringify(ids)
+    );
+}
+
+
+// =====================================================
+// HEADER
+// =====================================================
+
+function generarHeader() {
 
     return `
-      <p class="muted">
-        Todavía no hay evaluaciones.
-      </p>
-    `;
+        <header class="app-header">
 
-  }
+            <div class="header-inner">
 
+                <div class="brand">
 
-  return attempts.map(a => `
-
-    <div class="topic-row">
-
-      <div class="topic-info">
-
-        <strong>
-          ${escapeHtml(a.subjectName)}
-          ·
-          ${escapeHtml(a.topicName)}
-        </strong>
-
-        <span>
-          ${new Date(a.date)
-            .toLocaleString("es-PE")}
-        </span>
-
-      </div>
-
-      <strong>
-        ${a.score}/20
-      </strong>
-
-    </div>
-
-  `).join("");
-
-}
-
-
-
-function showTopics(subjectId) {
-
-  const subject =
-    getSubject(subjectId);
-
-
-  document.getElementById("app").innerHTML =
-    appShell(`
-
-      <div class="card">
-
-        <div class="top-actions">
-
-          <button
-            class="btn btn-secondary"
-            onclick="renderDashboard()">
-
-            ← Volver
-
-          </button>
-
-        </div>
-
-
-        <h2 style="margin-top:18px">
-
-          ${subject.icon}
-          ${escapeHtml(subject.name)}
-
-        </h2>
-
-
-        <p class="muted">
-          Selecciona un tema para practicar.
-        </p>
-
-
-        <div class="topic-list">
-
-          ${
-            subject.topics.map(topic => {
-
-              const attempts =
-                data.attempts.filter(
-                  a =>
-                    a.username === currentUser.username &&
-                    a.subjectId === subjectId &&
-                    a.topicId === topic.id
-                );
-
-
-              const best =
-                attempts.length
-                  ? Math.max(
-                      ...attempts.map(
-                        a => a.score
-                      )
-                    )
-                  : 0;
-
-
-              return `
-
-                <div class="topic-row">
-
-                  <div
-                    class="topic-info"
-                    style="flex:1">
-
-                    <strong>
-
-                      ${escapeHtml(topic.name)}
-
-                      ${
-                        best === 20
-                          ? " 🏆"
-                          : ""
-                      }
-
-                    </strong>
-
-
-                    <span>
-
-                      ${topic.questions.length}
-                      preguntas disponibles
-
-                      · Mejor:
-                      ${best}/20
-
-                    </span>
-
-
-                    <div class="progress">
-
-                      <div
-                        class="progress-bar"
-                        style="width:${best * 5}%">
-                      </div>
-
+                    <div class="brand-icon">
+                        📚
                     </div>
 
-                  </div>
-
-
-                  <button
-                    class="btn btn-primary"
-                    onclick="
-                      startExam(
-                        '${subjectId}',
-                        '${topic.id}'
-                      )
-                    ">
-
-                    Empezar
-
-                  </button>
+                    <div>
+                        <h1>Aula de Evaluaciones</h1>
+                        <p>Aprender practicando</p>
+                    </div>
 
                 </div>
 
-              `;
-
-            }).join("")
-          }
-
-        </div>
-
-      </div>
-
-    `);
-
-}
-
-
-
-function startExam(subjectId, topicId) {
-
-  const topic =
-    getTopic(
-      subjectId,
-      topicId
-    );
-
-
-  if (
-    !topic ||
-    topic.questions.length < 1
-  ) {
-
-    alert(
-      "Este tema todavía no tiene preguntas."
-    );
-
-    return;
-
-  }
-
-
-  const count =
-    Math.min(
-      20,
-      topic.questions.length
-    );
-
-
-  const questions =
-    shuffle(topic.questions)
-      .slice(0, count)
-      .map(q => {
-
-        const pairs =
-          q.options.map(
-            (text, index) => ({
-              text,
-              correct:
-                index === q.answer
-            })
-          );
-
-
-        const shuffledOptions =
-          shuffle(pairs);
-
-
-        return {
-
-          ...q,
-
-          options:
-            shuffledOptions.map(
-              x => x.text
-            ),
-
-          answer:
-            shuffledOptions.findIndex(
-              x => x.correct
-            ),
-
-          selected: null
-
-        };
-
-      });
-
-
-  exam = {
-
-    subjectId,
-
-    topicId,
-
-    subjectName:
-      getSubject(subjectId).name,
-
-    topicName:
-      topic.name,
-
-    questions,
-
-    current: 0
-
-  };
-
-
-  renderQuestion();
-
-}
-
-
-
-function renderQuestion() {
-
-  const q =
-    exam.questions[exam.current];
-
-
-  const total =
-    exam.questions.length;
-
-
-  const letters =
-    ["A", "B", "C", "D", "E", "F"];
-
-
-  document.getElementById("app").innerHTML =
-    appShell(`
-
-      <div class="card">
-
-        <div class="exam-header">
-
-          <div class="top-actions">
-
-            <button
-              class="btn btn-secondary"
-              onclick="
-                showTopics(
-                  '${exam.subjectId}'
-                )
-              ">
-
-              Salir
-
-            </button>
-
-          </div>
-
-
-          <p class="question-count">
-
-            Pregunta
-            ${exam.current + 1}
-            de
-            ${total}
-
-          </p>
-
-
-          <div class="progress">
-
-            <div
-              class="progress-bar"
-              style="
-                width:
-                ${
-                  ((exam.current + 1) /
-                  total) * 100
-                }%
-              ">
+                <div class="top-actions">
+
+                    <button
+                        class="btn btn-secondary"
+                        onclick="cerrarSesion()"
+                    >
+                        Cerrar sesión
+                    </button>
+
+                </div>
 
             </div>
 
-          </div>
-
-        </div>
-
-
-        <div class="question-text">
-
-          ${escapeHtml(q.text)}
-
-        </div>
+        </header>
+    `;
+}
 
 
-        <div class="answers">
+// =====================================================
+// LOGIN
+// =====================================================
 
-          ${
-            q.options.map(
-              (option, i) => `
+function mostrarLogin() {
+
+    document.getElementById("app").innerHTML = `
+
+        <div class="container">
+
+            <div class="card login-card">
+
+                <div class="login-avatar">
+                    👩‍🎓
+                </div>
+
+                <h2>
+                    Aula de Evaluaciones
+                </h2>
+
+                <p class="muted">
+                    Ingresa para comenzar a practicar
+                </p>
+
+                <div class="form-group">
+
+                    <label>
+                        Usuario
+                    </label>
+
+                    <input
+                        id="usuario"
+                        class="input"
+                        type="text"
+                        placeholder="Escribe tu usuario"
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Contraseña
+                    </label>
+
+                    <input
+                        id="clave"
+                        class="input"
+                        type="password"
+                        placeholder="Escribe tu contraseña"
+                    >
+
+                </div>
 
                 <button
-                  class="
-                    answer
-                    ${
-                      q.selected === i
-                        ? "selected"
-                        : ""
-                    }
-                  "
-                  onclick="
-                    selectAnswer(${i})
-                  ">
-
-                  <span
-                    class="answer-letter">
-
-                    ${letters[i]}
-
-                  </span>
-
-
-                  <span>
-
-                    ${escapeHtml(option)}
-
-                  </span>
-
+                    class="btn btn-primary"
+                    style="width:100%;"
+                    onclick="iniciarSesion()"
+                >
+                    Ingresar
                 </button>
 
-              `
-            ).join("")
-          }
+                <p
+                    id="mensajeLogin"
+                    class="muted"
+                    style="margin-top:15px;"
+                ></p>
+
+            </div>
 
         </div>
-
-
-        <div class="exam-actions">
-
-          <button
-            class="btn btn-secondary"
-            ${
-              exam.current === 0
-                ? "disabled"
-                : ""
-            }
-            onclick="
-              previousQuestion()
-            ">
-
-            ← Anterior
-
-          </button>
-
-
-          <button
-            class="btn btn-primary"
-            ${
-              q.selected === null
-                ? "disabled"
-                : ""
-            }
-            onclick="
-              nextQuestion()
-            ">
-
-            ${
-              exam.current === total - 1
-                ? "Terminar evaluación"
-                : "Siguiente →"
-            }
-
-          </button>
-
-        </div>
-
-      </div>
-
-    `);
-
+    `;
 }
 
 
+function iniciarSesion() {
 
-function selectAnswer(index) {
+    const usuario =
+        document.getElementById("usuario")
+            .value
+            .trim();
 
-  exam.questions[
-    exam.current
-  ].selected = index;
+    const clave =
+        document.getElementById("clave")
+            .value
+            .trim();
 
-  renderQuestion();
+    if (
+        usuario === USUARIO_HIJA &&
+        clave === CLAVE_HIJA
+    ) {
 
+        localStorage.setItem(
+            "usuarioActual",
+            usuario
+        );
+
+        mostrarDashboard();
+
+        return;
+    }
+
+
+    if (
+        usuario === USUARIO_ADMIN &&
+        clave === CLAVE_ADMIN
+    ) {
+
+        localStorage.setItem(
+            "usuarioActual",
+            usuario
+        );
+
+        mostrarAdmin();
+
+        return;
+    }
+
+
+    document.getElementById(
+        "mensajeLogin"
+    ).innerHTML =
+        "❌ Usuario o contraseña incorrectos.";
 }
 
 
+// =====================================================
+// DASHBOARD
+// =====================================================
 
-function previousQuestion() {
+function mostrarDashboard() {
 
-  if (exam.current > 0) {
+    const usuario =
+        localStorage.getItem(
+            "usuarioActual"
+        );
 
-    exam.current--;
+    const cursos =
+        obtenerCursos();
 
-    renderQuestion();
-
-  }
-
-}
-
-
-
-function nextQuestion() {
-
-  if (
-    exam.questions[
-      exam.current
-    ].selected === null
-  ) {
-
-    return;
-
-  }
-
-
-  if (
-    exam.current <
-    exam.questions.length - 1
-  ) {
-
-    exam.current++;
-
-    renderQuestion();
-
-  } else {
-
-    finishExam();
-
-  }
-
-}
-
-
-
-function finishExam() {
-
-  const score =
-    exam.questions.reduce(
-      (total, q) =>
-        total +
-        (
-          q.selected === q.answer
-            ? 1
-            : 0
-        ),
-      0
-    );
-
-
-  data.attempts.push({
-
-    username:
-      currentUser.username,
-
-    subjectId:
-      exam.subjectId,
-
-    topicId:
-      exam.topicId,
-
-    subjectName:
-      exam.subjectName,
-
-    topicName:
-      exam.topicName,
-
-    score,
-
-    total:
-      exam.questions.length,
-
-    date:
-      new Date().toISOString()
-
-  });
-
-
-  saveData();
-
-  renderResult(score);
-
-}
-
-
-
-function renderResult(score) {
-
-  const total =
-    exam.questions.length;
-
-
-  const normalizedScore =
-    total === 20
-      ? score
-      : Math.round(
-          (score / total) * 20
+    const historial =
+        JSON.parse(
+            localStorage.getItem(
+                `historial_${usuario}`
+            ) || "[]"
         );
 
 
-  let message =
-    "¡Sigue practicando! 💪";
+    let html = generarHeader();
 
 
-  if (
-    normalizedScore >= 16 &&
-    normalizedScore < 20
-  ) {
+    html += `
 
-    message =
-      "¡Muy bien! Ya casi lo logras 🌟";
+        <main class="container">
 
-  }
+            <div class="card">
 
+                <h2>
+                    👋 ¡Hola!
+                </h2>
 
-  if (normalizedScore === 20) {
+                <p class="muted">
+                    Elige un curso para comenzar a practicar.
+                </p>
 
-    message =
-      "¡Excelente! Tema dominado 🏆";
 
-  }
+                <!-- ESTADÍSTICAS -->
 
+                <div class="dashboard-grid">
 
-  document.getElementById("app").innerHTML =
-    appShell(`
+                    <div class="stat">
 
-      <div class="card result">
+                        <div class="muted">
+                            Cursos
+                        </div>
 
-        <div class="score-circle">
+                        <div class="stat-value">
+                            ${cursos.length}
+                        </div>
 
-          <strong>
-            ${normalizedScore}/20
-          </strong>
+                    </div>
 
-        </div>
 
+                    <div class="stat">
 
-        <div class="result-message">
+                        <div class="muted">
+                            Exámenes realizados
+                        </div>
 
-          ${message}
+                        <div class="stat-value">
+                            ${historial.length}
+                        </div>
 
-        </div>
+                    </div>
 
 
-        <p class="muted">
+                    <div class="stat">
 
-          ${score}
-          respuestas correctas
-          de
-          ${total}
-          preguntas.
+                        <div class="muted">
+                            Mejor nota
+                        </div>
 
-        </p>
-
-
-        <div
-          class="top-actions"
-          style="
-            justify-content:center;
-            margin-top:22px
-          ">
-
-          <button
-            class="btn btn-primary"
-            onclick="
-              startExam(
-                '${exam.subjectId}',
-                '${exam.topicId}'
-              )
-            ">
-
-            🔄 Nuevo intento
-
-          </button>
-
-
-          <button
-            class="btn btn-secondary"
-            onclick="
-              showTopics(
-                '${exam.subjectId}'
-              )
-            ">
-
-            Ver tema
-
-          </button>
-
-        </div>
-
-
-        <div class="review">
-
-          <h3>
-            Revisión
-          </h3>
-
-
-          ${
-            exam.questions.map(
-              (q, i) => {
-
-                const ok =
-                  q.selected === q.answer;
-
-
-                return `
-
-                  <div
-                    class="
-                      review-item
-                      ${
-                        ok
-                          ? "correct"
-                          : "incorrect"
-                      }
-                    ">
-
-                    <strong>
-
-                      ${i + 1}.
-                      ${escapeHtml(q.text)}
-
-                    </strong>
-
-
-                    <p>
-
-                      Tu respuesta:
-
-                      ${
-                        q.selected === null
-                          ? "Sin responder"
-                          : escapeHtml(
-                              q.options[
-                                q.selected
-                              ]
-                            )
-                      }
-
-                    </p>
-
-
-                    ${
-                      !ok
-                        ?
-                        `
-                          <p>
-
-                            Respuesta correcta:
-
-                            <strong>
-
-                              ${escapeHtml(
-                                q.options[
-                                  q.answer
-                                ]
-                              )}
-
-                            </strong>
-
-                          </p>
-                        `
-                        :
-                        ""
-                    }
-
-                  </div>
-
-                `;
-
-              }
-            ).join("")
-          }
-
-        </div>
-
-      </div>
-
-    `);
-
-}
-
-
-
-function renderAdmin() {
-
-  document.getElementById("app").innerHTML =
-    appShell(`
-
-      <div class="card">
-
-        <h2>
-          👨‍💻 Panel del administrador
-        </h2>
-
-        <p class="muted">
-
-          Crea temas y carga preguntas
-          para tu hija.
-
-        </p>
-
-      </div>
-
-
-      <div
-        class="admin-grid"
-        style="margin-top:20px">
-
-
-        <div class="card">
-
-          <h3>
-            Crear tema
-          </h3>
-
-
-          <div class="form-group">
-
-            <label>
-              Curso
-            </label>
-
-            <select
-              id="adminSubject"
-              class="select">
-
-              ${
-                data.subjects.map(
-                  s => `
-
-                    <option
-                      value="${s.id}">
-
-                      ${escapeHtml(
-                        s.name
-                      )}
-
-                    </option>
-
-                  `
-                ).join("")
-              }
-
-            </select>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label>
-              Nombre del tema
-            </label>
-
-            <input
-              id="newTopicName"
-              class="input"
-              placeholder="
-                Ej. Multiplicación
-              ">
-
-          </div>
-
-
-          <button
-            class="btn btn-primary"
-            onclick="addTopic()">
-
-            Crear tema
-
-          </button>
-
-
-          <hr
-            style="
-              margin:25px 0;
-              border:0;
-              border-top:
-              1px solid var(--border)
-            ">
-
-
-          <h3>
-            Cargar pregunta
-          </h3>
-
-
-          <div class="form-group">
-
-            <label>
-              Tema
-            </label>
-
-            <select
-              id="adminTopic"
-              class="select">
-            </select>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label>
-              Pregunta
-            </label>
-
-            <textarea
-              id="questionText"
-              class="textarea"
-              rows="3"
-              placeholder="
-                Escribe la pregunta...
-              ">
-            </textarea>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label>
-              Alternativas
-            </label>
-
-            <div id="optionsContainer">
-            </div>
-
-          </div>
-
-
-          <div class="form-group">
-
-            <label>
-              Respuesta correcta
-            </label>
-
-            <select
-              id="correctOption"
-              class="select">
-
-              <option value="0">
-                A
-              </option>
-
-              <option value="1">
-                B
-              </option>
-
-              <option value="2">
-                C
-              </option>
-
-              <option value="3">
-                D
-              </option>
-
-              <option value="4">
-                E
-              </option>
-
-              <option value="5">
-                F
-              </option>
-
-            </select>
-
-          </div>
-
-
-          <button
-            class="btn btn-primary"
-            onclick="addQuestion()">
-
-            Guardar pregunta
-
-          </button>
-
-        </div>
-
-
-        <div class="card">
-
-          <h3>
-            Banco de preguntas
-          </h3>
-
-          <div id="questionBank">
-          </div>
-
-        </div>
-
-      </div>
-
-    `);
-
-
-  updateAdminTopics();
-
-  renderQuestionBank();
-
-}
-
-
-
-function updateAdminTopics() {
-
-  const subject =
-    getSubject(
-      document.getElementById(
-        "adminSubject"
-      ).value
-    );
-
-
-  const select =
-    document.getElementById(
-      "adminTopic"
-    );
-
-
-  select.innerHTML =
-    subject.topics.map(
-      topic => `
-
-        <option value="${topic.id}">
-
-          ${escapeHtml(topic.name)}
-
-        </option>
-
-      `
-    ).join("");
-
-
-  document.getElementById(
-    "adminSubject"
-  ).onchange =
-    updateAdminTopics;
-
-
-  renderQuestionInputs();
-
-}
-
-
-
-function renderQuestionInputs() {
-
-  document.getElementById(
-    "optionsContainer"
-  ).innerHTML =
-
-    [0,1,2,3,4,5]
-      .map(
-        i => `
-
-          <div class="option-line">
-
-            <input
-              class="
-                input
-                admin-option
-              "
-              placeholder="
-                Alternativa
-                ${String.fromCharCode(
-                  65 + i
-                )}
-              ">
-
-          </div>
-
-        `
-      )
-      .join("");
-
-}
-
-
-
-function addTopic() {
-
-  const subject =
-    getSubject(
-      document.getElementById(
-        "adminSubject"
-      ).value
-    );
-
-
-  const name =
-    document.getElementById(
-      "newTopicName"
-    ).value.trim();
-
-
-  if (!name) {
-
-    alert(
-      "Escribe el nombre del tema."
-    );
-
-    return;
-
-  }
-
-
-  subject.topics.push({
-
-    id:
-      "topic_" +
-      Date.now(),
-
-    name,
-
-    questions: []
-
-  });
-
-
-  saveData();
-
-
-  document.getElementById(
-    "newTopicName"
-  ).value = "";
-
-
-  renderAdmin();
-
-}
-
-
-
-function addQuestion() {
-
-  const topic =
-    getTopic(
-
-      document.getElementById(
-        "adminSubject"
-      ).value,
-
-      document.getElementById(
-        "adminTopic"
-      ).value
-
-    );
-
-
-  const text =
-    document.getElementById(
-      "questionText"
-    ).value.trim();
-
-
-  const inputs =
-    [
-      ...document.querySelectorAll(
-        ".admin-option"
-      )
-    ];
-
-
-  const options =
-    inputs
-      .map(input =>
-        input.value.trim()
-      )
-      .filter(Boolean);
-
-
-  const answer =
-    Number(
-      document.getElementById(
-        "correctOption"
-      ).value
-    );
-
-
-  if (
-    !text ||
-    options.length < 2
-  ) {
-
-    alert(
-      "Debes escribir la pregunta y al menos 2 alternativas."
-    );
-
-    return;
-
-  }
-
-
-  if (
-    answer >= options.length
-  ) {
-
-    alert(
-      "La respuesta correcta no existe."
-    );
-
-    return;
-
-  }
-
-
-  topic.questions.push({
-
-    id:
-      "q_" +
-      Date.now(),
-
-    text,
-
-    options,
-
-    answer
-
-  });
-
-
-  saveData();
-
-
-  alert(
-    "Pregunta guardada correctamente."
-  );
-
-
-  renderAdmin();
-
-}
-
-
-
-function renderQuestionBank() {
-
-  const box =
-    document.getElementById(
-      "questionBank"
-    );
-
-
-  const rows = [];
-
-
-  data.subjects.forEach(
-    subject => {
-
-      subject.topics.forEach(
-        topic => {
-
-          topic.questions.forEach(
-            q => {
-
-              rows.push(`
-
-                <div
-                  class="question-admin">
-
-                  <div
-                    class="small muted">
-
-                    ${escapeHtml(
-                      subject.name
-                    )}
-
-                    ·
-
-                    ${escapeHtml(
-                      topic.name
-                    )}
-
-                  </div>
-
-
-                  <strong>
-
-                    ${escapeHtml(
-                      q.text
-                    )}
-
-                  </strong>
-
-
-                  <div
-                    class="small"
-                    style="
-                      margin-top:8px
-                    ">
-
-                    ${
-                      q.options
-                        .map(
-                          (option, i) => `
-
-                            ${String.fromCharCode(
-                              65 + i
-                            )})
-                            ${escapeHtml(
-                              option
-                            )}
+                        <div class="stat-value">
 
                             ${
-                              i === q.answer
-                                ? " ✓"
-                                : ""
+                                historial.length
+                                ? Math.max(
+                                    ...historial.map(
+                                        x => x.nota
+                                    )
+                                ) + "/20"
+                                : "-"
                             }
 
-                          `
-                        )
-                        .join(" · ")
-                    }
+                        </div>
 
-                  </div>
+                    </div>
 
                 </div>
 
-              `);
 
-            }
-          );
+                <!-- RESULTADOS -->
 
-        }
-      );
+                <div
+                    style="
+                        margin-top:25px;
+                        padding:20px;
+                        border-radius:18px;
+                        background:var(--secondary);
+                        display:flex;
+                        align-items:center;
+                        justify-content:space-between;
+                        gap:15px;
+                        flex-wrap:wrap;
+                    "
+                >
 
-    }
-  );
+                    <div>
+
+                        <h3 style="margin-bottom:5px;">
+                            📚 Mis resultados
+                        </h3>
+
+                        <p
+                            class="muted"
+                            style="margin:0;"
+                        >
+                            Revisa tus exámenes anteriores
+                            y aprende de tus errores.
+                        </p>
+
+                    </div>
 
 
-  box.innerHTML =
-    rows.length
-      ? rows.join("")
-      :
-      `
-        <p class="muted">
-          No hay preguntas todavía.
-        </p>
-      `;
+                    <button
+                        class="btn btn-primary"
+                        onclick="mostrarHistorial()"
+                    >
+                        👁️ Ver mis resultados
+                    </button>
 
+                </div>
+
+
+                <!-- CURSOS -->
+
+                <h2 style="margin-top:30px;">
+                    📚 Mis cursos
+                </h2>
+
+
+                <div class="subject-grid">
+    `;
+
+
+    cursos.forEach(curso => {
+
+        const preguntas =
+            obtenerPreguntasCurso(curso);
+
+        const temas =
+            obtenerTemasCurso(curso);
+
+
+        html += `
+
+            <div
+                class="subject-card"
+                onclick="seleccionarCurso('${curso}')"
+            >
+
+                <div class="subject-icon">
+                    📖
+                </div>
+
+                <h3>
+                    ${curso}
+                </h3>
+
+                <p class="muted">
+                    ${temas.length} temas
+                </p>
+
+                <p class="muted">
+                    ${preguntas.length} preguntas
+                </p>
+
+                <button
+                    class="btn btn-primary"
+                    onclick="
+                        event.stopPropagation();
+                        seleccionarCurso('${curso}')
+                    "
+                >
+                    Practicar
+                </button>
+
+            </div>
+
+        `;
+    });
+
+
+    html += `
+
+                </div>
+
+            </div>
+
+        </main>
+
+    `;
+
+
+    document.getElementById("app").innerHTML =
+        html;
 }
 
 
+// =====================================================
+// CURSO
+// =====================================================
 
-renderLogin();
+function seleccionarCurso(curso) {
+
+    cursoActual = curso;
+
+    mostrarCurso();
+}
+
+
+function mostrarCurso() {
+
+    const preguntas =
+        obtenerPreguntasCurso(
+            cursoActual
+        );
+
+    const temas =
+        obtenerTemasCurso(
+            cursoActual
+        );
+
+
+    let html = generarHeader();
+
+    html += `
+
+        <main class="container">
+
+            <div class="top-actions">
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="mostrarDashboard()"
+                >
+                    ← Volver a cursos
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <h2>
+                    📖 ${cursoActual}
+                </h2>
+
+                <p class="muted">
+                    Practica con preguntas mezcladas
+                    de todos los temas.
+                </p>
+
+                <div class="dashboard-grid">
+
+                    <div class="stat">
+
+                        <div class="muted">
+                            Temas
+                        </div>
+
+                        <div class="stat-value">
+                            ${temas.length}
+                        </div>
+
+                    </div>
+
+                    <div class="stat">
+
+                        <div class="muted">
+                            Preguntas
+                        </div>
+
+                        <div class="stat-value">
+                            ${preguntas.length}
+                        </div>
+
+                    </div>
+
+                    <div class="stat">
+
+                        <div class="muted">
+                            Por examen
+                        </div>
+
+                        <div class="stat-value">
+                            ${Math.min(
+                                CANTIDAD_EXAMEN,
+                                preguntas.length
+                            )}
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div
+                    style="
+                        margin-top:25px;
+                        padding:22px;
+                        border-radius:18px;
+                        background:var(--secondary);
+                    "
+                >
+
+                    <h3>
+                        🎯 Examen completo
+                    </h3>
+
+                    <p class="muted">
+                        Las preguntas serán seleccionadas
+                        aleatoriamente de todos los temas.
+                    </p>
+
+                    <button
+                        class="btn btn-primary"
+                        onclick="nuevoExamen()"
+                    >
+                        📝 Comenzar examen
+                    </button>
+
+                </div>
+
+                <h2 style="margin-top:30px;">
+                    📚 Temas incluidos
+                </h2>
+
+                <div class="topic-list">
+    `;
+
+
+    temas.forEach(tema => {
+
+        const cantidad =
+            preguntas.filter(
+                p => p.tema === tema
+            ).length;
+
+
+        html += `
+
+            <div class="topic-row">
+
+                <div class="topic-info">
+
+                    <strong>
+                        ${tema}
+                    </strong>
+
+                    <span>
+                        ${cantidad} ${
+                            cantidad === 1
+                            ? "pregunta"
+                            : "preguntas"
+                        }
+                    </span>
+
+                </div>
+
+                <div
+                    style="
+                        min-width:120px;
+                        width:120px;
+                    "
+                >
+
+                    <div class="progress">
+
+                        <div
+                            class="progress-bar"
+                            style="
+                                width:${
+                                    Math.min(
+                                        cantidad * 5,
+                                        100
+                                    )
+                                }%;
+                            "
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        `;
+    });
+
+
+    html += `
+
+                </div>
+
+            </div>
+
+        </main>
+    `;
+
+    document.getElementById("app").innerHTML =
+        html;
+}
+
+
+// =====================================================
+// NUEVO EXAMEN
+// =====================================================
+
+function nuevoExamen() {
+
+    const todas =
+        obtenerPreguntasCurso(
+            cursoActual
+        );
+
+
+    if (!todas.length) {
+
+        alert(
+            "No hay preguntas disponibles para este curso."
+        );
+
+        return;
+    }
+
+
+    let usadas =
+        obtenerPreguntasUsadas(
+            cursoActual
+        );
+
+
+    let disponibles =
+        todas.filter(
+            pregunta =>
+                !usadas.includes(
+                    pregunta.id
+                )
+        );
+
+
+    // Si no quedan suficientes preguntas
+    if (
+        disponibles.length <
+        Math.min(
+            CANTIDAD_EXAMEN,
+            todas.length
+        )
+    ) {
+
+        const reiniciar =
+            confirm(
+                "Ya se utilizaron las preguntas disponibles de este curso.\n\n" +
+                "¿Quieres comenzar nuevamente el banco?"
+            );
+
+
+        if (!reiniciar) {
+            return;
+        }
+
+
+        usadas = [];
+
+        disponibles = [...todas];
+
+        guardarPreguntasUsadas(
+            cursoActual,
+            []
+        );
+    }
+
+
+    // =================================================
+    // AQUÍ ESTÁ LA CORRECCIÓN PRINCIPAL
+    //
+    // NO FILTRAMOS POR TEMA.
+    //
+    // Tomamos TODAS las preguntas del curso.
+    // =================================================
+
+    disponibles =
+        mezclar(disponibles);
+
+
+    examenActual =
+        disponibles.slice(
+            0,
+            Math.min(
+                CANTIDAD_EXAMEN,
+                disponibles.length
+            )
+        );
+
+
+    // Guardamos como utilizadas
+    const nuevosIds =
+        examenActual.map(
+            p => p.id
+        );
+
+
+    guardarPreguntasUsadas(
+        cursoActual,
+        [
+            ...usadas,
+            ...nuevosIds
+        ]
+    );
+
+
+    // Guardamos copia para repetir
+    examenAnterior =
+        JSON.parse(
+            JSON.stringify(
+                examenActual
+            )
+        );
+
+
+    respuestasUsuario =
+        new Array(
+            examenActual.length
+        ).fill(null);
+
+
+    preguntaActual = 0;
+
+
+    mostrarPregunta();
+}
+
+
+// =====================================================
+// MOSTRAR PREGUNTA
+// =====================================================
+
+function mostrarPregunta() {
+
+    const pregunta =
+        examenActual[
+            preguntaActual
+        ];
+
+
+    if (!pregunta) {
+
+        mostrarResultado();
+
+        return;
+    }
+
+
+    // Mezclamos las alternativas
+  if (!pregunta.opcionesMezcladas) {
+
+    pregunta.opcionesMezcladas =
+        mezclar(
+            pregunta.opciones.map(
+                (texto, indice) => ({
+                    texto,
+                    indice
+                })
+            )
+        );
+}
+
+const opcionesMezcladas =
+    pregunta.opcionesMezcladas;
+
+
+    let html = generarHeader();
+
+
+    html += `
+
+        <main class="container">
+
+            <div class="card">
+
+                <div class="exam-header">
+
+                    <div class="question-count">
+
+                        Pregunta
+                        ${preguntaActual + 1}
+                        de
+                        ${examenActual.length}
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div
+                            class="progress-bar"
+                            style="
+                                width:${
+                                    (
+                                        (preguntaActual + 1)
+                                        /
+                                        examenActual.length
+                                        * 100
+                                    )
+                                }%;
+                            "
+                        ></div>
+
+                    </div>
+
+                </div>
+
+                <div class="muted">
+                    Tema:
+                    <strong>
+                        ${pregunta.tema}
+                    </strong>
+                </div>
+
+                <div class="question-text">
+                    ${pregunta.pregunta}
+                </div>
+
+                <div class="answers">
+    `;
+
+
+    opcionesMezcladas.forEach(
+        (opcion, posicion) => {
+
+            const seleccionada =
+                respuestasUsuario[
+                    preguntaActual
+                ] === opcion.indice;
+
+
+            html += `
+
+                <button
+                    class="answer ${
+                        seleccionada
+                        ? "selected"
+                        : ""
+                    }"
+                    onclick="
+                        seleccionarRespuesta(
+                            ${opcion.indice}
+                        )
+                    "
+                >
+
+                    <span class="answer-letter">
+                        ${String.fromCharCode(
+                            65 + posicion
+                        )}
+                    </span>
+
+                    <span>
+                        ${opcion.texto}
+                    </span>
+
+                </button>
+            `;
+        }
+    );
+
+
+    html += `
+
+                </div>
+
+                <div class="exam-actions">
+
+                    <button
+                        class="btn btn-secondary"
+                        onclick="preguntaAnterior()"
+                        ${
+                            preguntaActual === 0
+                            ? "disabled"
+                            : ""
+                        }
+                    >
+                        ← Anterior
+                    </button>
+
+                    <button
+                        class="btn btn-primary"
+                        onclick="siguientePregunta()"
+                        ${
+                            respuestasUsuario[
+                                preguntaActual
+                            ] === null
+                            ? "disabled"
+                            : ""
+                        }
+                    >
+                        ${
+                            preguntaActual ===
+                            examenActual.length - 1
+                            ? "Terminar"
+                            : "Siguiente →"
+                        }
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+    `;
+
+
+    document.getElementById("app").innerHTML =
+        html;
+}
+
+
+// =====================================================
+// RESPUESTA
+// =====================================================
+
+function seleccionarRespuesta(
+    indice
+) {
+
+    respuestasUsuario[
+        preguntaActual
+    ] = indice;
+
+
+    mostrarPregunta();
+}
+
+
+// =====================================================
+// SIGUIENTE
+// =====================================================
+
+function siguientePregunta() {
+
+    if (
+        respuestasUsuario[
+            preguntaActual
+        ] === null
+    ) {
+        return;
+    }
+
+
+    if (
+        preguntaActual <
+        examenActual.length - 1
+    ) {
+
+        preguntaActual++;
+
+        mostrarPregunta();
+
+    } else {
+
+        mostrarResultado();
+
+    }
+}
+
+
+// =====================================================
+// ANTERIOR
+// =====================================================
+
+function preguntaAnterior() {
+
+    if (preguntaActual > 0) {
+
+        preguntaActual--;
+
+        mostrarPregunta();
+    }
+}
+
+
+// =====================================================
+// RESULTADO
+// =====================================================
+
+function mostrarResultado() {
+
+    let correctas = 0;
+
+
+    examenActual.forEach(
+        (pregunta, indice) => {
+
+            if (
+                respuestasUsuario[indice] ===
+                pregunta.correcta
+            ) {
+
+                correctas++;
+            }
+        }
+    );
+
+
+    const total =
+        examenActual.length;
+
+
+    const nota =
+        Math.round(
+            (
+                correctas /
+                total
+            ) * 20
+        );
+
+
+    guardarResultado(
+        correctas,
+        total,
+        nota
+    );
+
+
+    let mensaje;
+
+
+    if (nota >= 18) {
+
+        mensaje =
+            "🌟 ¡Excelente trabajo!";
+
+    } else if (nota >= 14) {
+
+        mensaje =
+            "👏 ¡Muy bien!";
+
+    } else if (nota >= 11) {
+
+        mensaje =
+            "👍 ¡Buen esfuerzo!";
+
+    } else {
+
+        mensaje =
+            "💪 Sigue practicando.";
+    }
+
+
+    let html = generarHeader();
+
+
+    html += `
+
+        <main class="container">
+
+            <div class="card result">
+
+                <h2>
+                    🎉 Examen terminado
+                </h2>
+
+                <div class="score-circle">
+
+                    <strong>
+                        ${nota}/20
+                    </strong>
+
+                </div>
+
+                <div class="result-message">
+                    ${mensaje}
+                </div>
+
+                <p class="muted">
+                    Respuestas correctas:
+                    <strong>
+                        ${correctas}/${total}
+                    </strong>
+                </p>
+
+                <div class="top-actions"
+                    style="
+                        justify-content:center;
+                        margin-top:20px;
+                    "
+                >
+
+                    <button
+                        class="btn btn-secondary"
+                        onclick="repetirExamen()"
+                    >
+                        🔄 Repetir examen
+                    </button>
+
+                    <button
+                        class="btn btn-primary"
+                        onclick="nuevoExamen()"
+                    >
+                        🎲 Nuevo examen
+                    </button>
+
+                    <button
+                        class="btn btn-secondary"
+                        onclick="mostrarCurso()"
+                    >
+                        📚 Volver al curso
+                    </button>
+
+                </div>
+
+                <div class="review">
+
+                    <h3>
+                        📝 Revisión
+                    </h3>
+    `;
+
+
+    examenActual.forEach(
+        (pregunta, indice) => {
+
+            const respondida =
+                respuestasUsuario[indice];
+
+            const correcta =
+                respondida ===
+                pregunta.correcta;
+
+
+            html += `
+
+                <div class="
+                    review-item
+                    ${
+                        correcta
+                        ? "correct"
+                        : "incorrect"
+                    }
+                ">
+
+                    <strong>
+                        ${indice + 1}.
+                        ${pregunta.pregunta}
+                    </strong>
+
+                    <p>
+                        Tu respuesta:
+                        <strong>
+                            ${
+                                pregunta.opciones[
+                                    respondida
+                                ] || "Sin responder"
+                            }
+                        </strong>
+                    </p>
+
+                    ${
+                        !correcta
+                        ? `
+                            <p>
+                                Respuesta correcta:
+                                <strong>
+                                    ${
+                                        pregunta.opciones[
+                                            pregunta.correcta
+                                        ]
+                                    }
+                                </strong>
+                            </p>
+                        `
+                        : `
+                            <p>
+                                ✅ Correcta
+                            </p>
+                        `
+                    }
+
+                </div>
+            `;
+        }
+    );
+
+
+    html += `
+
+                </div>
+
+            </div>
+
+        </main>
+    `;
+
+
+    document.getElementById("app").innerHTML =
+        html;
+}
+
+
+// =====================================================
+// REPETIR EXAMEN
+// =====================================================
+
+function repetirExamen() {
+
+    examenActual =
+        JSON.parse(
+            JSON.stringify(
+                examenAnterior
+            )
+        );
+
+
+    respuestasUsuario =
+        new Array(
+            examenActual.length
+        ).fill(null);
+
+
+    preguntaActual = 0;
+
+
+    mostrarPregunta();
+}
+
+
+// =====================================================
+// HISTORIAL
+// =====================================================
+
+function guardarResultado(
+    correctas,
+    total,
+    nota
+) {
+
+    const usuario =
+        localStorage.getItem(
+            "usuarioActual"
+        );
+
+    const clave =
+        `historial_${usuario}`;
+
+    const historial =
+        JSON.parse(
+            localStorage.getItem(
+                clave
+            ) || "[]"
+        );
+
+    // Guardamos una copia completa del examen
+    const examenGuardado =
+        examenActual.map(
+            (pregunta, indice) => {
+
+                return {
+                    id: pregunta.id,
+                    tema: pregunta.tema,
+                    pregunta: pregunta.pregunta,
+                    opciones: [...pregunta.opciones],
+                    correcta: pregunta.correcta,
+                    respuestaUsuario:
+                        respuestasUsuario[indice]
+                };
+
+            }
+        );
+
+    historial.push({
+
+        id:
+            Date.now(),
+
+        fecha:
+            new Date().toLocaleString(),
+
+        curso:
+            cursoActual,
+
+        correctas:
+            correctas,
+
+        total:
+            total,
+
+        nota:
+            nota,
+
+        preguntas:
+            examenGuardado
+    });
+
+
+    localStorage.setItem(
+        clave,
+        JSON.stringify(
+            historial
+        )
+    );
+}
+
+
+// =====================================================
+// ADMIN
+// =====================================================
+
+function mostrarAdmin() {
+
+    const historial =
+        JSON.parse(
+            localStorage.getItem(
+                `historial_${USUARIO_HIJA}`
+            ) || "[]"
+        );
+
+
+    let html = generarHeader();
+
+
+    html += `
+
+        <main class="container">
+
+            <div class="card">
+
+                <h2>
+                    👨‍💼 Panel del administrador
+                </h2>
+
+                <p class="muted">
+                    Historial de evaluaciones de tu hija.
+                </p>
+
+                <div class="topic-list">
+    `;
+
+
+    if (!historial.length) {
+
+        html += `
+
+            <div class="topic-row">
+
+                <div class="topic-info">
+
+                    <strong>
+                        Aún no hay exámenes.
+                    </strong>
+
+                    <span>
+                        Cuando se realice el primero
+                        aparecerá aquí.
+                    </span>
+
+                </div>
+
+            </div>
+        `;
+
+    } else {
+
+        historial
+            .slice()
+            .reverse()
+            .forEach(resultado => {
+
+                html += `
+
+                    <div class="topic-row">
+
+                        <div class="topic-info">
+
+                            <strong>
+                                ${resultado.curso}
+                            </strong>
+
+                            <span>
+                                ${resultado.fecha}
+                                ·
+                                ${resultado.correctas}/${resultado.total}
+                                correctas
+                            </span>
+
+                        </div>
+
+                        <strong>
+                            ${resultado.nota}/20
+                        </strong>
+
+                    </div>
+                `;
+            });
+    }
+
+
+    html += `
+
+                </div>
+
+            </div>
+
+        </main>
+    `;
+
+
+    document.getElementById("app").innerHTML =
+        html;
+}
+
+// =====================================================
+// MIS RESULTADOS
+// =====================================================
+
+function mostrarHistorial() {
+
+    const usuario =
+        localStorage.getItem("usuarioActual");
+
+    const historial =
+        JSON.parse(
+            localStorage.getItem(
+                `historial_${usuario}`
+            ) || "[]"
+        );
+
+    let html = generarHeader();
+
+    html += `
+
+        <main class="container">
+
+            <div class="top-actions">
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="mostrarDashboard()"
+                >
+                    ← Volver
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <h2>
+                    📚 Mis resultados
+                </h2>
+
+                <p class="muted">
+                    Revisa tus exámenes anteriores
+                    y aprende de tus errores.
+                </p>
+
+                <div class="topic-list">
+    `;
+
+    if (historial.length === 0) {
+
+        html += `
+
+            <div class="topic-row">
+
+                <div class="topic-info">
+
+                    <strong>
+                        No tienes exámenes todavía.
+                    </strong>
+
+                </div>
+
+            </div>
+
+        `;
+
+    } else {
+
+        historial
+            .slice()
+            .reverse()
+            .forEach(resultado => {
+
+                html += `
+
+                    <div class="topic-row">
+
+                        <div class="topic-info">
+
+                            <strong>
+                                ${resultado.curso}
+                            </strong>
+
+                            <span>
+                                ${resultado.fecha}
+                                ·
+                                ${resultado.correctas}/${resultado.total}
+                                correctas
+                            </span>
+
+                        </div>
+
+                        <div class="top-actions">
+
+                            <strong>
+                                ${resultado.nota}/20
+                            </strong>
+
+                            ${
+                                resultado.preguntas
+                                ? `
+                                    <button
+                                        class="btn btn-primary"
+                                        onclick="revisarExamen(${resultado.id})"
+                                    >
+                                        👁️ Revisar
+                                    </button>
+                                `
+                                : `
+                                    <span class="muted">
+                                        Examen antiguo
+                                    </span>
+                                `
+                            }
+
+                        </div>
+
+                    </div>
+
+                `;
+            });
+    }
+
+    html += `
+
+                </div>
+
+            </div>
+
+        </main>
+    `;
+
+    document.getElementById("app").innerHTML =
+        html;
+}
+
+
+// =====================================================
+// REVISAR EXAMEN
+// =====================================================
+
+function revisarExamen(id) {
+
+    const usuario =
+        localStorage.getItem("usuarioActual");
+
+    const historial =
+        JSON.parse(
+            localStorage.getItem(
+                `historial_${usuario}`
+            ) || "[]"
+        );
+
+    const examen =
+        historial.find(
+            resultado =>
+                resultado.id === id
+        );
+
+    if (!examen) {
+
+        alert(
+            "No se encontró el examen."
+        );
+
+        return;
+    }
+
+    if (!examen.preguntas) {
+
+        alert(
+            "Este examen fue realizado antes de activar el sistema de revisión."
+        );
+
+        return;
+    }
+
+    let html = generarHeader();
+
+    html += `
+
+        <main class="container">
+
+            <div class="top-actions">
+
+                <button
+                    class="btn btn-secondary"
+                    onclick="mostrarHistorial()"
+                >
+                    ← Mis resultados
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <div class="result">
+
+                    <h2>
+                        📖 Revisión del examen
+                    </h2>
+
+                    <p class="muted">
+                        ${examen.curso}
+                        ·
+                        ${examen.fecha}
+                    </p>
+
+                    <div class="score-circle">
+
+                        <strong>
+                            ${examen.nota}/20
+                        </strong>
+
+                    </div>
+
+                    <p class="result-message">
+                        ${examen.correctas}
+                        de
+                        ${examen.total}
+                        respuestas correctas
+                    </p>
+
+                </div>
+
+                <div class="review">
+    `;
+
+    examen.preguntas.forEach(
+        (pregunta, indice) => {
+
+            const respuesta =
+                pregunta.respuestaUsuario;
+
+            const correcta =
+                respuesta ===
+                pregunta.correcta;
+
+            html += `
+
+                <div class="
+                    review-item
+                    ${
+                        correcta
+                        ? "correct"
+                        : "incorrect"
+                    }
+                ">
+
+                    <p class="muted">
+                        Pregunta ${indice + 1}
+                        · ${pregunta.tema}
+                    </p>
+
+                    <div class="question-text"
+                         style="font-size:18px;">
+                        ${pregunta.pregunta}
+                    </div>
+
+                    <p>
+
+                        Tu respuesta:
+
+                        <strong>
+                            ${
+                                respuesta !== null &&
+                                respuesta !== undefined
+                                ? pregunta.opciones[respuesta]
+                                : "Sin responder"
+                            }
+                        </strong>
+
+                    </p>
+
+                    ${
+                        correcta
+
+                        ? `
+
+                            <p>
+                                ✅ ¡Respuesta correcta!
+                            </p>
+
+                        `
+
+                        : `
+
+                            <p>
+                                ❌ Respuesta incorrecta
+                            </p>
+
+                            <p>
+
+                                Respuesta correcta:
+
+                                <strong>
+                                    ${
+                                        pregunta.opciones[
+                                            pregunta.correcta
+                                        ]
+                                    }
+                                </strong>
+
+                            </p>
+
+                        `
+                    }
+
+                </div>
+
+            `;
+        }
+    );
+
+    html += `
+
+                </div>
+
+            </div>
+
+        </main>
+    `;
+
+    document.getElementById("app").innerHTML =
+        html;
+}
+// =====================================================
+// CERRAR SESIÓN
+// =====================================================
+
+function cerrarSesion() {
+
+    localStorage.removeItem(
+        "usuarioActual"
+    );
+
+    cursoActual = "";
+
+    examenActual = [];
+
+    respuestasUsuario = [];
+
+    mostrarLogin();
+}

@@ -1308,49 +1308,61 @@ function repetirExamen() {
 // HISTORIAL
 // =====================================================
 
-function guardarResultado(
-    correctas,
-    total,
-    nota
-) {
+function guardarResultado(correctas, total, nota) {
 
     const usuario =
-        localStorage.getItem(
-            "usuarioActual"
-        );
+        localStorage.getItem("usuarioActual");
 
     const clave =
         `historial_${usuario}`;
 
     const historial =
         JSON.parse(
-            localStorage.getItem(
-                clave
-            ) || "[]"
+            localStorage.getItem(clave) || "[]"
         );
 
-    // Guardamos una copia completa del examen
+    // Guardamos toda la información necesaria
+    // para poder revisar y aprender de los errores.
     const examenGuardado =
-        examenActual.map(
-            (pregunta, indice) => {
+        examenActual.map((pregunta, indice) => {
 
-                return {
-                    id: pregunta.id,
-                    tema: pregunta.tema,
-                    pregunta: pregunta.pregunta,
-                    opciones: [...pregunta.opciones],
-                    correcta: pregunta.correcta,
-                    respuestaUsuario:
-                        respuestasUsuario[indice]
-                };
+            return {
+                id: pregunta.id,
+                tema: pregunta.tema,
 
-            }
-        );
+                // Pregunta original en inglés
+                pregunta: pregunta.pregunta,
+
+                // Traducción al español
+                traduccionPregunta:
+                    pregunta.traduccionPregunta || "",
+
+                // Alternativas
+                opciones: [...pregunta.opciones],
+
+                // Traducción de cada alternativa
+                traduccionesOpciones:
+                    pregunta.traduccionesOpciones
+                    ? [...pregunta.traduccionesOpciones]
+                    : [],
+
+                // Respuesta correcta
+                correcta: pregunta.correcta,
+
+                // Explicación del error
+                explicacion:
+                    pregunta.explicacion || "",
+
+                // Respuesta marcada por la alumna
+                respuestaUsuario:
+                    respuestasUsuario[indice]
+            };
+
+        });
 
     historial.push({
 
-        id:
-            Date.now(),
+        id: Date.now(),
 
         fecha:
             new Date().toLocaleString(),
@@ -1371,12 +1383,9 @@ function guardarResultado(
             examenGuardado
     });
 
-
     localStorage.setItem(
         clave,
-        JSON.stringify(
-            historial
-        )
+        JSON.stringify(historial)
     );
 }
 
@@ -1648,9 +1657,7 @@ function revisarExamen(id) {
 
     if (!examen) {
 
-        alert(
-            "No se encontró el examen."
-        );
+        alert("No se encontró el examen.");
 
         return;
     }
@@ -1725,6 +1732,68 @@ function revisarExamen(id) {
                 respuesta ===
                 pregunta.correcta;
 
+            // Traducción de la pregunta
+            const traduccionPregunta =
+                pregunta.traduccionPregunta ||
+                "Traducción no disponible.";
+
+            // Traducción de la respuesta marcada
+            let respuestaUsuarioTexto =
+                "Sin responder";
+
+            let respuestaUsuarioTraduccion =
+                "";
+
+            if (
+                respuesta !== null &&
+                respuesta !== undefined &&
+                pregunta.opciones &&
+                pregunta.opciones[respuesta] !== undefined
+            ) {
+
+                respuestaUsuarioTexto =
+                    pregunta.opciones[respuesta];
+
+                if (
+                    pregunta.traduccionesOpciones &&
+                    pregunta.traduccionesOpciones[respuesta]
+                ) {
+
+                    respuestaUsuarioTraduccion =
+                        pregunta.traduccionesOpciones[
+                            respuesta
+                        ];
+                }
+            }
+
+            // Respuesta correcta
+            const respuestaCorrectaTexto =
+                pregunta.opciones &&
+                pregunta.opciones[pregunta.correcta]
+                    ? pregunta.opciones[pregunta.correcta]
+                    : "";
+
+            let respuestaCorrectaTraduccion =
+                "";
+
+            if (
+                pregunta.traduccionesOpciones &&
+                pregunta.traduccionesOpciones[
+                    pregunta.correcta
+                ]
+            ) {
+
+                respuestaCorrectaTraduccion =
+                    pregunta.traduccionesOpciones[
+                        pregunta.correcta
+                    ];
+            }
+
+            // Explicación
+            const explicacion =
+                pregunta.explicacion ||
+                "Revisa la respuesta correcta y vuelve a practicar esta pregunta.";
+
             html += `
 
                 <div class="
@@ -1741,23 +1810,58 @@ function revisarExamen(id) {
                         · ${pregunta.tema}
                     </p>
 
-                    <div class="question-text"
-                         style="font-size:18px;">
+                    <!-- PREGUNTA EN INGLÉS -->
+
+                    <div
+                        class="question-text"
+                        style="font-size:18px;"
+                    >
                         ${pregunta.pregunta}
                     </div>
 
+                    <!-- TRADUCCIÓN -->
+
+                    <div
+                        style="
+                            background:#f5f6ff;
+                            border-radius:12px;
+                            padding:12px 15px;
+                            margin:12px 0 18px;
+                        "
+                    >
+
+                        🇪🇸
+                        <strong>
+                            Traducción:
+                        </strong>
+
+                        ${traduccionPregunta}
+
+                    </div>
+
+                    <!-- RESPUESTA DEL ALUMNO -->
+
                     <p>
 
-                        Tu respuesta:
+                        ${
+                            correcta
+                            ? "Tu respuesta:"
+                            : "❌ Tu respuesta:"
+                        }
 
                         <strong>
-                            ${
-                                respuesta !== null &&
-                                respuesta !== undefined
-                                ? pregunta.opciones[respuesta]
-                                : "Sin responder"
-                            }
+                            ${respuestaUsuarioTexto}
                         </strong>
+
+                        ${
+                            respuestaUsuarioTraduccion
+                            ? `
+                                <span class="muted">
+                                    — ${respuestaUsuarioTraduccion}
+                                </span>
+                            `
+                            : ""
+                        }
 
                     </p>
 
@@ -1766,31 +1870,85 @@ function revisarExamen(id) {
 
                         ? `
 
-                            <p>
-                                ✅ ¡Respuesta correcta!
-                            </p>
+                            <div
+                                style="
+                                    background:#eefaf3;
+                                    border-radius:12px;
+                                    padding:14px;
+                                    margin-top:12px;
+                                "
+                            >
+
+                                <p>
+                                    ✅
+                                    <strong>
+                                        ¡Respuesta correcta!
+                                    </strong>
+                                </p>
+
+                            </div>
 
                         `
 
                         : `
 
-                            <p>
-                                ❌ Respuesta incorrecta
-                            </p>
+                            <!-- RESPUESTA CORRECTA -->
 
-                            <p>
+                            <div
+                                style="
+                                    background:#fff5f5;
+                                    border-radius:12px;
+                                    padding:14px;
+                                    margin-top:12px;
+                                "
+                            >
 
-                                Respuesta correcta:
+                                <p>
 
-                                <strong>
+                                    ✅
+                                    <strong>
+                                        Respuesta correcta:
+                                    </strong>
+
+                                    ${respuestaCorrectaTexto}
+
                                     ${
-                                        pregunta.opciones[
-                                            pregunta.correcta
-                                        ]
+                                        respuestaCorrectaTraduccion
+                                        ? `
+                                            <span class="muted">
+                                                — ${respuestaCorrectaTraduccion}
+                                            </span>
+                                        `
+                                        : ""
                                     }
-                                </strong>
 
-                            </p>
+                                </p>
+
+                            </div>
+
+                            <!-- EXPLICACIÓN -->
+
+                            <div
+                                style="
+                                    background:#fffaf0;
+                                    border-radius:12px;
+                                    padding:14px;
+                                    margin-top:12px;
+                                "
+                            >
+
+                                <p>
+                                    💡
+                                    <strong>
+                                        ¿Por qué?
+                                    </strong>
+                                </p>
+
+                                <p>
+                                    ${explicacion}
+                                </p>
+
+                            </div>
 
                         `
                     }

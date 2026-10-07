@@ -2480,7 +2480,7 @@ const bancoPreguntas = [
     ],
     correcta: 0
   },
-
+  
     {
     id: 181,
     curso: "Matemática",
@@ -3130,7 +3130,1240 @@ const bancoPreguntas = [
       "700"
     ],
     correcta: 2
-  }
+  },
+// =====================================================
+// CURSO: INGLÉS
+// IDs 231 - 330
+// =====================================================
+
+// =====================================================
+// INGLÉS — PREGUNTAS 231–330
+// =====================================================
+
+{
+    id: 231,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food is made with bread, meat and vegetables?",
+    traduccionPregunta: "¿Qué comida se prepara con pan, carne y verduras?",
+    opciones: ["Hamburger", "Soup", "Rice", "French fries"],
+    traduccionesOpciones: ["Hamburguesa", "Sopa", "Arroz", "Papas fritas"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Hamburger porque una hamburguesa se prepara con pan, carne y verduras."
+},
+
+{
+    id: 232,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food is made from potatoes and is usually fried?",
+    traduccionPregunta: "¿Qué comida se prepara con papas y normalmente se fríe?",
+    opciones: ["Soup", "French fries", "Rice", "Steak"],
+    traduccionesOpciones: ["Sopa", "Papas fritas", "Arroz", "Bistec"],
+    correcta: 1,
+    explicacion: "La respuesta correcta es French fries porque las papas fritas se preparan con papas que normalmente se fríen."
+},
+
+{
+    id: 233,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food is a liquid food that you can eat with a spoon?",
+    traduccionPregunta: "¿Qué comida es líquida y puedes comerla con una cuchara?",
+    opciones: ["Soup", "Hamburger", "Steak", "Hot dog"],
+    traduccionesOpciones: ["Sopa", "Hamburguesa", "Bistec", "Hot dog"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Soup porque la sopa es un alimento líquido que normalmente se come con una cuchara."
+},
+
+{
+    id: 234,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food is a long sausage served in a bun?",
+    traduccionPregunta: "¿Qué comida es una salchicha larga servida dentro de un pan?",
+    opciones: ["Rice", "Soup", "Hot dog", "Steak"],
+    traduccionesOpciones: ["Arroz", "Sopa", "Hot dog", "Bistec"],
+    correcta: 2,
+    explicacion: "La respuesta correcta es Hot dog porque es una salchicha servida dentro de un pan."
+},
+
+{
+    id: 235,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food is usually served in a bowl and is made from cooked grains?",
+    traduccionPregunta: "¿Qué comida normalmente se sirve en un tazón y está hecha de granos cocidos?",
+    opciones: ["Rice", "Hamburger", "Hot dog", "French fries"],
+    traduccionesOpciones: ["Arroz", "Hamburguesa", "Hot dog", "Papas fritas"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Rice porque el arroz es un grano que se cocina y normalmente se sirve como alimento."
+},
+
+{
+    id: 236,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food is a piece of cooked meat?",
+    traduccionPregunta: "¿Qué comida es un trozo de carne cocida?",
+    opciones: ["Soup", "Steak", "Rice", "French fries"],
+    traduccionesOpciones: ["Sopa", "Bistec", "Arroz", "Papas fritas"],
+    correcta: 1,
+    explicacion: "La respuesta correcta es Steak porque steak significa bistec o un trozo de carne cocida."
+},
+
+{
+    id: 237,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food is usually made with chicken and fried?",
+    traduccionPregunta: "¿Qué comida normalmente se prepara con pollo y se fríe?",
+    opciones: ["Fried chicken", "Rice", "Soup", "Steak"],
+    traduccionesOpciones: ["Pollo frito", "Arroz", "Sopa", "Bistec"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Fried chicken porque significa pollo frito."
+},
+
+{
+    id: 238,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which word means hamburguesa?",
+    traduccionPregunta: "¿Qué palabra significa hamburguesa?",
+    opciones: ["Hamburger", "Soup", "Rice", "Steak"],
+    traduccionesOpciones: ["Hamburguesa", "Sopa", "Arroz", "Bistec"],
+    correcta: 0,
+    explicacion: "Hamburger significa hamburguesa en español."
+},
+
+{
+    id: 239,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which word means sopa?",
+    traduccionPregunta: "¿Qué palabra significa sopa?",
+    opciones: ["Rice", "Soup", "Steak", "Hot dog"],
+    traduccionesOpciones: ["Arroz", "Sopa", "Bistec", "Hot dog"],
+    correcta: 1,
+    explicacion: "Soup significa sopa en español."
+},
+
+{
+    id: 240,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which word means arroz?",
+    traduccionPregunta: "¿Qué palabra significa arroz?",
+    opciones: ["Steak", "Rice", "Soup", "Hamburger"],
+    traduccionesOpciones: ["Bistec", "Arroz", "Sopa", "Hamburguesa"],
+    correcta: 1,
+    explicacion: "Rice significa arroz en español."
+},
+
+{
+    id: 241,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which word means papas fritas?",
+    traduccionPregunta: "¿Qué palabra significa papas fritas?",
+    opciones: ["French fries", "Hot dog", "Steak", "Rice"],
+    traduccionesOpciones: ["Papas fritas", "Hot dog", "Bistec", "Arroz"],
+    correcta: 0,
+    explicacion: "French fries significa papas fritas en español."
+},
+
+{
+    id: 242,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which word means bistec?",
+    traduccionPregunta: "¿Qué palabra significa bistec?",
+    opciones: ["Soup", "Steak", "Rice", "Hamburger"],
+    traduccionesOpciones: ["Sopa", "Bistec", "Arroz", "Hamburguesa"],
+    correcta: 1,
+    explicacion: "Steak significa bistec en español."
+},
+
+{
+    id: 243,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food is commonly eaten with a bun?",
+    traduccionPregunta: "¿Qué comida normalmente se come con un pan?",
+    opciones: ["Hamburger", "Soup", "Rice", "Steak"],
+    traduccionesOpciones: ["Hamburguesa", "Sopa", "Arroz", "Bistec"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Hamburger porque normalmente se sirve dentro de un pan."
+},
+
+{
+    id: 244,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food can be served in a bowl?",
+    traduccionPregunta: "¿Qué comida puede servirse en un tazón?",
+    opciones: ["Soup", "Hamburger", "Hot dog", "French fries"],
+    traduccionesOpciones: ["Sopa", "Hamburguesa", "Hot dog", "Papas fritas"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Soup porque la sopa normalmente se sirve en un tazón."
+},
+
+{
+    id: 245,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food is usually yellow or golden when fried?",
+    traduccionPregunta: "¿Qué comida normalmente es amarilla o dorada cuando se fríe?",
+    opciones: ["French fries", "Soup", "Rice", "Steak"],
+    traduccionesOpciones: ["Papas fritas", "Sopa", "Arroz", "Bistec"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es French fries porque las papas fritas suelen quedar doradas al freírse."
+},
+
+{
+    id: 246,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food can be made with a beef patty?",
+    traduccionPregunta: "¿Qué comida puede prepararse con una carne de hamburguesa?",
+    opciones: ["Hamburger", "Soup", "Rice", "French fries"],
+    traduccionesOpciones: ["Hamburguesa", "Sopa", "Arroz", "Papas fritas"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Hamburger porque una hamburguesa puede prepararse con una carne de hamburguesa."
+},
+
+{
+    id: 247,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food is made with a sausage?",
+    traduccionPregunta: "¿Qué comida se prepara con una salchicha?",
+    opciones: ["Hot dog", "Rice", "Soup", "Steak"],
+    traduccionesOpciones: ["Hot dog", "Arroz", "Sopa", "Bistec"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Hot dog porque el hot dog lleva una salchicha."
+},
+
+{
+    id: 248,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food is made from cooked rice grains?",
+    traduccionPregunta: "¿Qué comida está hecha de granos de arroz cocidos?",
+    opciones: ["Rice", "Steak", "Hot dog", "Soup"],
+    traduccionesOpciones: ["Arroz", "Bistec", "Hot dog", "Sopa"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Rice porque rice significa arroz."
+},
+
+{
+    id: 249,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food is usually made from a piece of meat?",
+    traduccionPregunta: "¿Qué comida normalmente se prepara con un trozo de carne?",
+    opciones: ["Steak", "Soup", "Rice", "French fries"],
+    traduccionesOpciones: ["Bistec", "Sopa", "Arroz", "Papas fritas"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Steak porque steak es un trozo de carne cocida."
+},
+
+{
+    id: 250,
+    curso: "Inglés",
+    tema: "Food",
+    pregunta: "Which food is made from chicken and is fried?",
+    traduccionPregunta: "¿Qué comida se prepara con pollo y se fríe?",
+    opciones: ["Fried chicken", "Rice", "Hamburger", "Soup"],
+    traduccionesOpciones: ["Pollo frito", "Arroz", "Hamburguesa", "Sopa"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Fried chicken porque significa pollo frito."
+},
+
+// =====================================================
+// ARRANGING SENTENCES
+// =====================================================
+
+{
+    id: 251,
+    curso: "Inglés",
+    tema: "Arranging sentences",
+    pregunta: "Choose the correct sentence: / like / I / pizza",
+    traduccionPregunta: "Elige la oración correcta: / me gusta / yo / pizza.",
+    opciones: ["I like pizza.", "Pizza I like.", "Like I pizza.", "I pizza like."],
+    traduccionesOpciones: ["Me gusta la pizza.", "Pizza yo me gusta.", "Me gusta yo pizza.", "Yo pizza gusta."],
+    correcta: 0,
+    explicacion: "La oración correcta es I like pizza. En inglés usamos primero el sujeto I, luego el verbo like y después lo que nos gusta."
+},
+
+{
+    id: 252,
+    curso: "Inglés",
+    tema: "Arranging sentences",
+    pregunta: "Choose the correct sentence: / is / She / happy",
+    traduccionPregunta: "Elige la oración correcta: / está / ella / feliz.",
+    opciones: ["She is happy.", "Is she happy.", "Happy she is.", "She happy is."],
+    traduccionesOpciones: ["Ella está feliz.", "¿Está ella feliz?", "Feliz ella está.", "Ella feliz está."],
+    correcta: 0,
+    explicacion: "La oración correcta es She is happy. Después del sujeto She usamos el verbo is."
+},
+
+{
+    id: 253,
+    curso: "Inglés",
+    tema: "Arranging sentences",
+    pregunta: "Choose the correct sentence: / are / They / students",
+    traduccionPregunta: "Elige la oración correcta: / son / ellos / estudiantes.",
+    opciones: ["They are students.", "Are they students.", "Students they are.", "They students are."],
+    traduccionesOpciones: ["Ellos son estudiantes.", "¿Son ellos estudiantes?", "Estudiantes ellos son.", "Ellos estudiantes son."],
+    correcta: 0,
+    explicacion: "La oración correcta es They are students. El orden básico es sujeto + verbo + complemento."
+},
+
+{
+    id: 254,
+    curso: "Inglés",
+    tema: "Arranging sentences",
+    pregunta: "Choose the correct sentence: / have / We / lunch",
+    traduccionPregunta: "Elige la oración correcta: / tenemos / nosotros / almuerzo.",
+    opciones: ["We have lunch.", "Have we lunch.", "Lunch have we.", "We lunch have."],
+    traduccionesOpciones: ["Nosotros almorzamos.", "Tenemos nosotros almuerzo.", "Almuerzo tenemos nosotros.", "Nosotros almuerzo tenemos."],
+    correcta: 0,
+    explicacion: "La oración correcta es We have lunch. El sujeto We va antes del verbo have."
+},
+
+{
+    id: 255,
+    curso: "Inglés",
+    tema: "Arranging sentences",
+    pregunta: "Choose the correct sentence: / plays / He / soccer",
+    traduccionPregunta: "Elige la oración correcta: / juega / él / fútbol.",
+    opciones: ["He plays soccer.", "Plays he soccer.", "Soccer he plays.", "He soccer plays."],
+    traduccionesOpciones: ["Él juega fútbol.", "Juega él fútbol.", "Fútbol él juega.", "Él fútbol juega."],
+    correcta: 0,
+    explicacion: "La oración correcta es He plays soccer. Primero va He, luego plays y finalmente soccer."
+},
+
+{
+    id: 256,
+    curso: "Inglés",
+    tema: "Arranging sentences",
+    pregunta: "Choose the correct sentence: / has / She / a dog",
+    traduccionPregunta: "Elige la oración correcta: / tiene / ella / un perro.",
+    opciones: ["She has a dog.", "Has she a dog.", "A dog she has.", "She a dog has."],
+    traduccionesOpciones: ["Ella tiene un perro.", "Ella tiene un perro.", "Un perro ella tiene.", "Ella un perro tiene."],
+    correcta: 0,
+    explicacion: "La oración correcta es She has a dog. El sujeto She va primero y después usamos has."
+},
+
+{
+    id: 257,
+    curso: "Inglés",
+    tema: "Arranging sentences",
+    pregunta: "Choose the correct sentence: / is / It / small",
+    traduccionPregunta: "Elige la oración correcta: / es / eso / pequeño.",
+    opciones: ["It is small.", "Is it small.", "Small it is.", "It small is."],
+    traduccionesOpciones: ["Es pequeño.", "¿Es pequeño?", "Pequeño eso es.", "Eso pequeño es."],
+    correcta: 0,
+    explicacion: "La oración correcta es It is small. Para una afirmación usamos It + is + adjetivo."
+},
+
+{
+    id: 258,
+    curso: "Inglés",
+    tema: "Arranging sentences",
+    pregunta: "Choose the correct sentence: / am / I / hungry",
+    traduccionPregunta: "Elige la oración correcta: / estoy / yo / hambriento.",
+    opciones: ["I am hungry.", "Am I hungry.", "Hungry I am.", "I hungry am."],
+    traduccionesOpciones: ["Tengo hambre.", "¿Tengo hambre?", "Hambriento yo estoy.", "Yo hambre estoy."],
+    correcta: 0,
+    explicacion: "La oración correcta es I am hungry. Con I usamos am."
+},
+
+{
+    id: 259,
+    curso: "Inglés",
+    tema: "Arranging sentences",
+    pregunta: "Choose the correct sentence: / like / They / music",
+    traduccionPregunta: "Elige la oración correcta: / les gusta / ellos / música.",
+    opciones: ["They like music.", "Like they music.", "Music they like.", "They music like."],
+    traduccionesOpciones: ["A ellos les gusta la música.", "Les gusta ellos música.", "Música ellos gustan.", "Ellos música gustan."],
+    correcta: 0,
+    explicacion: "La oración correcta es They like music. El sujeto They va primero y después el verbo like."
+},
+
+{
+    id: 260,
+    curso: "Inglés",
+    tema: "Arranging sentences",
+    pregunta: "Choose the correct sentence: / is / The cat / black",
+    traduccionPregunta: "Elige la oración correcta: / es / el gato / negro.",
+    opciones: ["The cat is black.", "Is the cat black.", "Black the cat is.", "The cat black is."],
+    traduccionesOpciones: ["El gato es negro.", "¿El gato es negro?", "Negro el gato es.", "El gato negro es."],
+    correcta: 0,
+    explicacion: "La oración correcta es The cat is black. Primero va el sujeto, después is y luego el adjetivo."
+},
+
+// =====================================================
+// PERSONAL PRONOUNS
+// =====================================================
+
+{
+    id: 261,
+    curso: "Inglés",
+    tema: "Personal pronouns",
+    pregunta: "Which pronoun do we use for a person who is speaking?",
+    traduccionPregunta: "¿Qué pronombre usamos para una persona que está hablando?",
+    opciones: ["I", "You", "He", "They"],
+    traduccionesOpciones: ["Yo", "Tú / usted", "Él", "Ellos / ellas"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es I porque usamos I para hablar de nosotros mismos."
+},
+
+{
+    id: 262,
+    curso: "Inglés",
+    tema: "Personal pronouns",
+    pregunta: "Which pronoun means tú or usted?",
+    traduccionPregunta: "¿Qué pronombre significa tú o usted?",
+    opciones: ["You", "I", "He", "She"],
+    traduccionesOpciones: ["Tú / usted", "Yo", "Él", "Ella"],
+    correcta: 0,
+    explicacion: "You significa tú o usted en español."
+},
+
+{
+    id: 263,
+    curso: "Inglés",
+    tema: "Personal pronouns",
+    pregunta: "Which pronoun do we use for a boy or man?",
+    traduccionPregunta: "¿Qué pronombre usamos para un niño o un hombre?",
+    opciones: ["He", "She", "It", "We"],
+    traduccionesOpciones: ["Él", "Ella", "Eso / ello", "Nosotros"],
+    correcta: 0,
+    explicacion: "Usamos He para referirnos a un niño o a un hombre."
+},
+
+{
+    id: 264,
+    curso: "Inglés",
+    tema: "Personal pronouns",
+    pregunta: "Which pronoun do we use for a girl or woman?",
+    traduccionPregunta: "¿Qué pronombre usamos para una niña o una mujer?",
+    opciones: ["She", "He", "It", "They"],
+    traduccionesOpciones: ["Ella", "Él", "Eso / ello", "Ellos / ellas"],
+    correcta: 0,
+    explicacion: "Usamos She para referirnos a una niña o a una mujer."
+},
+
+{
+    id: 265,
+    curso: "Inglés",
+    tema: "Personal pronouns",
+    pregunta: "Which pronoun can we use for an animal or thing?",
+    traduccionPregunta: "¿Qué pronombre podemos usar para un animal o una cosa?",
+    opciones: ["It", "He", "She", "We"],
+    traduccionesOpciones: ["Eso / ello", "Él", "Ella", "Nosotros"],
+    correcta: 0,
+    explicacion: "Usamos It para una cosa o, en muchos casos, para un animal."
+},
+
+{
+    id: 266,
+    curso: "Inglés",
+    tema: "Personal pronouns",
+    pregunta: "Which pronoun means nosotros?",
+    traduccionPregunta: "¿Qué pronombre significa nosotros?",
+    opciones: ["We", "They", "You", "I"],
+    traduccionesOpciones: ["Nosotros", "Ellos / ellas", "Tú / usted", "Yo"],
+    correcta: 0,
+    explicacion: "We significa nosotros."
+},
+
+{
+    id: 267,
+    curso: "Inglés",
+    tema: "Personal pronouns",
+    pregunta: "Which pronoun means ellos or ellas?",
+    traduccionPregunta: "¿Qué pronombre significa ellos o ellas?",
+    opciones: ["They", "We", "He", "You"],
+    traduccionesOpciones: ["Ellos / ellas", "Nosotros", "Él", "Tú / usted"],
+    correcta: 0,
+    explicacion: "They significa ellos o ellas."
+},
+
+{
+    id: 268,
+    curso: "Inglés",
+    tema: "Personal pronouns",
+    pregunta: "Maria is a girl. Which pronoun replaces Maria?",
+    traduccionPregunta: "María es una niña. ¿Qué pronombre reemplaza a María?",
+    opciones: ["She", "He", "It", "We"],
+    traduccionesOpciones: ["Ella", "Él", "Eso / ello", "Nosotros"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es She porque Maria es una niña."
+},
+
+{
+    id: 269,
+    curso: "Inglés",
+    tema: "Personal pronouns",
+    pregunta: "Carlos is a boy. Which pronoun replaces Carlos?",
+    traduccionPregunta: "Carlos es un niño. ¿Qué pronombre reemplaza a Carlos?",
+    opciones: ["He", "She", "It", "They"],
+    traduccionesOpciones: ["Él", "Ella", "Eso / ello", "Ellos / ellas"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es He porque Carlos es un niño."
+},
+
+{
+    id: 270,
+    curso: "Inglés",
+    tema: "Personal pronouns",
+    pregunta: "My friends are at school. Which pronoun replaces my friends?",
+    traduccionPregunta: "Mis amigos están en la escuela. ¿Qué pronombre reemplaza a mis amigos?",
+    opciones: ["They", "He", "She", "It"],
+    traduccionesOpciones: ["Ellos / ellas", "Él", "Ella", "Eso / ello"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es They porque hablamos de varias personas."
+},
+
+// =====================================================
+// VERB TO BE
+// =====================================================
+
+{
+    id: 271,
+    curso: "Inglés",
+    tema: "Verb to be",
+    pregunta: "I ___ a student.",
+    traduccionPregunta: "Yo ___ un estudiante.",
+    opciones: ["am", "is", "are", "be"],
+    traduccionesOpciones: ["soy / estoy", "es / está", "son / están", "ser / estar"],
+    correcta: 0,
+    explicacion: "Con el pronombre I usamos am. Por eso decimos I am a student."
+},
+
+{
+    id: 272,
+    curso: "Inglés",
+    tema: "Verb to be",
+    pregunta: "She ___ happy.",
+    traduccionPregunta: "Ella ___ feliz.",
+    opciones: ["is", "am", "are", "be"],
+    traduccionesOpciones: ["es / está", "soy / estoy", "son / están", "ser / estar"],
+    correcta: 0,
+    explicacion: "Con She usamos is. La oración correcta es She is happy."
+},
+
+{
+    id: 273,
+    curso: "Inglés",
+    tema: "Verb to be",
+    pregunta: "He ___ my brother.",
+    traduccionPregunta: "Él ___ mi hermano.",
+    opciones: ["is", "am", "are", "be"],
+    traduccionesOpciones: ["es / está", "soy / estoy", "son / están", "ser / estar"],
+    correcta: 0,
+    explicacion: "Con He usamos is. Por eso decimos He is my brother."
+},
+
+{
+    id: 274,
+    curso: "Inglés",
+    tema: "Verb to be",
+    pregunta: "We ___ friends.",
+    traduccionPregunta: "Nosotros ___ amigos.",
+    opciones: ["are", "is", "am", "be"],
+    traduccionesOpciones: ["somos / estamos", "es / está", "soy / estoy", "ser / estar"],
+    correcta: 0,
+    explicacion: "Con We usamos are. La oración correcta es We are friends."
+},
+
+{
+    id: 275,
+    curso: "Inglés",
+    tema: "Verb to be",
+    pregunta: "They ___ students.",
+    traduccionPregunta: "Ellos ___ estudiantes.",
+    opciones: ["are", "is", "am", "be"],
+    traduccionesOpciones: ["son / están", "es / está", "soy / estoy", "ser / estar"],
+    correcta: 0,
+    explicacion: "Con They usamos are. Por eso decimos They are students."
+},
+
+{
+    id: 276,
+    curso: "Inglés",
+    tema: "Verb to be",
+    pregunta: "It ___ a dog.",
+    traduccionPregunta: "Es un perro.",
+    opciones: ["is", "are", "am", "be"],
+    traduccionesOpciones: ["es / está", "son / están", "soy / estoy", "ser / estar"],
+    correcta: 0,
+    explicacion: "Con It usamos is. La oración correcta es It is a dog."
+},
+
+{
+    id: 277,
+    curso: "Inglés",
+    tema: "Verb to be",
+    pregunta: "You ___ my friend.",
+    traduccionPregunta: "Tú ___ mi amigo o amiga.",
+    opciones: ["are", "is", "am", "be"],
+    traduccionesOpciones: ["eres / estás", "es / está", "soy / estoy", "ser / estar"],
+    correcta: 0,
+    explicacion: "Con You usamos are. La oración correcta es You are my friend."
+},
+
+{
+    id: 278,
+    curso: "Inglés",
+    tema: "Verb to be",
+    pregunta: "I ___ hungry.",
+    traduccionPregunta: "Yo ___ hambriento.",
+    opciones: ["am", "is", "are", "be"],
+    traduccionesOpciones: ["estoy", "es / está", "son / están", "ser / estar"],
+    correcta: 0,
+    explicacion: "Con I usamos am. Por eso decimos I am hungry."
+},
+
+{
+    id: 279,
+    curso: "Inglés",
+    tema: "Verb to be",
+    pregunta: "The cat ___ small.",
+    traduccionPregunta: "El gato ___ pequeño.",
+    opciones: ["is", "are", "am", "be"],
+    traduccionesOpciones: ["es / está", "son / están", "soy / estoy", "ser / estar"],
+    correcta: 0,
+    explicacion: "The cat es singular, por eso usamos is: The cat is small."
+},
+
+{
+    id: 280,
+    curso: "Inglés",
+    tema: "Verb to be",
+    pregunta: "The children ___ happy.",
+    traduccionPregunta: "Los niños ___ felices.",
+    opciones: ["are", "is", "am", "be"],
+    traduccionesOpciones: ["son / están", "es / está", "soy / estoy", "ser / estar"],
+    correcta: 0,
+    explicacion: "The children se refiere a varias personas, por eso usamos are."
+},
+
+// =====================================================
+// SOLAR SYSTEM
+// =====================================================
+
+{
+    id: 281,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "How many planets are in the Solar System?",
+    traduccionPregunta: "¿Cuántos planetas hay en el Sistema Solar?",
+    opciones: ["Eight", "Seven", "Nine", "Ten"],
+    traduccionesOpciones: ["Ocho", "Siete", "Nueve", "Diez"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Eight porque el Sistema Solar tiene ocho planetas."
+},
+
+{
+    id: 282,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet is closest to the Sun?",
+    traduccionPregunta: "¿Qué planeta está más cerca del Sol?",
+    opciones: ["Mercury", "Venus", "Earth", "Mars"],
+    traduccionesOpciones: ["Mercurio", "Venus", "Tierra", "Marte"],
+    correcta: 0,
+    explicacion: "Mercury es el planeta más cercano al Sol."
+},
+
+{
+    id: 283,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet is known as the Red Planet?",
+    traduccionPregunta: "¿Qué planeta es conocido como el Planeta Rojo?",
+    opciones: ["Mars", "Earth", "Venus", "Mercury"],
+    traduccionesOpciones: ["Marte", "Tierra", "Venus", "Mercurio"],
+    correcta: 0,
+    explicacion: "Mars es conocido como el Planeta Rojo por su apariencia rojiza."
+},
+
+{
+    id: 284,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet do we live on?",
+    traduccionPregunta: "¿En qué planeta vivimos?",
+    opciones: ["Earth", "Mars", "Venus", "Jupiter"],
+    traduccionesOpciones: ["Tierra", "Marte", "Venus", "Júpiter"],
+    correcta: 0,
+    explicacion: "Vivimos en Earth, que significa Tierra."
+},
+
+{
+    id: 285,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet is the largest?",
+    traduccionPregunta: "¿Qué planeta es el más grande?",
+    opciones: ["Jupiter", "Earth", "Mars", "Mercury"],
+    traduccionesOpciones: ["Júpiter", "Tierra", "Marte", "Mercurio"],
+    correcta: 0,
+    explicacion: "Jupiter es el planeta más grande del Sistema Solar."
+},
+
+{
+    id: 286,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet is famous for its rings?",
+    traduccionPregunta: "¿Qué planeta es famoso por sus anillos?",
+    opciones: ["Saturn", "Mars", "Earth", "Venus"],
+    traduccionesOpciones: ["Saturno", "Marte", "Tierra", "Venus"],
+    correcta: 0,
+    explicacion: "Saturn es famoso por sus grandes y visibles anillos."
+},
+
+{
+    id: 287,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet is between Earth and Jupiter?",
+    traduccionPregunta: "¿Qué planeta está entre la Tierra y Júpiter?",
+    opciones: ["Mars", "Venus", "Saturn", "Mercury"],
+    traduccionesOpciones: ["Marte", "Venus", "Saturno", "Mercurio"],
+    correcta: 0,
+    explicacion: "Mars está después de Earth y antes de Jupiter en el orden de los planetas."
+},
+
+{
+    id: 288,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet is between Mercury and Earth?",
+    traduccionPregunta: "¿Qué planeta está entre Mercurio y la Tierra?",
+    opciones: ["Venus", "Mars", "Jupiter", "Saturn"],
+    traduccionesOpciones: ["Venus", "Marte", "Júpiter", "Saturno"],
+    correcta: 0,
+    explicacion: "Venus está entre Mercury y Earth."
+},
+
+{
+    id: 289,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet is the farthest from the Sun?",
+    traduccionPregunta: "¿Qué planeta está más lejos del Sol?",
+    opciones: ["Neptune", "Uranus", "Saturn", "Jupiter"],
+    traduccionesOpciones: ["Neptuno", "Urano", "Saturno", "Júpiter"],
+    correcta: 0,
+    explicacion: "Neptune es el planeta más alejado del Sol."
+},
+
+{
+    id: 290,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet comes after Saturn?",
+    traduccionPregunta: "¿Qué planeta viene después de Saturno?",
+    opciones: ["Uranus", "Neptune", "Jupiter", "Mars"],
+    traduccionesOpciones: ["Urano", "Neptuno", "Júpiter", "Marte"],
+    correcta: 0,
+    explicacion: "Después de Saturn está Uranus."
+},
+
+{
+    id: 291,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet comes after Uranus?",
+    traduccionPregunta: "¿Qué planeta viene después de Urano?",
+    opciones: ["Neptune", "Saturn", "Jupiter", "Earth"],
+    traduccionesOpciones: ["Neptuno", "Saturno", "Júpiter", "Tierra"],
+    correcta: 0,
+    explicacion: "Después de Uranus está Neptune."
+},
+
+{
+    id: 292,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet comes before Mars?",
+    traduccionPregunta: "¿Qué planeta viene antes de Marte?",
+    opciones: ["Earth", "Jupiter", "Venus", "Saturn"],
+    traduccionesOpciones: ["Tierra", "Júpiter", "Venus", "Saturno"],
+    correcta: 0,
+    explicacion: "Earth está antes de Mars en el orden de los planetas."
+},
+
+{
+    id: 293,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet comes before Venus?",
+    traduccionPregunta: "¿Qué planeta viene antes de Venus?",
+    opciones: ["Mercury", "Earth", "Mars", "Jupiter"],
+    traduccionesOpciones: ["Mercurio", "Tierra", "Marte", "Júpiter"],
+    correcta: 0,
+    explicacion: "Mercury está antes de Venus."
+},
+
+{
+    id: 294,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet is the second planet from the Sun?",
+    traduccionPregunta: "¿Qué planeta es el segundo planeta desde el Sol?",
+    opciones: ["Venus", "Earth", "Mars", "Mercury"],
+    traduccionesOpciones: ["Venus", "Tierra", "Marte", "Mercurio"],
+    correcta: 0,
+    explicacion: "Venus es el segundo planeta desde el Sol."
+},
+
+{
+    id: 295,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet is the third planet from the Sun?",
+    traduccionPregunta: "¿Qué planeta es el tercer planeta desde el Sol?",
+    opciones: ["Earth", "Mars", "Venus", "Jupiter"],
+    traduccionesOpciones: ["Tierra", "Marte", "Venus", "Júpiter"],
+    correcta: 0,
+    explicacion: "Earth es el tercer planeta desde el Sol."
+},
+
+{
+    id: 296,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet is the fourth planet from the Sun?",
+    traduccionPregunta: "¿Qué planeta es el cuarto planeta desde el Sol?",
+    opciones: ["Mars", "Earth", "Jupiter", "Venus"],
+    traduccionesOpciones: ["Marte", "Tierra", "Júpiter", "Venus"],
+    correcta: 0,
+    explicacion: "Mars es el cuarto planeta desde el Sol."
+},
+
+{
+    id: 297,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet is the fifth planet from the Sun?",
+    traduccionPregunta: "¿Qué planeta es el quinto planeta desde el Sol?",
+    opciones: ["Jupiter", "Saturn", "Earth", "Mars"],
+    traduccionesOpciones: ["Júpiter", "Saturno", "Tierra", "Marte"],
+    correcta: 0,
+    explicacion: "Jupiter es el quinto planeta desde el Sol."
+},
+
+{
+    id: 298,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet is the sixth planet from the Sun?",
+    traduccionPregunta: "¿Qué planeta es el sexto planeta desde el Sol?",
+    opciones: ["Saturn", "Jupiter", "Uranus", "Neptune"],
+    traduccionesOpciones: ["Saturno", "Júpiter", "Urano", "Neptuno"],
+    correcta: 0,
+    explicacion: "Saturn es el sexto planeta desde el Sol."
+},
+
+{
+    id: 299,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet is the seventh planet from the Sun?",
+    traduccionPregunta: "¿Qué planeta es el séptimo planeta desde el Sol?",
+    opciones: ["Uranus", "Neptune", "Saturn", "Jupiter"],
+    traduccionesOpciones: ["Urano", "Neptuno", "Saturno", "Júpiter"],
+    correcta: 0,
+    explicacion: "Uranus es el séptimo planeta desde el Sol."
+},
+
+{
+    id: 300,
+    curso: "Inglés",
+    tema: "Solar System",
+    pregunta: "Which planet is the eighth planet from the Sun?",
+    traduccionPregunta: "¿Qué planeta es el octavo planeta desde el Sol?",
+    opciones: ["Neptune", "Uranus", "Saturn", "Jupiter"],
+    traduccionesOpciones: ["Neptuno", "Urano", "Saturno", "Júpiter"],
+    correcta: 0,
+    explicacion: "Neptune es el octavo y último planeta del Sistema Solar."
+},
+
+// =====================================================
+// SHOPPING
+// =====================================================
+
+{
+    id: 301,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What do you do when you want to get a product from a store?",
+    traduccionPregunta: "¿Qué haces cuando quieres obtener un producto de una tienda?",
+    opciones: ["Buy", "Sell", "Pay", "Read"],
+    traduccionesOpciones: ["Comprar", "Vender", "Pagar", "Leer"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Buy porque buy significa comprar."
+},
+
+{
+    id: 302,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What does a store do when it gives a product to a customer for money?",
+    traduccionPregunta: "¿Qué hace una tienda cuando entrega un producto a un cliente a cambio de dinero?",
+    opciones: ["Sell", "Buy", "Read", "Open"],
+    traduccionesOpciones: ["Vender", "Comprar", "Leer", "Abrir"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Sell porque sell significa vender."
+},
+
+{
+    id: 303,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What do you receive after paying for something in a store?",
+    traduccionPregunta: "¿Qué recibes después de pagar algo en una tienda?",
+    opciones: ["Receipt", "Purse", "Discount", "Price"],
+    traduccionesOpciones: ["Recibo", "Cartera", "Descuento", "Precio"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Receipt porque un receipt es el recibo de una compra."
+},
+
+{
+    id: 304,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What is the amount of money you pay for a product?",
+    traduccionPregunta: "¿Cuál es la cantidad de dinero que pagas por un producto?",
+    opciones: ["Price", "Receipt", "Purse", "Discount"],
+    traduccionesOpciones: ["Precio", "Recibo", "Cartera", "Descuento"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Price porque price significa precio."
+},
+
+{
+    id: 305,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What do you get when a product costs less than its original price?",
+    traduccionPregunta: "¿Qué obtienes cuando un producto cuesta menos que su precio original?",
+    opciones: ["Discount", "Receipt", "Bill", "Wallet"],
+    traduccionesOpciones: ["Descuento", "Recibo", "Cuenta", "Billetera"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Discount porque un descuento reduce el precio de un producto."
+},
+
+{
+    id: 306,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Which word means dinero en efectivo?",
+    traduccionPregunta: "¿Qué palabra significa dinero en efectivo?",
+    opciones: ["Cash", "Receipt", "Price", "Discount"],
+    traduccionesOpciones: ["Dinero en efectivo", "Recibo", "Precio", "Descuento"],
+    correcta: 0,
+    explicacion: "Cash significa dinero en efectivo."
+},
+
+{
+    id: 307,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Which word means tarjeta de crédito?",
+    traduccionPregunta: "¿Qué palabra significa tarjeta de crédito?",
+    opciones: ["Credit card", "Receipt", "Cash", "Bill"],
+    traduccionesOpciones: ["Tarjeta de crédito", "Recibo", "Efectivo", "Cuenta"],
+    correcta: 0,
+    explicacion: "Credit card significa tarjeta de crédito."
+},
+
+{
+    id: 308,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Which word means billetera?",
+    traduccionPregunta: "¿Qué palabra significa billetera?",
+    opciones: ["Wallet", "Purse", "Receipt", "Price"],
+    traduccionesOpciones: ["Billetera", "Cartera", "Recibo", "Precio"],
+    correcta: 0,
+    explicacion: "Wallet significa billetera."
+},
+
+{
+    id: 309,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Which word means cartera?",
+    traduccionPregunta: "¿Qué palabra significa cartera?",
+    opciones: ["Purse", "Wallet", "Bill", "Cash"],
+    traduccionesOpciones: ["Cartera", "Billetera", "Cuenta", "Efectivo"],
+    correcta: 0,
+    explicacion: "Purse significa cartera, especialmente una cartera o bolso pequeño."
+},
+
+{
+    id: 310,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What can you use to carry your money and cards?",
+    traduccionPregunta: "¿Qué puedes usar para llevar tu dinero y tus tarjetas?",
+    opciones: ["Wallet", "Receipt", "Discount", "Price"],
+    traduccionesOpciones: ["Billetera", "Recibo", "Descuento", "Precio"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Wallet porque una billetera sirve para llevar dinero y tarjetas."
+},
+
+{
+    id: 311,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What can you use to pay without using cash?",
+    traduccionPregunta: "¿Qué puedes usar para pagar sin utilizar efectivo?",
+    opciones: ["Credit card", "Receipt", "Purse", "Discount"],
+    traduccionesOpciones: ["Tarjeta de crédito", "Recibo", "Cartera", "Descuento"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Credit card porque una tarjeta de crédito permite pagar sin usar efectivo."
+},
+
+{
+    id: 312,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Where can you buy food?",
+    traduccionPregunta: "¿Dónde puedes comprar comida?",
+    opciones: ["Supermarket", "School", "Park", "Hospital"],
+    traduccionesOpciones: ["Supermercado", "Escuela", "Parque", "Hospital"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Supermarket porque allí puedes comprar alimentos y otros productos."
+},
+
+{
+    id: 313,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What do you ask when you want to know how much something costs?",
+    traduccionPregunta: "¿Qué preguntas cuando quieres saber cuánto cuesta algo?",
+    opciones: ["What is the price?", "Where is the school?", "Who is he?", "What is your name?"],
+    traduccionesOpciones: ["¿Cuál es el precio?", "¿Dónde está la escuela?", "¿Quién es él?", "¿Cuál es tu nombre?"],
+    correcta: 0,
+    explicacion: "What is the price? significa ¿Cuál es el precio? y se usa para preguntar cuánto cuesta algo."
+},
+
+{
+    id: 314,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What do you get from the cashier after paying?",
+    traduccionPregunta: "¿Qué recibes del cajero después de pagar?",
+    opciones: ["Receipt", "Discount", "Price", "Purse"],
+    traduccionesOpciones: ["Recibo", "Descuento", "Precio", "Cartera"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Receipt porque el cajero puede entregarte el recibo después de pagar."
+},
+
+{
+    id: 315,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What does a discount do to the price?",
+    traduccionPregunta: "¿Qué hace un descuento al precio?",
+    opciones: ["It makes it lower.", "It makes it higher.", "It removes the store.", "It changes the color."],
+    traduccionesOpciones: ["Lo hace más bajo.", "Lo hace más alto.", "Elimina la tienda.", "Cambia el color."],
+    correcta: 0,
+    explicacion: "Un discount hace que el precio sea menor."
+},
+
+{
+    id: 316,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Which word means cuenta?",
+    traduccionPregunta: "¿Qué palabra significa cuenta?",
+    opciones: ["Bill", "Cash", "Price", "Purse"],
+    traduccionesOpciones: ["Cuenta", "Efectivo", "Precio", "Cartera"],
+    correcta: 0,
+    explicacion: "Bill puede significar cuenta, especialmente la cantidad que debes pagar."
+},
+
+{
+    id: 317,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Which word means comprar?",
+    traduccionPregunta: "¿Qué palabra significa comprar?",
+    opciones: ["Buy", "Sell", "Bill", "Pay"],
+    traduccionesOpciones: ["Comprar", "Vender", "Cuenta", "Pagar"],
+    correcta: 0,
+    explicacion: "Buy significa comprar."
+},
+
+{
+    id: 318,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Which word means vender?",
+    traduccionPregunta: "¿Qué palabra significa vender?",
+    opciones: ["Sell", "Buy", "Pay", "Cash"],
+    traduccionesOpciones: ["Vender", "Comprar", "Pagar", "Efectivo"],
+    correcta: 0,
+    explicacion: "Sell significa vender."
+},
+
+{
+    id: 319,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Which word means pagar?",
+    traduccionPregunta: "¿Qué palabra significa pagar?",
+    opciones: ["Pay", "Buy", "Sell", "Price"],
+    traduccionesOpciones: ["Pagar", "Comprar", "Vender", "Precio"],
+    correcta: 0,
+    explicacion: "Pay significa pagar."
+},
+
+{
+    id: 320,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Which word means recibo?",
+    traduccionPregunta: "¿Qué palabra significa recibo?",
+    opciones: ["Receipt", "Bill", "Cash", "Discount"],
+    traduccionesOpciones: ["Recibo", "Cuenta", "Efectivo", "Descuento"],
+    correcta: 0,
+    explicacion: "Receipt significa recibo."
+},
+
+{
+    id: 321,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Which word means precio?",
+    traduccionPregunta: "¿Qué palabra significa precio?",
+    opciones: ["Price", "Cash", "Bill", "Receipt"],
+    traduccionesOpciones: ["Precio", "Efectivo", "Cuenta", "Recibo"],
+    correcta: 0,
+    explicacion: "Price significa precio."
+},
+
+{
+    id: 322,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Which word means descuento?",
+    traduccionPregunta: "¿Qué palabra significa descuento?",
+    opciones: ["Discount", "Price", "Receipt", "Cash"],
+    traduccionesOpciones: ["Descuento", "Precio", "Recibo", "Efectivo"],
+    correcta: 0,
+    explicacion: "Discount significa descuento."
+},
+
+{
+    id: 323,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Which word means efectivo?",
+    traduccionPregunta: "¿Qué palabra significa efectivo?",
+    opciones: ["Cash", "Bill", "Receipt", "Purse"],
+    traduccionesOpciones: ["Efectivo", "Cuenta", "Recibo", "Cartera"],
+    correcta: 0,
+    explicacion: "Cash significa dinero en efectivo."
+},
+
+{
+    id: 324,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Which word means billetera?",
+    traduccionPregunta: "¿Qué palabra significa billetera?",
+    opciones: ["Wallet", "Purse", "Cash", "Receipt"],
+    traduccionesOpciones: ["Billetera", "Cartera", "Efectivo", "Recibo"],
+    correcta: 0,
+    explicacion: "Wallet significa billetera."
+},
+
+{
+    id: 325,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "Which word means cartera?",
+    traduccionPregunta: "¿Qué palabra significa cartera?",
+    opciones: ["Purse", "Wallet", "Cash", "Price"],
+    traduccionesOpciones: ["Cartera", "Billetera", "Efectivo", "Precio"],
+    correcta: 0,
+    explicacion: "Purse significa cartera."
+},
+
+{
+    id: 326,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What product can you buy at a supermarket?",
+    traduccionPregunta: "¿Qué producto puedes comprar en un supermercado?",
+    opciones: ["Food", "A car", "A house", "A school"],
+    traduccionesOpciones: ["Comida", "Un automóvil", "Una casa", "Una escuela"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Food porque en un supermercado puedes comprar comida."
+},
+
+{
+    id: 327,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What can you use to carry your shopping items?",
+    traduccionPregunta: "¿Qué puedes usar para llevar tus compras?",
+    opciones: ["Bag", "Receipt", "Price", "Discount"],
+    traduccionesOpciones: ["Bolsa", "Recibo", "Precio", "Descuento"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Bag porque una bolsa sirve para llevar los productos que compras."
+},
+
+{
+    id: 328,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What do you look at to know how much a product costs?",
+    traduccionPregunta: "¿Qué miras para saber cuánto cuesta un producto?",
+    opciones: ["Price", "Receipt", "Purse", "Wallet"],
+    traduccionesOpciones: ["Precio", "Recibo", "Cartera", "Billetera"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Price porque el precio indica cuánto cuesta un producto."
+},
+
+{
+    id: 329,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What can you receive when a store reduces the price?",
+    traduccionPregunta: "¿Qué puedes recibir cuando una tienda reduce el precio?",
+    opciones: ["Discount", "Bill", "Wallet", "Receipt"],
+    traduccionesOpciones: ["Descuento", "Cuenta", "Billetera", "Recibo"],
+    correcta: 0,
+    explicacion: "La respuesta correcta es Discount porque un descuento significa que el precio ha sido reducido."
+},
+
+{
+    id: 330,
+    curso: "Inglés",
+    tema: "Shopping",
+    pregunta: "What do you ask when you want to know the cost of a product?",
+    traduccionPregunta: "¿Qué preguntas cuando quieres saber el costo de un producto?",
+    opciones: ["How much is it?", "Who is it?", "Where are you?", "What is your name?"],
+    traduccionesOpciones: [
+        "¿Cuánto cuesta?",
+        "¿Quién es?",
+        "¿Dónde estás?",
+        "¿Cuál es tu nombre?"
+    ],
+    correcta: 0,
+    explicacion: "La respuesta correcta es How much is it? porque usamos esta pregunta para saber cuánto cuesta algo."
+},
 
 
 

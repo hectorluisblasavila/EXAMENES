@@ -1067,7 +1067,6 @@ function mostrarResultado() {
 
     let correctas = 0;
 
-
     examenActual.forEach(
         (pregunta, indice) => {
 
@@ -1075,16 +1074,14 @@ function mostrarResultado() {
                 respuestasUsuario[indice] ===
                 pregunta.correcta
             ) {
-
                 correctas++;
             }
+
         }
     );
 
-
     const total =
         examenActual.length;
-
 
     const nota =
         Math.round(
@@ -1094,16 +1091,14 @@ function mostrarResultado() {
             ) * 20
         );
 
-
+    // Guardar resultado
     guardarResultado(
         correctas,
         total,
         nota
     );
 
-
     let mensaje;
-
 
     if (nota >= 18) {
 
@@ -1124,11 +1119,10 @@ function mostrarResultado() {
 
         mensaje =
             "💪 Sigue practicando.";
+
     }
 
-
     let html = generarHeader();
-
 
     html += `
 
@@ -1153,13 +1147,17 @@ function mostrarResultado() {
                 </div>
 
                 <p class="muted">
+
                     Respuestas correctas:
+
                     <strong>
                         ${correctas}/${total}
                     </strong>
+
                 </p>
 
-                <div class="top-actions"
+                <div
+                    class="top-actions"
                     style="
                         justify-content:center;
                         margin-top:20px;
@@ -1189,24 +1187,106 @@ function mostrarResultado() {
 
                 </div>
 
+            </div>
+
+            <div
+                class="card"
+                style="margin-top:20px;"
+            >
+
+                <h2>
+                    📝 Revisión
+                </h2>
+
                 <div class="review">
 
-                    <h3>
-                        📝 Revisión
-                    </h3>
     `;
-
 
     examenActual.forEach(
         (pregunta, indice) => {
 
-            const respondida =
+            const respuesta =
                 respuestasUsuario[indice];
 
             const correcta =
-                respondida ===
+                respuesta ===
                 pregunta.correcta;
 
+            // =========================================
+            // TRADUCCIÓN DE LA PREGUNTA
+            // =========================================
+
+            const traduccionPregunta =
+                pregunta.traduccionPregunta ||
+                "";
+
+            // =========================================
+            // RESPUESTA DEL ALUMNO
+            // =========================================
+
+            let respuestaUsuarioTexto =
+                "Sin responder";
+
+            let respuestaUsuarioTraduccion =
+                "";
+
+            if (
+                respuesta !== null &&
+                respuesta !== undefined &&
+                pregunta.opciones &&
+                pregunta.opciones[respuesta]
+            ) {
+
+                respuestaUsuarioTexto =
+                    pregunta.opciones[respuesta];
+
+                if (
+                    pregunta.traduccionesOpciones &&
+                    pregunta.traduccionesOpciones[
+                        respuesta
+                    ]
+                ) {
+
+                    respuestaUsuarioTraduccion =
+                        pregunta.traduccionesOpciones[
+                            respuesta
+                        ];
+                }
+
+            }
+
+            // =========================================
+            // RESPUESTA CORRECTA
+            // =========================================
+
+            const respuestaCorrectaTexto =
+                pregunta.opciones[
+                    pregunta.correcta
+                ];
+
+            let respuestaCorrectaTraduccion =
+                "";
+
+            if (
+                pregunta.traduccionesOpciones &&
+                pregunta.traduccionesOpciones[
+                    pregunta.correcta
+                ]
+            ) {
+
+                respuestaCorrectaTraduccion =
+                    pregunta.traduccionesOpciones[
+                        pregunta.correcta
+                    ];
+            }
+
+            // =========================================
+            // EXPLICACIÓN
+            // =========================================
+
+            const explicacion =
+                pregunta.explicacion ||
+                "";
 
             html += `
 
@@ -1219,48 +1299,191 @@ function mostrarResultado() {
                     }
                 ">
 
-                    <strong>
-                        ${indice + 1}.
+                    <p class="muted">
+
+                        Pregunta ${indice + 1}
+
+                        ${
+                            pregunta.tema
+                            ? ` · ${pregunta.tema}`
+                            : ""
+                        }
+
+                    </p>
+
+                    <!-- PREGUNTA EN INGLÉS -->
+
+                    <div
+                        class="question-text"
+                        style="font-size:18px;"
+                    >
+
                         ${pregunta.pregunta}
-                    </strong>
+
+                    </div>
+
+                    ${
+                        traduccionPregunta
+                        ? `
+
+                            <div
+                                style="
+                                    background:#f5f6ff;
+                                    border-radius:12px;
+                                    padding:12px 15px;
+                                    margin:12px 0 18px;
+                                "
+                            >
+
+                                🇪🇸
+                                <strong>
+                                    Traducción:
+                                </strong>
+
+                                ${traduccionPregunta}
+
+                            </div>
+
+                        `
+                        : ""
+                    }
+
+                    <!-- RESPUESTA DEL ALUMNO -->
 
                     <p>
-                        Tu respuesta:
+
+                        ${
+                            correcta
+                            ? "Tu respuesta:"
+                            : "❌ Tu respuesta:"
+                        }
+
                         <strong>
-                            ${
-                                pregunta.opciones[
-                                    respondida
-                                ] || "Sin responder"
-                            }
+                            ${respuestaUsuarioTexto}
                         </strong>
+
+                        ${
+                            respuestaUsuarioTraduccion
+                            ? `
+
+                                <span class="muted">
+                                    —
+                                    ${respuestaUsuarioTraduccion}
+                                </span>
+
+                            `
+                            : ""
+                        }
+
                     </p>
 
                     ${
-                        !correcta
+                        correcta
+
                         ? `
-                            <p>
-                                Respuesta correcta:
-                                <strong>
-                                    ${
-                                        pregunta.opciones[
-                                            pregunta.correcta
-                                        ]
-                                    }
-                                </strong>
-                            </p>
+
+                            <div
+                                style="
+                                    background:#eefaf3;
+                                    border-radius:12px;
+                                    padding:14px;
+                                    margin-top:12px;
+                                "
+                            >
+
+                                <p>
+
+                                    ✅
+                                    <strong>
+                                        ¡Respuesta correcta!
+                                    </strong>
+
+                                </p>
+
+                            </div>
+
                         `
+
                         : `
-                            <p>
-                                ✅ Correcta
-                            </p>
+
+                            <!-- RESPUESTA CORRECTA -->
+
+                            <div
+                                style="
+                                    background:#fff5f5;
+                                    border-radius:12px;
+                                    padding:14px;
+                                    margin-top:12px;
+                                "
+                            >
+
+                                <p>
+
+                                    ✅
+                                    <strong>
+                                        Respuesta correcta:
+                                    </strong>
+
+                                    ${respuestaCorrectaTexto}
+
+                                    ${
+                                        respuestaCorrectaTraduccion
+                                        ? `
+
+                                            <span class="muted">
+                                                —
+                                                ${respuestaCorrectaTraduccion}
+                                            </span>
+
+                                        `
+                                        : ""
+                                    }
+
+                                </p>
+
+                            </div>
+
+                            ${
+                                explicacion
+                                ? `
+
+                                    <div
+                                        style="
+                                            background:#fffaf0;
+                                            border-radius:12px;
+                                            padding:14px;
+                                            margin-top:12px;
+                                        "
+                                    >
+
+                                        <p>
+
+                                            💡
+                                            <strong>
+                                                ¿Por qué?
+                                            </strong>
+
+                                        </p>
+
+                                        <p>
+                                            ${explicacion}
+                                        </p>
+
+                                    </div>
+
+                                `
+                                : ""
+                            }
+
                         `
                     }
 
                 </div>
+
             `;
+
         }
     );
-
 
     html += `
 
@@ -1269,8 +1492,8 @@ function mostrarResultado() {
             </div>
 
         </main>
-    `;
 
+    `;
 
     document.getElementById("app").innerHTML =
         html;

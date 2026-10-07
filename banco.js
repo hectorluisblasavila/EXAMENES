@@ -2481,656 +2481,759 @@ const bancoPreguntas = [
     correcta: 0
   },
   
-    {
+   // =====================================================
+// MATEMÁTICA — PREGUNTAS 181–230
+// =====================================================
+
+{
     id: 181,
     curso: "Matemática",
     tema: "Área con cuadrículas",
     pregunta: "Observa la figura: 🟦🟦🟦🟦 🟦🟦🟦🟦 🟦🟦🟦🟦. Si cada cuadradito representa 1 cm², ¿cuál es el área?",
     opciones: [
-      "8 cm²",
-      "10 cm²",
-      "12 cm²",
-      "16 cm²"
+        "8 cm²",
+        "10 cm²",
+        "12 cm²",
+        "16 cm²"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "La figura tiene 3 filas con 4 cuadraditos cada una. Multiplicamos 3 × 4 = 12. Como cada cuadradito representa 1 cm², el área es 12 cm²."
+},
+
+{
     id: 182,
     curso: "Matemática",
     tema: "Área con cuadrículas",
     pregunta: "Observa la figura: 🟩🟩🟩 🟩🟩🟩 🟩🟩🟩 🟩🟩🟩. Cada cuadradito representa 1 cm². ¿Cuál es el área?",
     opciones: [
-      "7 cm²",
-      "9 cm²",
-      "12 cm²",
-      "15 cm²"
+        "7 cm²",
+        "9 cm²",
+        "12 cm²",
+        "15 cm²"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "La figura tiene 4 filas con 3 cuadraditos cada una. Multiplicamos 4 × 3 = 12. Como cada cuadradito representa 1 cm², el área es 12 cm²."
+},
+
+{
     id: 183,
     curso: "Matemática",
     tema: "Área con cuadrículas",
     pregunta: "Un cuadrado está formado por 5 cuadritos de largo y 5 de ancho. Si cada cuadrito mide 1 cm², ¿cuál es su área?",
     opciones: [
-      "10 cm²",
-      "20 cm²",
-      "25 cm²",
-      "30 cm²"
+        "10 cm²",
+        "20 cm²",
+        "25 cm²",
+        "30 cm²"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Para hallar el área de un cuadrado multiplicamos lado × lado. 5 × 5 = 25. Por eso el área es 25 cm²."
+},
+
+{
     id: 184,
     curso: "Matemática",
     tema: "Área con cuadrículas",
     pregunta: "Un rectángulo tiene 7 cuadritos de largo y 3 cuadritos de ancho. ¿Cuántos cuadritos forman toda su superficie?",
     opciones: [
-      "10",
-      "18",
-      "21",
-      "24"
+        "10",
+        "18",
+        "21",
+        "24"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Hay 7 cuadraditos de largo y 3 de ancho. Multiplicamos 7 × 3 = 21. Por eso toda la superficie está formada por 21 cuadraditos."
+},
+
+{
     id: 185,
     curso: "Matemática",
     tema: "Área con cuadrículas",
     pregunta: "Una figura ocupa 18 cuadraditos iguales. Si cada cuadradito representa 1 cm², ¿cuál es su área?",
     opciones: [
-      "8 cm²",
-      "16 cm²",
-      "18 cm²",
-      "20 cm²"
+        "8 cm²",
+        "16 cm²",
+        "18 cm²",
+        "20 cm²"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Si cada cuadradito representa 1 cm² y hay 18 cuadraditos, el área es 18 cm²."
+},
+
+{
     id: 186,
     curso: "Matemática",
     tema: "Área del cuadrado",
     pregunta: "Un cuadrado tiene 6 cm de lado. ¿Cuál es su área?",
     opciones: [
-      "12 cm²",
-      "24 cm²",
-      "30 cm²",
-      "36 cm²"
+        "12 cm²",
+        "24 cm²",
+        "30 cm²",
+        "36 cm²"
     ],
-    correcta: 3
-  },
-  {
+    correcta: 3,
+    explicacion: "Para hallar el área de un cuadrado usamos lado × lado. 6 × 6 = 36. Por eso la respuesta correcta es 36 cm²."
+},
+
+{
     id: 187,
     curso: "Matemática",
     tema: "Área del cuadrado",
     pregunta: "Un cuadrado tiene 8 cm de lado. ¿Cuál es su área?",
     opciones: [
-      "16 cm²",
-      "32 cm²",
-      "64 cm²",
-      "72 cm²"
+        "16 cm²",
+        "32 cm²",
+        "64 cm²",
+        "72 cm²"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Usamos lado × lado. 8 × 8 = 64. Por eso el área del cuadrado es 64 cm²."
+},
+
+{
     id: 188,
     curso: "Matemática",
     tema: "Área del cuadrado",
     pregunta: "Si un cuadrado tiene un lado de 4 cm, ¿cuál es su área?",
     opciones: [
-      "8 cm²",
-      "12 cm²",
-      "16 cm²",
-      "20 cm²"
+        "8 cm²",
+        "12 cm²",
+        "16 cm²",
+        "20 cm²"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Usamos lado × lado. 4 × 4 = 16. Por eso el área es 16 cm²."
+},
+
+{
     id: 189,
     curso: "Matemática",
     tema: "Área del rectángulo",
     pregunta: "Un rectángulo mide 9 cm de largo y 4 cm de ancho. ¿Cuál es su área?",
     opciones: [
-      "13 cm²",
-      "26 cm²",
-      "36 cm²",
-      "40 cm²"
+        "13 cm²",
+        "26 cm²",
+        "36 cm²",
+        "40 cm²"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Para un rectángulo usamos largo × ancho. 9 × 4 = 36. Por eso el área es 36 cm²."
+},
+
+{
     id: 190,
     curso: "Matemática",
     tema: "Área del rectángulo",
     pregunta: "Un rectángulo mide 7 cm de largo y 5 cm de ancho. ¿Cuál es su área?",
     opciones: [
-      "12 cm²",
-      "24 cm²",
-      "35 cm²",
-      "40 cm²"
+        "12 cm²",
+        "24 cm²",
+        "35 cm²",
+        "40 cm²"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Para un rectángulo usamos largo × ancho. 7 × 5 = 35. Por eso el área es 35 cm²."
+},
+
+{
     id: 191,
     curso: "Matemática",
     tema: "Área del rectángulo",
     pregunta: "Una cartulina rectangular mide 10 cm de largo y 3 cm de ancho. ¿Cuál es su área?",
     opciones: [
-      "13 cm²",
-      "20 cm²",
-      "30 cm²",
-      "33 cm²"
+        "13 cm²",
+        "20 cm²",
+        "30 cm²",
+        "33 cm²"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Multiplicamos largo × ancho: 10 × 3 = 30. Por eso el área de la cartulina es 30 cm²."
+},
+
+{
     id: 192,
     curso: "Matemática",
     tema: "Unidades de superficie",
     pregunta: "¿Cuál es una unidad utilizada para medir superficies pequeñas?",
     opciones: [
-      "Centímetro cuadrado",
-      "Kilogramo",
-      "Litro",
-      "Metro"
+        "Centímetro cuadrado",
+        "Kilogramo",
+        "Litro",
+        "Metro"
     ],
-    correcta: 0
-  },
-  {
+    correcta: 0,
+    explicacion: "El centímetro cuadrado (cm²) es una unidad para medir superficies pequeñas. Kilogramo y litro miden otras magnitudes."
+},
+
+{
     id: 193,
     curso: "Matemática",
     tema: "Unidades de superficie",
     pregunta: "¿Cómo se escribe correctamente un centímetro cuadrado?",
     opciones: [
-      "cm",
-      "cm²",
-      "cm³",
-      "cml"
+        "cm",
+        "cm²",
+        "cm³",
+        "cml"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "El símbolo correcto de centímetro cuadrado es cm². El pequeño ² indica que estamos midiendo una superficie."
+},
+
+{
     id: 194,
     curso: "Matemática",
     tema: "Unidades de superficie",
     pregunta: "Si una figura tiene un área de 24 centímetros cuadrados, ¿cuál es la forma correcta de escribirlo?",
     opciones: [
-      "24 cm",
-      "24 cm²",
-      "24 kg",
-      "24 L"
+        "24 cm",
+        "24 cm²",
+        "24 kg",
+        "24 L"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Como estamos hablando de un área, usamos una unidad cuadrada. Por eso se escribe 24 cm²."
+},
+
+{
     id: 195,
     curso: "Matemática",
     tema: "Área de polígonos",
     pregunta: "¿Qué debemos encontrar cuando calculamos el área de una figura?",
     opciones: [
-      "La cantidad de superficie que ocupa",
-      "La cantidad de lados solamente",
-      "La longitud de un solo lado",
-      "El número de vértices"
+        "La cantidad de superficie que ocupa",
+        "La cantidad de lados solamente",
+        "La longitud de un solo lado",
+        "El número de vértices"
     ],
-    correcta: 0
-  },
-  {
+    correcta: 0,
+    explicacion: "El área nos indica cuánto espacio o superficie ocupa una figura."
+},
+
+{
     id: 196,
     curso: "Matemática",
     tema: "Área de polígonos",
     pregunta: "Una figura está formada por 20 cuadraditos iguales. ¿Cuál es su área si cada cuadradito representa 1 cm²?",
     opciones: [
-      "10 cm²",
-      "15 cm²",
-      "20 cm²",
-      "25 cm²"
+        "10 cm²",
+        "15 cm²",
+        "20 cm²",
+        "25 cm²"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Hay 20 cuadraditos y cada uno representa 1 cm². Entonces 20 × 1 = 20 cm²."
+},
+
+{
     id: 197,
     curso: "Matemática",
     tema: "Área de polígonos",
     pregunta: "Si una figura ocupa 30 cuadraditos y cada uno representa 1 cm², ¿cuál es su área?",
     opciones: [
-      "20 cm²",
-      "25 cm²",
-      "30 cm²",
-      "35 cm²"
+        "20 cm²",
+        "25 cm²",
+        "30 cm²",
+        "35 cm²"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Hay 30 cuadraditos y cada uno representa 1 cm². Entonces el área es 30 cm²."
+},
+
+{
     id: 198,
     curso: "Matemática",
     tema: "Área de figuras compuestas",
     pregunta: "Una figura está formada por un rectángulo de 4 cm² y otro de 6 cm². ¿Cuál es el área total?",
     opciones: [
-      "8 cm²",
-      "10 cm²",
-      "12 cm²",
-      "24 cm²"
+        "8 cm²",
+        "10 cm²",
+        "12 cm²",
+        "24 cm²"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Sumamos las dos partes: 4 + 6 = 10. Por eso el área total es 10 cm²."
+},
+
+{
     id: 199,
     curso: "Matemática",
     tema: "Área de figuras compuestas",
     pregunta: "Una figura está formada por dos partes: una tiene 8 cm² y otra 7 cm². ¿Cuál es el área total?",
     opciones: [
-      "13 cm²",
-      "14 cm²",
-      "15 cm²",
-      "16 cm²"
+        "13 cm²",
+        "14 cm²",
+        "15 cm²",
+        "16 cm²"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Sumamos las dos partes: 8 + 7 = 15. Por eso el área total es 15 cm²."
+},
+
+{
     id: 200,
     curso: "Matemática",
     tema: "Área de figuras compuestas",
     pregunta: "Un patio tiene una parte de 12 m² y otra parte de 8 m². ¿Cuál es el área total del patio?",
     opciones: [
-      "18 m²",
-      "20 m²",
-      "22 m²",
-      "24 m²"
+        "18 m²",
+        "20 m²",
+        "22 m²",
+        "24 m²"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Sumamos las dos partes del patio: 12 + 8 = 20. Por eso el área total es 20 m²."
+},
+
+{
     id: 201,
     curso: "Matemática",
     tema: "Área del triángulo",
     pregunta: "¿Qué elementos necesitamos conocer para calcular el área de un triángulo?",
     opciones: [
-      "La base y la altura",
-      "Solo un lado",
-      "Solo los vértices",
-      "El perímetro"
+        "La base y la altura",
+        "Solo un lado",
+        "Solo los vértices",
+        "El perímetro"
     ],
-    correcta: 0
-  },
-  {
+    correcta: 0,
+    explicacion: "Para calcular el área de un triángulo necesitamos la base y la altura. Luego usamos base × altura ÷ 2."
+},
+
+{
     id: 202,
     curso: "Matemática",
     tema: "Área del triángulo",
     pregunta: "Un triángulo tiene una base de 6 cm y una altura de 4 cm. ¿Cuál es su área?",
     opciones: [
-      "10 cm²",
-      "12 cm²",
-      "20 cm²",
-      "24 cm²"
+        "10 cm²",
+        "12 cm²",
+        "20 cm²",
+        "24 cm²"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Usamos base × altura ÷ 2: 6 × 4 = 24 y 24 ÷ 2 = 12. El área es 12 cm²."
+},
+
+{
     id: 203,
     curso: "Matemática",
     tema: "Área del triángulo",
     pregunta: "Un triángulo tiene base de 8 cm y altura de 5 cm. ¿Cuál es su área?",
     opciones: [
-      "20 cm²",
-      "30 cm²",
-      "40 cm²",
-      "45 cm²"
+        "20 cm²",
+        "30 cm²",
+        "40 cm²",
+        "45 cm²"
     ],
-    correcta: 0
-  },
-  {
+    correcta: 0,
+    explicacion: "Usamos base × altura ÷ 2: 8 × 5 = 40 y 40 ÷ 2 = 20. El área es 20 cm²."
+},
+
+{
     id: 204,
     curso: "Matemática",
     tema: "Área del triángulo",
     pregunta: "Un triángulo tiene una base de 10 cm y una altura de 6 cm. ¿Cuál es su área?",
     opciones: [
-      "20 cm²",
-      "30 cm²",
-      "40 cm²",
-      "60 cm²"
+        "20 cm²",
+        "30 cm²",
+        "40 cm²",
+        "60 cm²"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Usamos base × altura ÷ 2: 10 × 6 = 60 y 60 ÷ 2 = 30. El área es 30 cm²."
+},
+
+{
     id: 205,
     curso: "Matemática",
     tema: "Área del triángulo",
     pregunta: "Si un triángulo tiene base 4 cm y altura 3 cm, ¿cuál es su área?",
     opciones: [
-      "6 cm²",
-      "7 cm²",
-      "12 cm²",
-      "14 cm²"
+        "6 cm²",
+        "7 cm²",
+        "12 cm²",
+        "14 cm²"
     ],
-    correcta: 0
-  },
-  {
+    correcta: 0,
+    explicacion: "Usamos base × altura ÷ 2: 4 × 3 = 12 y 12 ÷ 2 = 6. El área es 6 cm²."
+},
+
+{
     id: 206,
     curso: "Matemática",
     tema: "Fracciones",
     pregunta: "En la fracción 3/8, ¿qué número es el numerador?",
     opciones: [
-      "3",
-      "8",
-      "11",
-      "5"
+        "3",
+        "8",
+        "11",
+        "5"
     ],
-    correcta: 0
-  },
-  {
+    correcta: 0,
+    explicacion: "En una fracción, el numerador es el número de arriba. En 3/8, el numerador es 3."
+},
+
+{
     id: 207,
     curso: "Matemática",
     tema: "Fracciones",
     pregunta: "En la fracción 5/9, ¿qué número es el denominador?",
     opciones: [
-      "5",
-      "9",
-      "14",
-      "4"
+        "5",
+        "9",
+        "14",
+        "4"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "En una fracción, el denominador es el número de abajo. En 5/9, el denominador es 9."
+},
+
+{
     id: 208,
     curso: "Matemática",
     tema: "Fracciones homogéneas",
     pregunta: "¿Cuál de estas parejas está formada por fracciones homogéneas?",
     opciones: [
-      "2/7 y 5/7",
-      "2/5 y 3/8",
-      "1/4 y 2/9",
-      "3/6 y 4/7"
+        "2/7 y 5/7",
+        "2/5 y 3/8",
+        "1/4 y 2/9",
+        "3/6 y 4/7"
     ],
-    correcta: 0
-  },
-  {
+    correcta: 0,
+    explicacion: "Las fracciones homogéneas tienen el mismo denominador. 2/7 y 5/7 tienen 7 como denominador."
+},
+
+{
     id: 209,
     curso: "Matemática",
     tema: "Fracciones homogéneas",
     pregunta: "¿Qué tienen en común las fracciones homogéneas?",
     opciones: [
-      "Tienen el mismo numerador",
-      "Tienen el mismo denominador",
-      "Siempre son iguales",
-      "Siempre tienen denominador 10"
+        "Tienen el mismo numerador",
+        "Tienen el mismo denominador",
+        "Siempre son iguales",
+        "Siempre tienen denominador 10"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Las fracciones homogéneas tienen el mismo denominador. Por eso esa es la característica correcta."
+},
+
+{
     id: 210,
     curso: "Matemática",
     tema: "Suma de fracciones",
     pregunta: "¿Cuánto es 2/8 + 3/8?",
     opciones: [
-      "5/8",
-      "5/16",
-      "6/8",
-      "1/8"
+        "5/8",
+        "5/16",
+        "6/8",
+        "1/8"
     ],
-    correcta: 0
-  },
-  {
+    correcta: 0,
+    explicacion: "Como tienen el mismo denominador, sumamos los numeradores: 2 + 3 = 5 y mantenemos el 8. Resultado: 5/8."
+},
+
+{
     id: 211,
     curso: "Matemática",
     tema: "Suma de fracciones",
     pregunta: "¿Cuánto es 1/7 + 4/7?",
     opciones: [
-      "5/7",
-      "5/14",
-      "4/7",
-      "3/7"
+        "5/7",
+        "5/14",
+        "4/7",
+        "3/7"
     ],
-    correcta: 0
-  },
-  {
+    correcta: 0,
+    explicacion: "Sumamos los numeradores: 1 + 4 = 5 y mantenemos el denominador 7. Resultado: 5/7."
+},
+
+{
     id: 212,
     curso: "Matemática",
     tema: "Suma de fracciones",
     pregunta: "¿Cuánto es 3/9 + 2/9?",
     opciones: [
-      "5/9",
-      "5/18",
-      "6/9",
-      "1/9"
+        "5/9",
+        "5/18",
+        "6/9",
+        "1/9"
     ],
-    correcta: 0
-  },
-  {
+    correcta: 0,
+    explicacion: "Sumamos los numeradores: 3 + 2 = 5 y mantenemos el denominador 9. Resultado: 5/9."
+},
+
+{
     id: 213,
     curso: "Matemática",
     tema: "Resta de fracciones",
     pregunta: "¿Cuánto es 7/8 - 3/8?",
     opciones: [
-      "3/8",
-      "4/8",
-      "5/8",
-      "10/8"
+        "3/8",
+        "4/8",
+        "5/8",
+        "10/8"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Restamos los numeradores: 7 - 3 = 4 y mantenemos el denominador 8. Resultado: 4/8."
+},
+
+{
     id: 214,
     curso: "Matemática",
     tema: "Resta de fracciones",
     pregunta: "¿Cuánto es 6/10 - 2/10?",
     opciones: [
-      "2/10",
-      "3/10",
-      "4/10",
-      "8/10"
+        "2/10",
+        "3/10",
+        "4/10",
+        "8/10"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Restamos los numeradores: 6 - 2 = 4 y mantenemos el denominador 10. Resultado: 4/10."
+},
+
+{
     id: 215,
     curso: "Matemática",
     tema: "Resta de fracciones",
     pregunta: "¿Cuánto es 7/9 - 4/9?",
     opciones: [
-      "2/9",
-      "3/9",
-      "4/9",
-      "11/9"
+        "2/9",
+        "3/9",
+        "4/9",
+        "11/9"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Restamos los numeradores: 7 - 4 = 3 y mantenemos el denominador 9. Resultado: 3/9."
+},
+
+{
     id: 216,
     curso: "Matemática",
     tema: "Comparación de fracciones",
     pregunta: "¿Cuál fracción es mayor?",
     opciones: [
-      "2/8",
-      "5/8",
-      "3/8",
-      "1/8"
+        "2/8",
+        "5/8",
+        "3/8",
+        "1/8"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Todas tienen denominador 8. Comparamos los numeradores: 5 es el mayor. Por eso 5/8 es la mayor."
+},
+
+{
     id: 217,
     curso: "Matemática",
     tema: "Comparación de fracciones",
     pregunta: "¿Cuál fracción es menor?",
     opciones: [
-      "6/10",
-      "3/10",
-      "8/10",
-      "9/10"
+        "6/10",
+        "3/10",
+        "8/10",
+        "9/10"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Todas tienen denominador 10. Comparamos los numeradores: 3 es el menor. Por eso 3/10 es la menor."
+},
+
+{
     id: 218,
     curso: "Matemática",
     tema: "Fracciones equivalentes",
     pregunta: "¿Cuál fracción es equivalente a 1/2?",
     opciones: [
-      "2/4",
-      "2/3",
-      "3/5",
-      "1/3"
+        "2/4",
+        "2/3",
+        "3/5",
+        "1/3"
     ],
-    correcta: 0
-  },
-  {
+    correcta: 0,
+    explicacion: "Una fracción equivalente representa la misma cantidad. Multiplicamos 1/2 por 2 arriba y abajo y obtenemos 2/4."
+},
+
+{
     id: 219,
     curso: "Matemática",
     tema: "Fracciones equivalentes",
     pregunta: "¿Cuál fracción es equivalente a 2/3?",
     opciones: [
-      "3/5",
-      "4/6",
-      "5/8",
-      "2/6"
+        "3/5",
+        "4/6",
+        "5/8",
+        "2/6"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Multiplicamos 2/3 por 2 arriba y abajo y obtenemos 4/6. Por eso 4/6 es equivalente a 2/3."
+},
+
+{
     id: 220,
     curso: "Matemática",
     tema: "Fracciones",
     pregunta: "Una pizza fue dividida en 8 partes iguales y Ana comió 3 partes. ¿Qué fracción de la pizza comió?",
     opciones: [
-      "3/8",
-      "5/8",
-      "3/5",
-      "8/3"
+        "3/8",
+        "5/8",
+        "3/5",
+        "8/3"
     ],
-    correcta: 0
-  },
-  {
+    correcta: 0,
+    explicacion: "La pizza tiene 8 partes iguales y Ana comió 3. Partes comidas = numerador y partes totales = denominador. Resultado: 3/8."
+},
+
+{
     id: 221,
     curso: "Matemática",
     tema: "Adición",
     pregunta: "¿Cuánto es 2 345 + 1 204?",
     opciones: [
-      "3 449",
-      "3 549",
-      "3 649",
-      "3 749"
+        "3 449",
+        "3 549",
+        "3 649",
+        "3 749"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Sumamos 2 345 + 1 204 = 3 549. Por eso la respuesta es 3 549."
+},
+
+{
     id: 222,
     curso: "Matemática",
     tema: "Adición",
     pregunta: "¿Cuánto es 7 658 + 2 791?",
     opciones: [
-      "9 449",
-      "10 449",
-      "10 349",
-      "11 449"
+        "9 449",
+        "10 449",
+        "10 349",
+        "11 449"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Sumamos 7 658 + 2 791 = 10 449. Por eso la respuesta es 10 449."
+},
+
+{
     id: 223,
     curso: "Matemática",
     tema: "Sustracción",
     pregunta: "¿Cuánto es 8 500 - 1 700?",
     opciones: [
-      "6 600",
-      "6 700",
-      "6 800",
-      "7 000"
+        "6 600",
+        "6 700",
+        "6 800",
+        "7 000"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Restamos 8 500 - 1 700 = 6 800. Por eso la respuesta es 6 800."
+},
+
+{
     id: 224,
     curso: "Matemática",
     tema: "Sustracción",
     pregunta: "¿Cuánto es 6 340 - 2 120?",
     opciones: [
-      "4 120",
-      "4 220",
-      "4 320",
-      "4 420"
+        "4 120",
+        "4 220",
+        "4 320",
+        "4 420"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Restamos 6 340 - 2 120 = 4 220. Por eso la respuesta es 4 220."
+},
+
+{
     id: 225,
     curso: "Matemática",
     tema: "Multiplicación",
     pregunta: "¿Cuánto es 24 × 5?",
     opciones: [
-      "100",
-      "110",
-      "120",
-      "125"
+        "100",
+        "110",
+        "120",
+        "125"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Multiplicamos 24 × 5 = 120. También podemos pensar 20 × 5 = 100 y 4 × 5 = 20; 100 + 20 = 120."
+},
+
+{
     id: 226,
     curso: "Matemática",
     tema: "Multiplicación",
     pregunta: "¿Cuánto es 36 × 4?",
     opciones: [
-      "124",
-      "134",
-      "144",
-      "154"
+        "124",
+        "134",
+        "144",
+        "154"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Multiplicamos 36 × 4 = 144. 30 × 4 = 120 y 6 × 4 = 24; 120 + 24 = 144."
+},
+
+{
     id: 227,
     curso: "Matemática",
     tema: "Multiplicación",
     pregunta: "Una caja tiene 8 lápices. ¿Cuántos lápices hay en 7 cajas iguales?",
     opciones: [
-      "48",
-      "54",
-      "56",
-      "64"
+        "48",
+        "54",
+        "56",
+        "64"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Hay 8 lápices en cada caja y 7 cajas. Multiplicamos 8 × 7 = 56. Por eso hay 56 lápices."
+},
+
+{
     id: 228,
     curso: "Matemática",
     tema: "División",
     pregunta: "¿Cuánto es 85 ÷ 5?",
     opciones: [
-      "15",
-      "16",
-      "17",
-      "18"
+        "15",
+        "16",
+        "17",
+        "18"
     ],
-    correcta: 2
-  },
-  {
+    correcta: 2,
+    explicacion: "Como 5 × 17 = 85, entonces 85 ÷ 5 = 17."
+},
+
+{
     id: 229,
     curso: "Matemática",
     tema: "División",
     pregunta: "¿Cuánto es 680 ÷ 5?",
     opciones: [
-      "126",
-      "136",
-      "146",
-      "156"
+        "126",
+        "136",
+        "146",
+        "156"
     ],
-    correcta: 1
-  },
-  {
+    correcta: 1,
+    explicacion: "Como 5 × 136 = 680, entonces 680 ÷ 5 = 136."
+},
+
+{
     id: 230,
     curso: "Matemática",
     tema: "División",
     pregunta: "¿Cuánto es 3 400 ÷ 5?",
     opciones: [
-      "580",
-      "620",
-      "680",
-      "700"
+        "580",
+        "620",
+        "680",
+        "700"
     ],
-    correcta: 2
-  },
+    correcta: 2,
+    explicacion: "Como 5 × 680 = 3 400, entonces 3 400 ÷ 5 = 680."
+},
 // =====================================================
 // CURSO: INGLÉS
 // IDs 231 - 330

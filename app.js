@@ -221,7 +221,6 @@ window.addEventListener("message", function(event) {
         );
     }
 });
-```
 
 async function llamarAppsScript(accion, datos) {
     const iframe = await obtenerPuenteAppsScript();

@@ -181,33 +181,38 @@ function obtenerPuenteAppsScript() {
     });
 }
 
+
 window.addEventListener("message", function(event) {
+    // Solo aceptar mensajes del iframe que creamos.
     if (
         !puenteAppsScript ||
+        !puenteAppsScript.contentWindow ||
         event.source !== puenteAppsScript.contentWindow ||
-        !event.data
+        !event.data ||
+        typeof event.data !== "object"
     ) {
         return;
     }
 
-    // El puente avisa que terminó de cargar.
+    // El puente puede avisar que ya terminó de cargar.
     if (event.data.tipo === "PUENTE_LISTO") {
         console.log("Puente de Apps Script listo.");
         return;
     }
 
-    // Procesar únicamente respuestas a solicitudes.
+    // Procesar solamente respuestas a solicitudes pendientes.
     if (event.data.tipo !== "RESPUESTA") {
         return;
     }
 
-    const solicitud = solicitudesPuente.get(String(event.data.id));
+    const id = String(event.data.id || "");
+    const solicitud = solicitudesPuente.get(id);
 
     if (!solicitud) {
         return;
     }
 
-    solicitudesPuente.delete(String(event.data.id));
+    solicitudesPuente.delete(id);
 
     if (event.data.ok) {
         solicitud.resolve(event.data.resultado);
@@ -221,6 +226,7 @@ window.addEventListener("message", function(event) {
         );
     }
 });
+
 
 async function llamarAppsScript(accion, datos) {
     const iframe = await obtenerPuenteAppsScript();

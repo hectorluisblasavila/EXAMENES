@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <base target="_top">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro educativo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6fb;
+      color: #263247;
+      margin: 0;
+      padding: 24px 16px;
+    }
+
+    .contenedor {
+      max-width: 460px;
+      margin: 25px auto;
+      padding: 28px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 5px 22px #00000012;
+    }
+
+    h1 { font-size: 25px; margin-top: 0; }
+    p { color: #5d6678; line-height: 1.5; }
+
+    label {
+      display: block;
+      margin: 17px 0 7px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    input, select {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccd2de;
+      border-radius: 8px;
+      font-size: 16px;
+      background: white;
+    }
+
+    .consentimiento {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      margin: 18px 0;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .consentimiento input {
+      width: auto;
+      margin-top: 3px;
+    }
+
+    button {
+      width: 100%;
+      padding: 13px;
+      border: 0;
+      border-radius: 8px;
+      background: #315ee8;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:disabled { opacity: .6; }
+    #mensaje { margin-top: 16px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Crear cuenta educativa</h1>
+    <p>Registra al adulto responsable y al estudiante.</p>
+
+    <form id="formulario">
+      <label for="nombreAdulto">Nombre del padre, madre o tutor</label>
+      <input id="nombreAdulto" maxlength="100" required>
+
+      <label for="correo">Correo electrónico del adulto</label>
+      <input id="correo" type="email" maxlength="150" required>
+
+      <label for="nombreEstudiante">Nombre del estudiante</label>
+      <input id="nombreEstudiante" maxlength="100" required>
+
+      <label for="grado">Grado de primaria</label>
+      <select id="grado" required>
+        <option value="">Selecciona el grado</option>
+        <option>1.º de primaria</option>
+        <option>2.º de primaria</option>
+        <option>3.º de primaria</option>
+        <option>4.º de primaria</option>
+        <option>5.º de primaria</option>
+        <option>6.º de primaria</option>
+      </select>
+
+      <label class="consentimiento">
+        <input id="autorizacion" type="checkbox" required>
+        <span>
+          Soy el padre, madre o tutor y autorizo el envío de estos datos
+          para gestionar el registro educativo. He leído la información
+          de privacidad de la plataforma.
+        </span>
+      </label>
+
+      <button id="boton" type="submit">Registrarme</button>
+      <div id="mensaje" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <script>
+    const formulario = document.getElementById("formulario");
+    const boton = document.getElementById("boton");
+    const mensaje = document.getElementById("mensaje");
+
+    formulario.addEventListener("submit", function(evento) {
+      evento.preventDefault();
+      boton.disabled = true;
+      mensaje.textContent = "Guardando registro...";
+
+      const datos = {
+        nombreAdulto: document.getElementById("nombreAdulto").value,
+        correo: document.getElementById("correo").value,
+        nombreEstudiante: document.getElementById("nombreEstudiante").value,
+        grado: document.getElementById("grado").value,
+        autorizacion: document.getElementById("autorizacion").checked
+      };
+
+      google.script.run
+        .withSuccessHandler(function(respuesta) {
+          mensaje.textContent = respuesta.mensaje;
+          formulario.reset();
+          boton.disabled = false;
+        })
+        .withFailureHandler(function(error) {
+          mensaje.textContent = error.message || "Error al registrar.";
+          boton.disabled = false;
+        })
+        .registrarUsuario(datos);
+    });
+  </script>
+</body>
+</html>

@@ -210,6 +210,10 @@ window.addEventListener("message", function(event) {
 
 async function llamarAppsScript(accion, datos) {
     const iframe = await obtenerPuenteAppsScript();
+
+    console.log("Puente cargado:", iframe.src);
+console.log("Ventana del puente:", iframe.contentWindow);
+
     const id = String(++contadorSolicitudes);
 
     return new Promise((resolve, reject) => {

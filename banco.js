@@ -4469,5 +4469,835 @@ const bancoPreguntas = [
 },
 
 
+{
+    id: 331,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema óseo y sus partes",
+    pregunta: "¿Cuál es la función principal del sistema óseo?",
+    opciones: ["Sostener el cuerpo y proteger órganos", "Bombear la sangre", "Digerir los alimentos", "Producir la orina"],
+    correcta: 0,
+    explicacion: "El sistema óseo sostiene el cuerpo, le da forma y protege órganos importantes, como el cerebro y el corazón."
+},
+{
+    id: 332,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema óseo y sus partes",
+    pregunta: "¿Cómo se llaman las estructuras que unen dos o más huesos?",
+    opciones: ["Articulaciones", "Neuronas", "Tendones", "Venas"],
+    correcta: 0,
+    explicacion: "Las articulaciones son las uniones entre los huesos. Algunas permiten movimientos, como las de las rodillas y los codos."
+},
+{
+    id: 333,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema óseo y sus partes",
+    pregunta: "¿Cuál de estos huesos protege el cerebro?",
+    opciones: ["Cráneo", "Fémur", "Costilla", "Húmero"],
+    correcta: 0,
+    explicacion: "El cráneo rodea y protege el cerebro frente a golpes y lesiones."
+},
+{
+    id: 334,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema óseo y sus partes",
+    pregunta: "¿Cuál es el hueso más largo del cuerpo humano?",
+    opciones: ["Fémur", "Radio", "Esternón", "Clavícula"],
+    correcta: 0,
+    explicacion: "El fémur está en el muslo y es el hueso más largo del cuerpo humano. Ayuda a soportar el peso y caminar."
+},
+{
+    id: 335,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema óseo y sus partes",
+    pregunta: "¿Cuál es una clasificación de los huesos según su forma?",
+    opciones: ["Largos, cortos y planos", "Dulces, salados y ácidos", "Internos, externos y líquidos", "Rápidos, lentos y flexibles"],
+    correcta: 0,
+    explicacion: "Los huesos pueden clasificarse por su forma, por ejemplo, en largos, cortos y planos. El fémur es largo y algunos huesos del cráneo son planos."
+},
+
+{
+    id: 336,
+    curso: "Ciencia y Tecnología",
+    tema: "Esqueleto humano",
+    pregunta: "¿Qué es el esqueleto humano?",
+    opciones: ["El conjunto de huesos del cuerpo", "El conjunto de músculos", "El conjunto de nervios", "El conjunto de órganos digestivos"],
+    correcta: 0,
+    explicacion: "El esqueleto humano es el conjunto de huesos que sostiene el cuerpo, protege órganos y participa en el movimiento."
+},
+{
+    id: 337,
+    curso: "Ciencia y Tecnología",
+    tema: "Esqueleto humano",
+    pregunta: "¿Qué parte del esqueleto protege el corazón y los pulmones?",
+    opciones: ["La caja torácica", "El cráneo", "La pelvis solamente", "Los huesos de los dedos"],
+    correcta: 0,
+    explicacion: "La caja torácica, formada por las costillas, el esternón y otras estructuras, protege el corazón y los pulmones."
+},
+{
+    id: 338,
+    curso: "Ciencia y Tecnología",
+    tema: "Esqueleto humano",
+    pregunta: "¿Qué estructura ósea ayuda a sostener el tronco y protege la médula espinal?",
+    opciones: ["La columna vertebral", "La mandíbula", "La clavícula", "La rótula"],
+    correcta: 0,
+    explicacion: "La columna vertebral está formada por vértebras. Sostiene el tronco y protege la médula espinal."
+},
+{
+    id: 339,
+    curso: "Ciencia y Tecnología",
+    tema: "Esqueleto humano",
+    pregunta: "¿Qué huesos forman parte de las extremidades superiores?",
+    opciones: ["Húmero, radio y cúbito", "Fémur, tibia y peroné", "Costillas y esternón", "Cráneo y mandíbula"],
+    correcta: 0,
+    explicacion: "El húmero está en el brazo y el radio y el cúbito están en el antebrazo."
+},
+{
+    id: 340,
+    curso: "Ciencia y Tecnología",
+    tema: "Esqueleto humano",
+    pregunta: "¿Qué parte del esqueleto une las extremidades inferiores con el tronco?",
+    opciones: ["La pelvis", "El cráneo", "La caja torácica", "La mandíbula"],
+    correcta: 0,
+    explicacion: "La pelvis conecta las extremidades inferiores con el tronco y ayuda a sostener el peso corporal."
+},
+
+{
+    id: 341,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema muscular",
+    pregunta: "¿Cuál es una función principal del sistema muscular?",
+    opciones: ["Permitir el movimiento del cuerpo", "Filtrar la sangre para producir orina", "Proteger únicamente el cerebro", "Transportar el oxígeno por las arterias"],
+    correcta: 0,
+    explicacion: "Los músculos se contraen y se relajan para producir movimientos y ayudar a mantener la postura."
+},
+{
+    id: 342,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema muscular",
+    pregunta: "¿Qué tipo de músculo podemos mover voluntariamente para levantar un brazo?",
+    opciones: ["Músculo esquelético", "Músculo cardíaco", "Músculo liso del intestino", "Ningún músculo"],
+    correcta: 0,
+    explicacion: "Los músculos esqueléticos se unen a los huesos y permiten movimientos voluntarios, como caminar o levantar un brazo."
+},
+{
+    id: 343,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema muscular",
+    pregunta: "¿Qué tipo de músculo forma el corazón?",
+    opciones: ["Cardíaco", "Esquelético", "Liso", "Óseo"],
+    correcta: 0,
+    explicacion: "El músculo cardíaco forma la pared del corazón y se contrae de manera involuntaria para bombear sangre."
+},
+{
+    id: 344,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema muscular",
+    pregunta: "¿Dónde encontramos principalmente el músculo liso?",
+    opciones: ["En las paredes de órganos como el intestino", "En la superficie de los huesos", "En el cabello", "En las uñas"],
+    correcta: 0,
+    explicacion: "El músculo liso se encuentra en las paredes de órganos internos y ayuda a mover sustancias sin que tengamos que controlarlo conscientemente."
+},
+{
+    id: 345,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema muscular",
+    pregunta: "¿Qué estructura une un músculo con un hueso?",
+    opciones: ["Tendón", "Ligamento", "Neurona", "Uréter"],
+    correcta: 0,
+    explicacion: "Los tendones unen los músculos a los huesos y transmiten la fuerza necesaria para producir movimiento. Los ligamentos unen huesos entre sí."
+},
+
+{
+    id: 346,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema excretor",
+    pregunta: "¿Qué es la excreción?",
+    opciones: ["La eliminación de desechos producidos por el cuerpo", "La entrada de alimentos al estómago", "El movimiento de los huesos", "La recepción de sonidos"],
+    correcta: 0,
+    explicacion: "La excreción permite eliminar sustancias de desecho que se producen durante el funcionamiento del organismo."
+},
+{
+    id: 347,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema excretor",
+    pregunta: "¿Qué órgano elimina parte de los desechos del cuerpo mediante el sudor?",
+    opciones: ["La piel", "El cerebro", "El fémur", "La vejiga"],
+    correcta: 0,
+    explicacion: "Las glándulas sudoríparas de la piel producen sudor. Este ayuda a regular la temperatura y contiene agua y pequeñas cantidades de sales y desechos."
+},
+{
+    id: 348,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema excretor",
+    pregunta: "¿Qué gas de desecho eliminamos principalmente al exhalar?",
+    opciones: ["Dióxido de carbono", "Oxígeno", "Helio", "Hidrógeno"],
+    correcta: 0,
+    explicacion: "Al exhalar eliminamos dióxido de carbono, un gas de desecho producido por las células al obtener energía."
+},
+{
+    id: 349,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema excretor",
+    pregunta: "¿Qué órgano participa en la eliminación de desechos al filtrar la sangre y producir orina?",
+    opciones: ["Los riñones", "Los pulmones solamente", "El estómago", "La tráquea"],
+    correcta: 0,
+    explicacion: "Los riñones filtran la sangre, regulan el agua y las sales del organismo y producen la orina."
+},
+{
+    id: 350,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema excretor",
+    pregunta: "¿Cuál es la diferencia entre excreción y defecación?",
+    opciones: ["La excreción elimina desechos del organismo y la defecación expulsa restos no digeridos", "Son exactamente lo mismo", "La excreción solo ocurre al comer", "La defecación elimina el dióxido de carbono de los pulmones"],
+    correcta: 0,
+    explicacion: "La excreción elimina desechos del funcionamiento celular, como los que pasan a la orina. La defecación expulsa las heces, que contienen restos no digeridos."
+},
+
+{
+    id: 351,
+    curso: "Ciencia y Tecnología",
+    tema: "La neurona y sus partes",
+    pregunta: "¿Qué es una neurona?",
+    opciones: ["Una célula del sistema nervioso", "Un tipo de hueso", "Una glándula sudorípara", "Una célula que forma el cabello"],
+    correcta: 0,
+    explicacion: "La neurona es una célula especializada que recibe y transmite información mediante señales eléctricas y químicas."
+},
+{
+    id: 352,
+    curso: "Ciencia y Tecnología",
+    tema: "La neurona y sus partes",
+    pregunta: "¿Qué parte de la neurona recibe muchas de las señales de otras células?",
+    opciones: ["Las dendritas", "El axón", "La vejiga", "El tendón"],
+    correcta: 0,
+    explicacion: "Las dendritas son prolongaciones que reciben señales de otras células y las conducen hacia el cuerpo celular."
+},
+{
+    id: 353,
+    curso: "Ciencia y Tecnología",
+    tema: "La neurona y sus partes",
+    pregunta: "¿Qué parte de la neurona conduce la señal desde el cuerpo celular hacia otras células?",
+    opciones: ["El axón", "Las costillas", "La pelvis", "El uréter"],
+    correcta: 0,
+    explicacion: "El axón conduce señales desde el cuerpo celular hacia otras neuronas, músculos o glándulas."
+},
+{
+    id: 354,
+    curso: "Ciencia y Tecnología",
+    tema: "La neurona y sus partes",
+    pregunta: "¿Dónde se encuentra el núcleo de una neurona?",
+    opciones: ["En el cuerpo celular", "En la punta de cada dendrita", "En el axón completo", "Fuera de la célula"],
+    correcta: 0,
+    explicacion: "El núcleo está en el cuerpo celular y contiene gran parte de la información genética de la neurona."
+},
+{
+    id: 355,
+    curso: "Ciencia y Tecnología",
+    tema: "La neurona y sus partes",
+    pregunta: "¿Cómo se llama la zona de comunicación entre una neurona y otra célula?",
+    opciones: ["Sinapsis", "Articulación", "Vértebra", "Uréter"],
+    correcta: 0,
+    explicacion: "La sinapsis es la zona donde una neurona se comunica con otra célula, a menudo mediante sustancias químicas llamadas neurotransmisores."
+},
+
+{
+    id: 356,
+    curso: "Ciencia y Tecnología",
+    tema: "El cerebro y sus partes",
+    pregunta: "¿Qué órgano coordina muchas funciones del sistema nervioso y permite pensar, recordar y aprender?",
+    opciones: ["El cerebro", "El estómago", "La vejiga", "El fémur"],
+    correcta: 0,
+    explicacion: "El cerebro participa en el pensamiento, la memoria, el aprendizaje, la interpretación de los sentidos y el control de muchas acciones."
+},
+{
+    id: 357,
+    curso: "Ciencia y Tecnología",
+    tema: "El cerebro y sus partes",
+    pregunta: "¿Qué parte del encéfalo ayuda a coordinar los movimientos y mantener el equilibrio?",
+    opciones: ["El cerebelo", "La vejiga", "El cráneo por dentro", "La médula ósea"],
+    correcta: 0,
+    explicacion: "El cerebelo ayuda a coordinar los movimientos y contribuye al equilibrio y la postura."
+},
+{
+    id: 358,
+    curso: "Ciencia y Tecnología",
+    tema: "El cerebro y sus partes",
+    pregunta: "¿Qué estructura ayuda a controlar funciones automáticas como la respiración y el ritmo cardíaco?",
+    opciones: ["El tronco encefálico", "El fémur", "La mandíbula", "La vejiga"],
+    correcta: 0,
+    explicacion: "El tronco encefálico conecta el encéfalo con la médula espinal y participa en funciones automáticas esenciales, como la respiración."
+},
+{
+    id: 359,
+    curso: "Ciencia y Tecnología",
+    tema: "El cerebro y sus partes",
+    pregunta: "¿Qué estructura ósea protege el encéfalo?",
+    opciones: ["El cráneo", "La pelvis", "Las costillas inferiores", "La tibia"],
+    correcta: 0,
+    explicacion: "El cráneo rodea y protege el encéfalo, que incluye el cerebro, el cerebelo y el tronco encefálico."
+},
+{
+    id: 360,
+    curso: "Ciencia y Tecnología",
+    tema: "El cerebro y sus partes",
+    pregunta: "¿Qué estructura transmite mensajes entre el encéfalo y muchas partes del cuerpo?",
+    opciones: ["La médula espinal", "El esternón", "El intestino grueso", "La vejiga"],
+    correcta: 0,
+    explicacion: "La médula espinal forma parte del sistema nervioso central y conduce señales entre el encéfalo y muchas regiones del cuerpo."
+},
+
+{
+    id: 361,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema urinario",
+    pregunta: "¿Cuál es la función principal del sistema urinario?",
+    opciones: ["Filtrar la sangre y eliminar desechos mediante la orina", "Transportar el aire a los pulmones", "Mover los huesos", "Digerir los alimentos"],
+    correcta: 0,
+    explicacion: "El sistema urinario elimina desechos mediante la orina y ayuda a mantener el equilibrio de agua y sales del organismo."
+},
+{
+    id: 362,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema urinario",
+    pregunta: "¿Cuáles son los órganos que filtran la sangre y producen la orina?",
+    opciones: ["Los riñones", "Los uréteres", "La vejiga", "La uretra"],
+    correcta: 0,
+    explicacion: "Los riñones filtran la sangre y producen la orina. El sistema urinario normalmente tiene dos riñones."
+},
+{
+    id: 363,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema urinario",
+    pregunta: "¿Qué conductos llevan la orina desde los riñones hasta la vejiga?",
+    opciones: ["Los uréteres", "Las arterias coronarias", "Los bronquios", "Los tendones"],
+    correcta: 0,
+    explicacion: "Los uréteres son dos conductos que transportan la orina desde cada riñón hasta la vejiga."
+},
+{
+    id: 364,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema urinario",
+    pregunta: "¿Qué órgano almacena temporalmente la orina antes de expulsarla?",
+    opciones: ["La vejiga urinaria", "El riñón", "El hígado", "El corazón"],
+    correcta: 0,
+    explicacion: "La vejiga urinaria almacena la orina hasta que el cuerpo la expulsa."
+},
+{
+    id: 365,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema urinario",
+    pregunta: "¿Por qué es importante beber suficiente agua?",
+    opciones: ["Ayuda al funcionamiento de los riñones y al equilibrio de líquidos", "Hace que los huesos dejen de crecer", "Evita que el corazón lata", "Impide que el cuerpo necesite eliminar desechos"],
+    correcta: 0,
+    explicacion: "El agua ayuda a mantener el equilibrio de líquidos y permite que los riñones formen orina. La cantidad necesaria depende de la edad, la actividad y otras condiciones."
+},
+
+{
+    id: 366,
+    curso: "Ciencia y Tecnología",
+    tema: "Aparato reproductor femenino y masculino",
+    pregunta: "¿Cuál es una función del aparato reproductor humano?",
+    opciones: ["Participar en la reproducción humana", "Filtrar el aire que respiramos", "Producir todos los movimientos del cuerpo", "Bombear sangre a todo el organismo"],
+    correcta: 0,
+    explicacion: "El aparato reproductor contiene órganos que participan en la reproducción humana. Sus órganos y funciones son diferentes en el aparato femenino y masculino."
+},
+{
+    id: 367,
+    curso: "Ciencia y Tecnología",
+    tema: "Aparato reproductor femenino y masculino",
+    pregunta: "¿Qué órganos del aparato reproductor femenino producen los óvulos?",
+    opciones: ["Los ovarios", "Los riñones", "La vejiga", "Los uréteres"],
+    correcta: 0,
+    explicacion: "Los ovarios producen óvulos y hormonas sexuales, como los estrógenos y la progesterona."
+},
+{
+    id: 368,
+    curso: "Ciencia y Tecnología",
+    tema: "Aparato reproductor femenino y masculino",
+    pregunta: "¿Qué órgano del aparato reproductor femenino es el lugar donde se desarrolla el embarazo?",
+    opciones: ["El útero", "La vejiga", "El ovario", "La uretra"],
+    correcta: 0,
+    explicacion: "El útero es un órgano muscular donde puede desarrollarse el embarazo después de que el embrión se implanta."
+},
+{
+    id: 369,
+    curso: "Ciencia y Tecnología",
+    tema: "Aparato reproductor femenino y masculino",
+    pregunta: "¿Qué órganos del aparato reproductor masculino producen los espermatozoides?",
+    opciones: ["Los testículos", "La próstata solamente", "Los uréteres", "La vejiga"],
+    correcta: 0,
+    explicacion: "Los testículos producen espermatozoides y la hormona sexual testosterona."
+},
+{
+    id: 370,
+    curso: "Ciencia y Tecnología",
+    tema: "Aparato reproductor femenino y masculino",
+    pregunta: "¿Cuál es la función principal de la próstata?",
+    opciones: ["Producir parte del líquido que forma el semen", "Producir óvulos", "Almacenar la orina", "Filtrar la sangre para producir orina"],
+    correcta: 0,
+    explicacion: "La próstata produce parte del líquido seminal, que forma parte del semen y ayuda a transportar y proteger los espermatozoides."
+},
+
+
+{
+    id: 371,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema nervioso",
+    pregunta: "¿Cuál es la función principal del sistema nervioso?",
+    opciones: ["Recibir información, procesarla y coordinar respuestas", "Producir los huesos", "Digerir todos los alimentos", "Filtrar la orina"],
+    correcta: 0,
+    explicacion: "El sistema nervioso recibe información del cuerpo y del entorno, la procesa y coordina respuestas, movimientos y muchas funciones corporales."
+},
+{
+    id: 372,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema nervioso",
+    pregunta: "¿Cuáles son las dos partes principales del sistema nervioso?",
+    opciones: ["Sistema nervioso central y periférico", "Sistema óseo y muscular", "Sistema digestivo y urinario", "Sistema respiratorio y circulatorio"],
+    correcta: 0,
+    explicacion: "El sistema nervioso central incluye el encéfalo y la médula espinal. El periférico está formado por los nervios y otras estructuras que conectan el sistema central con el resto del cuerpo."
+},
+{
+    id: 373,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema nervioso",
+    pregunta: "¿Qué órganos forman el sistema nervioso central?",
+    opciones: ["Encéfalo y médula espinal", "Cerebro y estómago", "Corazón y pulmones", "Riñones y vejiga"],
+    correcta: 0,
+    explicacion: "El sistema nervioso central está formado por el encéfalo, que se encuentra dentro del cráneo, y la médula espinal, que está protegida por la columna vertebral."
+},
+{
+    id: 374,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema nervioso",
+    pregunta: "¿Qué función cumplen los nervios?",
+    opciones: ["Transmitir información entre el sistema nervioso central y el cuerpo", "Producir la orina", "Unir los huesos de las piernas", "Bombear la sangre"],
+    correcta: 0,
+    explicacion: "Los nervios transportan señales que permiten comunicar el encéfalo y la médula espinal con los órganos, músculos y receptores sensoriales."
+},
+{
+    id: 375,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema nervioso",
+    pregunta: "¿Qué sucede cuando tocas algo muy caliente y retiras rápidamente la mano?",
+    opciones: ["Se produce una respuesta refleja que ayuda a protegerte", "Los huesos se derriten", "Los riñones producen más orina inmediatamente", "El estómago detiene la digestión para siempre"],
+    correcta: 0,
+    explicacion: "Retirar la mano rápidamente es un ejemplo de reflejo. La médula espinal puede coordinar esta respuesta de protección antes de que seas plenamente consciente del dolor."
+},
+{
+    id: 376,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema nervioso",
+    pregunta: "¿Qué órganos permiten captar la luz, los sonidos, los olores, los sabores y las sensaciones del tacto?",
+    opciones: ["Los órganos de los sentidos", "Los huesos largos", "Los tendones", "Los uréteres"],
+    correcta: 0,
+    explicacion: "Los ojos, oídos, nariz, lengua y receptores de la piel detectan diferentes estímulos y envían información al sistema nervioso."
+},
+{
+    id: 377,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema nervioso",
+    pregunta: "¿Qué protege la médula espinal?",
+    opciones: ["La columna vertebral", "La caja torácica", "La pelvis solamente", "El fémur"],
+    correcta: 0,
+    explicacion: "La columna vertebral está formada por vértebras que rodean y protegen la médula espinal."
+},
+{
+    id: 378,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema nervioso",
+    pregunta: "¿Cuál es la célula especializada en transmitir información en el sistema nervioso?",
+    opciones: ["La neurona", "El glóbulo rojo", "La célula ósea", "La célula muscular"],
+    correcta: 0,
+    explicacion: "Las neuronas reciben y transmiten información mediante señales eléctricas y químicas. Trabajan junto con otras células del sistema nervioso."
+},
+{
+    id: 379,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema nervioso",
+    pregunta: "¿Qué parte del sistema nervioso ayuda a controlar movimientos voluntarios como escribir o patear una pelota?",
+    opciones: ["El cerebro y sus conexiones nerviosas", "La vejiga urinaria", "Los riñones", "El estómago"],
+    correcta: 0,
+    explicacion: "El cerebro participa en la planificación y el control de movimientos voluntarios, enviando señales a través de las vías nerviosas."
+},
+{
+    id: 380,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema nervioso",
+    pregunta: "¿Cuál es un hábito saludable para cuidar el sistema nervioso?",
+    opciones: ["Dormir lo suficiente y alimentarse de manera equilibrada", "Dormir muy poco todos los días", "Evitar beber agua", "No descansar después de hacer ejercicio"],
+    correcta: 0,
+    explicacion: "Dormir bien, alimentarse de forma equilibrada, realizar actividad física y proteger la cabeza ayudan a cuidar el sistema nervioso y su funcionamiento."
+},
+
+{
+    id: 381,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema óseo y sus partes",
+    pregunta: "¿Qué tejido duro forma la mayor parte de los huesos?",
+    opciones: ["Tejido óseo", "Tejido pulmonar", "Tejido nervioso solamente", "Tejido del cabello"],
+    correcta: 0,
+    explicacion: "El tejido óseo es un tejido resistente que forma gran parte de los huesos y ayuda a sostener y proteger el cuerpo."
+},
+{
+    id: 382,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema óseo y sus partes",
+    pregunta: "¿Qué mineral es importante para mantener los huesos fuertes?",
+    opciones: ["Calcio", "Cloro doméstico", "Gas carbónico", "Alcohol"],
+    correcta: 0,
+    explicacion: "El calcio es un mineral importante para los huesos y los dientes. También se necesita vitamina D para ayudar al cuerpo a absorberlo."
+},
+{
+    id: 383,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema óseo y sus partes",
+    pregunta: "¿Qué estructura ayuda a reducir el roce entre los huesos en muchas articulaciones?",
+    opciones: ["El cartílago articular", "El cabello", "Las uñas", "Los alvéolos pulmonares"],
+    correcta: 0,
+    explicacion: "El cartílago articular recubre los extremos de muchos huesos y facilita que se deslicen con menos fricción."
+},
+{
+    id: 384,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema óseo y sus partes",
+    pregunta: "¿Qué huesos protegen principalmente los pulmones y el corazón?",
+    opciones: ["Las costillas y el esternón", "El fémur y la tibia", "El radio y el cúbito", "Los huesos de los dedos"],
+    correcta: 0,
+    explicacion: "Las costillas y el esternón forman parte de la caja torácica, que protege órganos importantes del pecho."
+},
+{
+    id: 385,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema óseo y sus partes",
+    pregunta: "¿Qué función cumple la médula ósea roja?",
+    opciones: ["Producir células de la sangre", "Producir los pensamientos", "Almacenar toda la orina", "Mover los pulmones directamente"],
+    correcta: 0,
+    explicacion: "La médula ósea roja produce células sanguíneas, como glóbulos rojos, glóbulos blancos y plaquetas."
+},
+
+{
+    id: 386,
+    curso: "Ciencia y Tecnología",
+    tema: "Esqueleto humano",
+    pregunta: "¿Cuántos huesos tiene aproximadamente el esqueleto de una persona adulta?",
+    opciones: ["206", "106", "306", "56"],
+    correcta: 0,
+    explicacion: "Una persona adulta suele tener 206 huesos. Los bebés tienen más estructuras óseas, algunas de las cuales se fusionan durante el crecimiento."
+},
+{
+    id: 387,
+    curso: "Ciencia y Tecnología",
+    tema: "Esqueleto humano",
+    pregunta: "¿Qué hueso se encuentra en la parte superior del brazo?",
+    opciones: ["Húmero", "Fémur", "Tibia", "Peroné"],
+    correcta: 0,
+    explicacion: "El húmero es el hueso del brazo que se encuentra entre el hombro y el codo."
+},
+{
+    id: 388,
+    curso: "Ciencia y Tecnología",
+    tema: "Esqueleto humano",
+    pregunta: "¿Qué hueso se encuentra en el muslo?",
+    opciones: ["Fémur", "Radio", "Cúbito", "Clavícula"],
+    correcta: 0,
+    explicacion: "El fémur está situado en el muslo, entre la cadera y la rodilla. Es el hueso más largo del cuerpo humano."
+},
+{
+    id: 389,
+    curso: "Ciencia y Tecnología",
+    tema: "Esqueleto humano",
+    pregunta: "¿Qué parte del esqueleto forma la mandíbula inferior?",
+    opciones: ["La mandíbula", "El esternón", "La rótula", "La pelvis"],
+    correcta: 0,
+    explicacion: "La mandíbula es el hueso móvil de la parte inferior de la cara y participa en la masticación."
+},
+{
+    id: 390,
+    curso: "Ciencia y Tecnología",
+    tema: "Esqueleto humano",
+    pregunta: "¿Qué huesos protegen principalmente el cerebro y la médula espinal, respectivamente?",
+    opciones: ["Cráneo y columna vertebral", "Costillas y fémur", "Pelvis y húmero", "Esternón y tibia"],
+    correcta: 0,
+    explicacion: "El cráneo protege el encéfalo y la columna vertebral protege la médula espinal."
+},
+
+{
+    id: 391,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema muscular",
+    pregunta: "¿Qué sucede con un músculo cuando se contrae?",
+    opciones: ["Desarrolla tensión y puede producir movimiento", "Se convierte en un hueso", "Deja de recibir sangre para siempre", "Se transforma en una neurona"],
+    correcta: 0,
+    explicacion: "Cuando un músculo se contrae, genera tensión. Al trabajar con los huesos y las articulaciones, puede producir movimiento."
+},
+{
+    id: 392,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema muscular",
+    pregunta: "¿Qué músculos trabajan de forma involuntaria en las paredes del intestino?",
+    opciones: ["Músculos lisos", "Músculos esqueléticos únicamente", "Músculos de los dedos", "Ningún músculo"],
+    correcta: 0,
+    explicacion: "El músculo liso produce movimientos involuntarios que ayudan a desplazar los alimentos por el aparato digestivo."
+},
+{
+    id: 393,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema muscular",
+    pregunta: "¿Qué ocurre normalmente con los músculos al doblar el codo?",
+    opciones: ["Unos músculos se contraen y otros se relajan", "Todos los músculos se convierten en hueso", "Los músculos dejan de funcionar", "La articulación desaparece"],
+    correcta: 0,
+    explicacion: "Para doblar y estirar el codo, distintos músculos trabajan coordinadamente: algunos se contraen mientras otros se relajan."
+},
+{
+    id: 394,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema muscular",
+    pregunta: "¿Cuál de estas acciones ayuda a mantener saludables los músculos?",
+    opciones: ["Hacer actividad física y alimentarse bien", "No moverse nunca", "Dormir solo dos horas", "Evitar todos los alimentos con proteínas"],
+    correcta: 0,
+    explicacion: "La actividad física apropiada, el descanso y una alimentación equilibrada ayudan a mantener la fuerza y la salud muscular."
+},
+{
+    id: 395,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema muscular",
+    pregunta: "¿Qué músculo se encuentra en el corazón?",
+    opciones: ["Músculo cardíaco", "Músculo esquelético del brazo", "Músculo liso de la vejiga", "Tejido óseo"],
+    correcta: 0,
+    explicacion: "El corazón está formado principalmente por músculo cardíaco, que se contrae rítmicamente para impulsar la sangre."
+},
+
+{
+    id: 396,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema excretor",
+    pregunta: "¿Qué sistema elimina el dióxido de carbono producido por las células?",
+    opciones: ["El sistema respiratorio", "El sistema óseo", "El sistema muscular solamente", "El sistema reproductor"],
+    correcta: 0,
+    explicacion: "El dióxido de carbono pasa a la sangre y llega a los pulmones, desde donde se elimina al exhalar."
+},
+{
+    id: 397,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema excretor",
+    pregunta: "¿Qué sustancia de desecho se elimina principalmente mediante la orina?",
+    opciones: ["Urea", "Oxígeno que respiramos", "Saliva", "Almidón de los alimentos"],
+    correcta: 0,
+    explicacion: "La urea se forma cuando el cuerpo procesa sustancias que contienen nitrógeno. Los riñones la eliminan principalmente a través de la orina."
+},
+{
+    id: 398,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema excretor",
+    pregunta: "¿Por qué sudamos cuando tenemos mucho calor?",
+    opciones: ["Porque la evaporación del sudor ayuda a enfriar el cuerpo", "Para dejar de respirar", "Para aumentar la temperatura corporal", "Para detener la circulación de la sangre"],
+    correcta: 0,
+    explicacion: "Cuando el sudor se evapora de la piel, se lleva parte del calor y ayuda a regular la temperatura corporal."
+},
+{
+    id: 399,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema excretor",
+    pregunta: "¿Cuál de estas acciones ayuda al funcionamiento saludable de los riñones?",
+    opciones: ["Beber agua según las necesidades del cuerpo", "Retener la orina durante muchas horas siempre", "Beber únicamente gaseosas", "Evitar ir al baño cuando se necesita"],
+    correcta: 0,
+    explicacion: "Beber suficiente agua y no retener la orina innecesariamente favorece el cuidado del sistema urinario. Las necesidades de agua varían según la persona y la actividad."
+},
+{
+    id: 400,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema excretor",
+    pregunta: "¿Cuál de estas acciones corresponde a la excreción y no a la digestión?",
+    opciones: ["Eliminar urea mediante la orina", "Masticar un alimento", "Descomponer alimentos en el estómago", "Absorber nutrientes en el intestino"],
+    correcta: 0,
+    explicacion: "Eliminar urea mediante la orina es excreción. La digestión descompone los alimentos para que el organismo pueda aprovechar sus nutrientes."
+},
+
+{
+    id: 401,
+    curso: "Ciencia y Tecnología",
+    tema: "La neurona y sus partes",
+    pregunta: "¿Qué estructura de una neurona contiene el núcleo?",
+    opciones: ["Cuerpo celular", "Axón", "Vaina de mielina", "Terminal del axón"],
+    correcta: 0,
+    explicacion: "El cuerpo celular contiene el núcleo y gran parte de las estructuras que mantienen viva y funcionando a la neurona."
+},
+{
+    id: 402,
+    curso: "Ciencia y Tecnología",
+    tema: "La neurona y sus partes",
+    pregunta: "¿Qué función puede cumplir la vaina de mielina?",
+    opciones: ["Aislar el axón y acelerar la transmisión de señales", "Producir huesos", "Almacenar orina", "Formar las articulaciones"],
+    correcta: 0,
+    explicacion: "La vaina de mielina recubre algunos axones y ayuda a que las señales nerviosas viajen más rápidamente."
+},
+{
+    id: 403,
+    curso: "Ciencia y Tecnología",
+    tema: "La neurona y sus partes",
+    pregunta: "¿Qué parte de la neurona suele recibir señales de otras neuronas?",
+    opciones: ["Dendritas", "Vejiga", "Costillas", "Tendones"],
+    correcta: 0,
+    explicacion: "Las dendritas son prolongaciones que reciben muchas de las señales que llegan a la neurona."
+},
+{
+    id: 404,
+    curso: "Ciencia y Tecnología",
+    tema: "La neurona y sus partes",
+    pregunta: "¿Cómo se llama la sustancia química que puede transmitir una señal en una sinapsis?",
+    opciones: ["Neurotransmisor", "Hemoglobina ósea", "Urea", "Calcio del cartílago"],
+    correcta: 0,
+    explicacion: "Los neurotransmisores son sustancias químicas que permiten comunicar una neurona con otra célula en muchas sinapsis."
+},
+{
+    id: 405,
+    curso: "Ciencia y Tecnología",
+    tema: "La neurona y sus partes",
+    pregunta: "¿Qué relación existe entre las neuronas y el aprendizaje?",
+    opciones: ["Las conexiones entre neuronas participan en el aprendizaje y la memoria", "Las neuronas solo sirven para formar los huesos", "Las neuronas producen la orina", "Las neuronas no se comunican entre sí"],
+    correcta: 0,
+    explicacion: "El aprendizaje y la memoria dependen de cambios en las conexiones y la actividad de redes de neuronas del sistema nervioso."
+},
+
+{
+    id: 406,
+    curso: "Ciencia y Tecnología",
+    tema: "El cerebro y sus partes",
+    pregunta: "¿Qué parte del encéfalo participa especialmente en el equilibrio y la coordinación?",
+    opciones: ["Cerebelo", "Vejiga", "Fémur", "Riñón"],
+    correcta: 0,
+    explicacion: "El cerebelo ayuda a coordinar los movimientos y mantener el equilibrio y la postura."
+},
+{
+    id: 407,
+    curso: "Ciencia y Tecnología",
+    tema: "El cerebro y sus partes",
+    pregunta: "¿Qué estructura conecta el encéfalo con la médula espinal?",
+    opciones: ["Tronco encefálico", "Rótula", "Esternón", "Pelvis"],
+    correcta: 0,
+    explicacion: "El tronco encefálico conecta el encéfalo con la médula espinal y participa en funciones automáticas esenciales."
+},
+{
+    id: 408,
+    curso: "Ciencia y Tecnología",
+    tema: "El cerebro y sus partes",
+    pregunta: "¿Qué actividad está relacionada con la memoria?",
+    opciones: ["Recordar información aprendida", "Filtrar la sangre", "Producir sudor únicamente", "Unir dos huesos"],
+    correcta: 0,
+    explicacion: "La memoria permite conservar y recuperar información. En ella participan distintas regiones y redes del cerebro."
+},
+{
+    id: 409,
+    curso: "Ciencia y Tecnología",
+    tema: "El cerebro y sus partes",
+    pregunta: "¿Qué hueso protege el cerebro de muchos golpes?",
+    opciones: ["El cráneo", "El húmero", "La tibia", "El radio"],
+    correcta: 0,
+    explicacion: "El cráneo forma una estructura ósea protectora alrededor del encéfalo."
+},
+{
+    id: 410,
+    curso: "Ciencia y Tecnología",
+    tema: "El cerebro y sus partes",
+    pregunta: "¿Qué parte del encéfalo es la más relacionada con el pensamiento consciente y el lenguaje?",
+    opciones: ["El cerebro", "La vejiga", "El riñón", "El fémur"],
+    correcta: 0,
+    explicacion: "El cerebro participa en funciones complejas como el pensamiento, el lenguaje, la memoria y la interpretación de la información sensorial."
+},
+
+{
+    id: 411,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema urinario",
+    pregunta: "¿Cuál es el recorrido correcto de la orina después de producirse?",
+    opciones: ["Riñones, uréteres, vejiga y uretra", "Vejiga, pulmones, riñones y uretra", "Uréteres, estómago, vejiga y riñones", "Riñones, tráquea, corazón y vejiga"],
+    correcta: 0,
+    explicacion: "La orina se produce en los riñones, viaja por los uréteres hasta la vejiga y finalmente sale del cuerpo por la uretra."
+},
+{
+    id: 412,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema urinario",
+    pregunta: "¿Qué conducto permite que la orina salga de la vejiga al exterior?",
+    opciones: ["Uretra", "Uréter", "Tráquea", "Esófago"],
+    correcta: 0,
+    explicacion: "La uretra conduce la orina desde la vejiga hacia el exterior del cuerpo. No debe confundirse con los uréteres, que conectan los riñones con la vejiga."
+},
+{
+    id: 413,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema urinario",
+    pregunta: "¿Qué podría ocurrir si los riñones no filtran correctamente la sangre?",
+    opciones: ["Podrían acumularse desechos y alterarse el equilibrio de líquidos", "Los huesos desaparecerían inmediatamente", "El cuerpo dejaría de necesitar oxígeno", "El cerebro se convertiría en músculo"],
+    correcta: 0,
+    explicacion: "Los riñones eliminan desechos y regulan el agua y las sales. Si su función falla, estas sustancias pueden acumularse y afectar al organismo."
+},
+{
+    id: 414,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema urinario",
+    pregunta: "¿Cuántos riñones tiene normalmente una persona?",
+    opciones: ["Dos", "Uno siempre", "Cuatro", "Seis"],
+    correcta: 0,
+    explicacion: "Normalmente tenemos dos riñones, uno a cada lado de la columna vertebral. Algunas personas pueden vivir con un solo riñón funcional."
+},
+{
+    id: 415,
+    curso: "Ciencia y Tecnología",
+    tema: "Sistema urinario",
+    pregunta: "¿Cuál de estos órganos forma parte del sistema urinario?",
+    opciones: ["Vejiga urinaria", "Pulmón", "Estómago", "Cerebelo"],
+    correcta: 0,
+    explicacion: "La vejiga urinaria forma parte del sistema urinario y almacena la orina antes de su expulsión."
+},
+
+{
+    id: 416,
+    curso: "Ciencia y Tecnología",
+    tema: "Aparato reproductor femenino y masculino",
+    pregunta: "¿Qué nombre recibe la célula reproductora femenina?",
+    opciones: ["Óvulo", "Espermatozoide", "Neurona", "Glóbulo rojo"],
+    correcta: 0,
+    explicacion: "El óvulo es la célula reproductora femenina. En la reproducción sexual, puede unirse con un espermatozoide."
+},
+{
+    id: 417,
+    curso: "Ciencia y Tecnología",
+    tema: "Aparato reproductor femenino y masculino",
+    pregunta: "¿Qué nombre recibe la célula reproductora masculina?",
+    opciones: ["Espermatozoide", "Óvulo", "Plaqueta", "Glóbulo blanco"],
+    correcta: 0,
+    explicacion: "El espermatozoide es la célula reproductora masculina y se produce en los testículos."
+},
+{
+    id: 418,
+    curso: "Ciencia y Tecnología",
+    tema: "Aparato reproductor femenino y masculino",
+    pregunta: "¿Qué conductos transportan los óvulos desde la zona de los ovarios hacia el útero?",
+    opciones: ["Trompas de Falopio", "Uréteres", "Bronquios", "Tendones"],
+    correcta: 0,
+    explicacion: "Las trompas de Falopio conectan la zona de los ovarios con el útero. La fecundación suele ocurrir en una de estas trompas."
+},
+{
+    id: 419,
+    curso: "Ciencia y Tecnología",
+    tema: "Aparato reproductor femenino y masculino",
+    pregunta: "¿Qué función cumple el escroto?",
+    opciones: ["Contener y proteger los testículos y ayudar a regular su temperatura", "Producir óvulos", "Almacenar la orina", "Filtrar la sangre"],
+    correcta: 0,
+    explicacion: "El escroto es una bolsa de piel que contiene los testículos y ayuda a mantener una temperatura adecuada para la producción de espermatozoides."
+},
+{
+    id: 420,
+    curso: "Ciencia y Tecnología",
+    tema: "Aparato reproductor femenino y masculino",
+    pregunta: "¿Qué cambio ocurre normalmente durante la pubertad?",
+    opciones: ["El cuerpo madura y aparecen cambios físicos y hormonales", "Todos los huesos desaparecen", "Los riñones dejan de funcionar", "El sistema nervioso se apaga"],
+    correcta: 0,
+    explicacion: "Durante la pubertad, las hormonas producen cambios físicos y emocionales. El momento y el ritmo de estos cambios varían entre las personas."
+}
+
+
+
 
 ];

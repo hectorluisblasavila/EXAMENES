@@ -167,10 +167,13 @@ function obtenerPuenteAppsScript() {
         iframe.setAttribute("aria-hidden", "true");
 
         iframe.onload = () => {
-            puenteAppsScript = iframe;
-            puenteAppsScript.isConnected = true;
-            resolve(iframe);
-        };
+    puenteAppsScript = iframe;
+    puenteAppsScript.isConnected = true;
+
+    console.log("El iframe de Apps Script terminó de cargar.");
+
+    resolve(iframe);
+};
 
         iframe.onerror = () => {
             iframe.remove();

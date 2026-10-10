@@ -247,7 +247,7 @@ console.log("Ventana del puente:", iframe.contentWindow);
             id: id,
             accion: accion,
             datos: datos
-        }, "*");
+        }, "https://script.google.com/macros/s/AKfycbwvUAgKz_l-q6IRreuCnMQhqEg6gXeRtv7br80e4cKyYr-dFruD8eCSfb0ajN0r5csjCg/exec");
 
         setTimeout(() => {
             if (solicitudesPuente.has(id)) {

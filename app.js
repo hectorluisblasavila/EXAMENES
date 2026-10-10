@@ -145,162 +145,57 @@ function generarHeader() {
 // LOGIN
 // =====================================================
 
-
-const URL_APPS_SCRIPT =
-    "https://script.google.com/macros/s/AKfycbwvUAgKz_l-q6IRreuCnMQhqEg6gXeRtv7br80e4cKyYr-dFruD8eCSfb0ajN0r5csjCg/exec";
-
-let puenteAppsScript = null;
-let solicitudesPuente = new Map();
-let contadorSolicitudes = 0;
-
-function obtenerPuenteAppsScript() {
-    return new Promise((resolve, reject) => {
-        if (puenteAppsScript && puenteAppsScript.isConnected) {
-            resolve(puenteAppsScript);
-            return;
-        }
-
-        const iframe = document.createElement("iframe");
-        iframe.src = URL_APPS_SCRIPT + "?bridge=1";
-        iframe.title = "Conexión de cuentas";
-        iframe.style.display = "none";
-        iframe.setAttribute("aria-hidden", "true");
-
-        iframe.onload = () => {
-    puenteAppsScript = iframe;
-    puenteAppsScript.isConnected = true;
-
-    console.log("El iframe de Apps Script terminó de cargar.");
-
-    resolve(iframe);
-};
-
-        iframe.onerror = () => {
-            iframe.remove();
-            reject(new Error("No se pudo conectar con el servidor."));
-        };
-
-        document.body.appendChild(iframe);
-    });
-}
-
-
-window.addEventListener("message", function(event) {
-    // Solo aceptar mensajes del iframe que creamos.
-    if (
-        !puenteAppsScript ||
-        !puenteAppsScript.contentWindow ||
-        event.source !== puenteAppsScript.contentWindow ||
-        !event.data ||
-        typeof event.data !== "object"
-    ) {
-        return;
-    }
-
-    // El puente puede avisar que ya terminó de cargar.
-    if (event.data.tipo === "PUENTE_LISTO") {
-        console.log("Puente de Apps Script listo.");
-        return;
-    }
-
-    // Procesar solamente respuestas a solicitudes pendientes.
-    if (event.data.tipo !== "RESPUESTA") {
-        return;
-    }
-
-    const id = String(event.data.id || "");
-    const solicitud = solicitudesPuente.get(id);
-
-    if (!solicitud) {
-        return;
-    }
-
-    solicitudesPuente.delete(id);
-
-    if (event.data.ok) {
-        solicitud.resolve(event.data.resultado);
-    } else {
-        solicitud.reject(
-            new Error(
-                typeof event.data.resultado === "string"
-                    ? event.data.resultado
-                    : "No se pudo completar la solicitud."
-            )
-        );
-    }
-});
-
-
-async function llamarAppsScript(accion, datos) {
-    const iframe = await obtenerPuenteAppsScript();
-
-    console.log("Puente cargado:", iframe.src);
-console.log("Ventana del puente:", iframe.contentWindow);
-
-    const id = String(++contadorSolicitudes);
-
-    return new Promise((resolve, reject) => {
-        solicitudesPuente.set(id, { resolve, reject });
-
-        iframe.contentWindow.postMessage({
-            tipo: "SOLICITUD",
-            id: id,
-            accion: accion,
-            datos: datos
-        }, "https://script.google.com/macros/s/AKfycbwvUAgKz_l-q6IRreuCnMQhqEg6gXeRtv7br80e4cKyYr-dFruD8eCSfb0ajN0r5csjCg/exec");
-
-        setTimeout(() => {
-            if (solicitudesPuente.has(id)) {
-                solicitudesPuente.delete(id);
-                reject(new Error(
-                    "El servidor tardó demasiado. Inténtalo nuevamente."
-                ));
-            }
-        }, 20000);
-    });
-}
-
-
-// =====================================================
-// LOGIN
-// =====================================================
-
 function mostrarLogin() {
-    document.getElementById("app").innerHTML = `
-        <div class="container">
-            <div class="card login-card">
-                <div class="login-avatar">👩‍🎓</div>
 
-                <h2>Aula de Evaluaciones</h2>
+    document.getElementById("app").innerHTML = `
+
+        <div class="container">
+
+            <div class="card login-card">
+
+                <div class="login-avatar">
+                    👩‍🎓
+                </div>
+
+                <h2>
+                    Aula de Evaluaciones
+                </h2>
 
                 <p class="muted">
-                    Ingresa con el correo y la contraseña de tu cuenta.
+                    Ingresa para comenzar a practicar
                 </p>
 
                 <div class="form-group">
-                    <label for="usuario">Correo electrónico</label>
+
+                    <label>
+                        Usuario
+                    </label>
+
                     <input
                         id="usuario"
                         class="input"
-                        type="email"
-                        autocomplete="username"
-                        placeholder="tu correo electrónico"
+                        type="text"
+                        placeholder="Escribe tu usuario"
                     >
+
                 </div>
 
                 <div class="form-group">
-                    <label for="clave">Contraseña</label>
+
+                    <label>
+                        Contraseña
+                    </label>
+
                     <input
                         id="clave"
                         class="input"
                         type="password"
-                        autocomplete="current-password"
-                        placeholder="Tu contraseña"
+                        placeholder="Escribe tu contraseña"
                     >
+
                 </div>
 
                 <button
-                    id="botonIngresar"
                     class="btn btn-primary"
                     style="width:100%;"
                     onclick="iniciarSesion()"
@@ -308,88 +203,68 @@ function mostrarLogin() {
                     Ingresar
                 </button>
 
-                <button
-                    class="btn btn-secondary"
-                    style="width:100%; margin-top:10px;"
-                    onclick="abrirRegistro()"
-                >
-                    Crear cuenta educativa
-                </button>
-
                 <p
                     id="mensajeLogin"
                     class="muted"
                     style="margin-top:15px;"
-                    role="status"
-                    aria-live="polite"
                 ></p>
+
             </div>
+
         </div>
     `;
 }
 
 
-function abrirRegistro() {
-    window.open(URL_APPS_SCRIPT, "_blank", "noopener");
-}
+function iniciarSesion() {
 
+    const usuario =
+        document.getElementById("usuario")
+            .value
+            .trim();
 
-async function iniciarSesion() {
-    const campoCorreo = document.getElementById("usuario");
-    const campoClave = document.getElementById("clave");
-    const mensaje = document.getElementById("mensajeLogin");
-    const boton = document.getElementById("botonIngresar");
+    const clave =
+        document.getElementById("clave")
+            .value
+            .trim();
 
-    const correo = campoCorreo.value.trim().toLowerCase();
-    const contrasena = campoClave.value;
-
-    if (!correo || !contrasena) {
-        mensaje.textContent = "Ingresa tu correo y contraseña.";
-        return;
-    }
-
-    // Mantiene el acceso administrativo anterior.
     if (
-        correo === USUARIO_ADMIN &&
-        contrasena === CLAVE_ADMIN
+        usuario === USUARIO_HIJA &&
+        clave === CLAVE_HIJA
     ) {
-        localStorage.setItem("usuarioActual", USUARIO_ADMIN);
-        mostrarAdmin();
-        return;
-    }
 
-    boton.disabled = true;
-    mensaje.textContent = "Verificando tu cuenta...";
-
-    try {
-        const resultado = await llamarAppsScript("iniciarSesion", {
-            correo: correo,
-            contrasena: contrasena
-        });
-
-        if (!resultado || !resultado.ok) {
-            throw new Error("No se pudo validar la cuenta.");
-        }
-
-        localStorage.setItem("usuarioActual", correo);
-
-        // Guardamos el nombre para mostrar un saludo personalizado.
-        if (resultado.usuario) {
-            localStorage.setItem(
-                "nombreEstudiante",
-                resultado.usuario.nombreEstudiante || ""
-            );
-        }
+        localStorage.setItem(
+            "usuarioActual",
+            usuario
+        );
 
         mostrarDashboard();
 
-    } catch (error) {
-        mensaje.textContent =
-            error.message || "No se pudo iniciar sesión.";
-        boton.disabled = false;
+        return;
     }
-}
 
+
+    if (
+        usuario === USUARIO_ADMIN &&
+        clave === CLAVE_ADMIN
+    ) {
+
+        localStorage.setItem(
+            "usuarioActual",
+            usuario
+        );
+
+        mostrarAdmin();
+
+        return;
+    }
+
+
+    document.getElementById(
+        "mensajeLogin"
+    ).innerHTML =
+        "❌ Usuario o contraseña incorrectos.";
+}
 
 
 // =====================================================

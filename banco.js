@@ -5295,7 +5295,1031 @@ const bancoPreguntas = [
     opciones: ["El cuerpo madura y aparecen cambios físicos y hormonales", "Todos los huesos desaparecen", "Los riñones dejan de funcionar", "El sistema nervioso se apaga"],
     correcta: 0,
     explicacion: "Durante la pubertad, las hormonas producen cambios físicos y emocionales. El momento y el ritmo de estos cambios varían entre las personas."
-}
+},
+
+{
+    id: 421,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué son los derechos del niño?",
+    opciones: [
+      "Normas y libertades que protegen a todos los niños",
+      "Premios por portarse bien",
+      "Obligaciones solo de los padres",
+      "Reglas que solo existen en la escuela"
+    ],
+    correcta: 0,
+    explicacion: "Los derechos protegen la vida, dignidad, bienestar y desarrollo de todos los niños."
+},
+{
+    id: 422,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué significa que los derechos del niño sean universales?",
+    opciones: [
+      "Que solo se aplican en algunos países",
+      "Que corresponden a todos los niños",
+      "Que dependen de las calificaciones",
+      "Que se pierden al cambiar de colegio"
+    ],
+    correcta: 1,
+    explicacion: "Son universales porque corresponden a todos los niños sin discriminación."
+},
+{
+    id: 423,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué significa que los derechos sean inalienables?",
+    opciones: [
+      "Que pueden venderse",
+      "Que se pueden cambiar por juguetes",
+      "Que no se pueden quitar ni renunciar a ellos",
+      "Que solo duran hasta los diez años"
+    ],
+    correcta: 2,
+    explicacion: "Los derechos no pueden ser arrebatados ni se debe obligar a renunciar a ellos."
+},
+{
+    id: 424,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué significa que los derechos sean indivisibles?",
+    opciones: [
+      "Que todos son importantes y se relacionan entre sí",
+      "Que solo importa el derecho a estudiar",
+      "Que se reparten por edades",
+      "Que algunos niños tienen más derechos"
+    ],
+    correcta: 0,
+    explicacion: "Todos los derechos son importantes y deben respetarse en conjunto."
+},
+{
+    id: 425,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Cuál es un derecho fundamental de los niños?",
+    opciones: [
+      "Trabajar muchas horas",
+      "Recibir educación",
+      "Cuidar solos a sus hermanos",
+      "Dejar de jugar"
+    ],
+    correcta: 1,
+    explicacion: "La educación permite aprender y desarrollar capacidades."
+},
+{
+    id: 426,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Cuál de estas acciones es un deber de los niños?",
+    opciones: [
+      "Respetar a los demás",
+      "Trabajar para mantener la casa",
+      "Renunciar a sus derechos",
+      "Obedecer cualquier orden peligrosa"
+    ],
+    correcta: 0,
+    explicacion: "Los niños deben respetar a los demás y cumplir responsabilidades adecuadas a su edad."
+},
+{
+    id: 427,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué institución de las Naciones Unidas trabaja por los derechos y el bienestar de la infancia?",
+    opciones: [
+      "UNICEF",
+      "DEMUNA",
+      "Municipalidad solamente",
+      "Comisaría escolar"
+    ],
+    correcta: 0,
+    explicacion: "UNICEF promueve y apoya la protección de los derechos de la niñez."
+},
+{
+    id: 428,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué significan las siglas DEMUNA?",
+    opciones: [
+      "Defensa Municipal del Niño y del Adolescente",
+      "Departamento Médico de Niños",
+      "Dirección Escolar de Menores",
+      "Defensoría Mundial de Naciones Unidas"
+    ],
+    correcta: 0,
+    explicacion: "La DEMUNA brinda orientación y protección de los derechos de niñas, niños y adolescentes."
+},
+{
+    id: 429,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Cuál es una función de la DEMUNA?",
+    opciones: [
+      "Vender útiles escolares",
+      "Promover y defender los derechos de niños y adolescentes",
+      "Organizar competencias deportivas",
+      "Reemplazar a los padres"
+    ],
+    correcta: 1,
+    explicacion: "La DEMUNA ayuda a proteger los derechos y orientar ante situaciones que los vulneran."
+},
+{
+    id: 430,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué documento reúne leyes para proteger a los niños y adolescentes en el Perú?",
+    opciones: [
+      "Código de los Niños y Adolescentes",
+      "Reglamento de tránsito",
+      "Código de comercio",
+      "Manual de deportes"
+    ],
+    correcta: 0,
+    explicacion: "El Código de los Niños y Adolescentes establece normas para su protección integral."
+},
+{
+    id: 431,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué programa peruano brinda atención y cuidado a niños pequeños mientras sus padres trabajan?",
+    opciones: [
+      "Cuna Más / Wawa Wasi (según el material)",
+      "UNICEF escolar",
+      "DEMUNA deportiva",
+      "Biblioteca Nacional"
+    ],
+    correcta: 0,
+    explicacion: "El material menciona el programa Wawa Wasi; actualmente existe Cuna Más."
+},
+{
+    id: 432,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Cuál es una función principal de la familia?",
+    opciones: [
+      "Proteger, cuidar y brindar afecto",
+      "Impedir que los niños estudien",
+      "Evitar toda comunicación",
+      "Reemplazar a la escuela en todo"
+    ],
+    correcta: 0,
+    explicacion: "La familia ofrece protección, afecto, cuidado y apoyo para el desarrollo."
+},
+{
+    id: 433,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué función familiar transmite costumbres y tradiciones?",
+    opciones: [
+      "Cultural",
+      "Económica",
+      "Biológica",
+      "Deportiva"
+    ],
+    correcta: 0,
+    explicacion: "La función cultural transmite costumbres, tradiciones y valores entre generaciones."
+},
+{
+    id: 434,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué función familiar organiza recursos para alimentación, vivienda, salud y educación?",
+    opciones: [
+      "Económica",
+      "Recreativa",
+      "Policial",
+      "Meteorológica"
+    ],
+    correcta: 0,
+    explicacion: "La función económica permite atender las necesidades materiales de la familia."
+},
+{
+    id: 435,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué función familiar ayuda a desarrollar la autoestima y el equilibrio emocional?",
+    opciones: [
+      "Emocional",
+      "Geológica",
+      "Hidrológica",
+      "Comercial"
+    ],
+    correcta: 0,
+    explicacion: "La familia brinda afecto, seguridad y apoyo emocional."
+},
+{
+    id: 436,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué significa que existen diversos tipos de familia?",
+    opciones: [
+      "Todas las familias deben ser idénticas",
+      "Hay familias con distintas formas de organización",
+      "Solo existe la familia nuclear",
+      "Una familia necesita muchos integrantes"
+    ],
+    correcta: 1,
+    explicacion: "Las familias pueden tener distintas composiciones y todas merecen respeto."
+},
+{
+    id: 437,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué característica de la familia ayuda a que sus integrantes vivan en armonía?",
+    opciones: [
+      "La convivencia y el respeto",
+      "Las discusiones constantes",
+      "La falta de comunicación",
+      "La indiferencia"
+    ],
+    correcta: 0,
+    explicacion: "El respeto, los acuerdos y la comunicación favorecen una convivencia saludable."
+},
+{
+    id: 438,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Cuál es un deber adecuado para un niño en casa?",
+    opciones: [
+      "Colaborar con tareas sencillas según su edad",
+      "Realizar todo el trabajo de los adultos",
+      "Cocinar con fuego sin supervisión",
+      "Dejar de estudiar"
+    ],
+    correcta: 0,
+    explicacion: "Los niños pueden colaborar con responsabilidades seguras y apropiadas para su edad."
+},
+{
+    id: 439,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Cuál es una responsabilidad escolar?",
+    opciones: [
+      "Cumplir las tareas y cuidar los materiales",
+      "Faltar sin motivo",
+      "Maltratar los libros",
+      "Interrumpir siempre la clase"
+    ],
+    correcta: 0,
+    explicacion: "Cumplir las tareas y cuidar los materiales son responsabilidades escolares."
+},
+{
+    id: 440,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué deben hacer los padres con sus hijos?",
+    opciones: [
+      "Amarlos, protegerlos y atender sus necesidades",
+      "Darles dinero todos los días",
+      "Comprarles todos los juguetes",
+      "Dejar que se cuiden solos"
+    ],
+    correcta: 0,
+    explicacion: "Los padres deben brindar protección, afecto, alimentación, educación y cuidado."
+},
+{
+    id: 441,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué puede provocar jugar con medicamentos sin permiso?",
+    opciones: [
+      "Envenenamiento",
+      "Diversión segura",
+      "Mejor salud",
+      "Sueño reparador"
+    ],
+    correcta: 0,
+    explicacion: "Los medicamentos pueden causar intoxicaciones si se usan incorrectamente."
+},
+{
+    id: 442,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué accidente puede ocurrir al correr en un piso mojado?",
+    opciones: [
+      "Caída",
+      "Tsunami",
+      "Sequía",
+      "Epidemia"
+    ],
+    correcta: 0,
+    explicacion: "Un piso mojado puede hacer que una persona resbale y se caiga."
+},
+{
+    id: 443,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué debemos evitar para prevenir cortaduras?",
+    opciones: [
+      "Jugar con cuchillos y tijeras",
+      "Guardar los útiles",
+      "Pedir ayuda a un adulto",
+      "Usar materiales adecuados"
+    ],
+    correcta: 0,
+    explicacion: "Los objetos filosos deben usarse solo con supervisión adulta cuando corresponda."
+},
+{
+    id: 444,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué riesgo existe al jugar con fósforos o encendedores?",
+    opciones: [
+      "Incendio y quemaduras",
+      "Inundación",
+      "Deslizamiento",
+      "Epidemia"
+    ],
+    correcta: 0,
+    explicacion: "El fuego puede causar incendios y quemaduras."
+},
+{
+    id: 445,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Por qué no debemos introducir objetos en los tomacorrientes?",
+    opciones: [
+      "Porque puede producir una descarga eléctrica",
+      "Porque se rompe el objeto solamente",
+      "Porque causa una sequía",
+      "Porque genera un terremoto"
+    ],
+    correcta: 0,
+    explicacion: "La electricidad puede provocar descargas graves, quemaduras o incendios."
+},
+{
+    id: 446,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué debemos hacer antes de cruzar una calle?",
+    opciones: [
+      "Mirar el semáforo y cruzar por un lugar seguro",
+      "Correr sin mirar",
+      "Jugar en la pista",
+      "Seguir a cualquier desconocido"
+    ],
+    correcta: 0,
+    explicacion: "Se debe respetar el semáforo y cruzar por el paso peatonal."
+},
+{
+    id: 447,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es un fenómeno natural?",
+    opciones: [
+      "Un evento que ocurre por procesos propios de la naturaleza",
+      "Un accidente causado siempre por una persona",
+      "Una actividad escolar",
+      "Un objeto fabricado"
+    ],
+    correcta: 0,
+    explicacion: "Los fenómenos naturales se producen por procesos de la Tierra, el agua, el aire o los seres vivos."
+},
+{
+    id: 448,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es un desastre?",
+    opciones: [
+      "Un evento que causa daños importantes a personas, viviendas o al ambiente",
+      "Una celebración familiar",
+      "Un día de clases",
+      "Un cambio de uniforme"
+    ],
+    correcta: 0,
+    explicacion: "Un fenómeno puede convertirse en desastre cuando ocasiona daños y afecta a la población."
+},
+{
+    id: 449,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué tipo de fenómeno se origina por movimientos internos de la Tierra?",
+    opciones: [
+      "Geológico",
+      "Hidrológico",
+      "Biológico",
+      "Cultural"
+    ],
+    correcta: 0,
+    explicacion: "Los fenómenos geológicos se relacionan con procesos y movimientos de la Tierra."
+},
+{
+    id: 450,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Cuál es un ejemplo de fenómeno geológico?",
+    opciones: [
+      "Terremoto",
+      "Epidemia",
+      "Sequía",
+      "Granizada"
+    ],
+    correcta: 0,
+    explicacion: "Los terremotos se producen por liberación de energía y movimientos de la corteza terrestre."
+},
+{
+    id: 451,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es un terremoto?",
+    opciones: [
+      "Movimiento brusco de la corteza terrestre por liberación de energía",
+      "Acumulación de agua en calles",
+      "Columna de aire que gira",
+      "Aumento de una enfermedad"
+    ],
+    correcta: 0,
+    explicacion: "Un terremoto es un movimiento de la Tierra causado por energía liberada en su interior."
+},
+{
+    id: 452,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es una erupción volcánica?",
+    opciones: [
+      "Salida de magma, gases y cenizas desde un volcán",
+      "Caída de nieve",
+      "Desborde de un río",
+      "Movimiento de animales"
+    ],
+    correcta: 0,
+    explicacion: "En una erupción, un volcán expulsa materiales como lava, gases y ceniza."
+},
+{
+    id: 453,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es un tsunami?",
+    opciones: [
+      "Serie de grandes olas generalmente provocadas por un movimiento sísmico bajo el mar",
+      "Lluvia suave",
+      "Viento de montaña",
+      "Incendio forestal"
+    ],
+    correcta: 0,
+    explicacion: "Un tsunami puede originarse por un terremoto submarino y generar olas peligrosas."
+},
+{
+    id: 454,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es un deslizamiento?",
+    opciones: [
+      "Movimiento de tierra o rocas que bajan por una pendiente",
+      "Aumento de temperatura",
+      "Enfermedad contagiosa",
+      "Ola de calor"
+    ],
+    correcta: 0,
+    explicacion: "Un deslizamiento ocurre cuando tierra o rocas se desplazan por una ladera."
+},
+{
+    id: 455,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué son los fenómenos hidrológicos?",
+    opciones: [
+      "Fenómenos relacionados con el movimiento o acumulación del agua",
+      "Fenómenos relacionados con las costumbres",
+      "Movimientos de la corteza terrestre",
+      "Enfermedades de plantas"
+    ],
+    correcta: 0,
+    explicacion: "Los fenómenos hidrológicos están relacionados con el agua."
+},
+{
+    id: 456,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es una inundación?",
+    opciones: [
+      "Acumulación de agua que cubre zonas normalmente secas",
+      "Falta prolongada de lluvia",
+      "Caída de hielo desde nubes",
+      "Giro violento de aire"
+    ],
+    correcta: 0,
+    explicacion: "Una inundación ocurre cuando el agua cubre terrenos que normalmente están secos."
+},
+{
+    id: 457,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es un huaico?",
+    opciones: [
+      "Deslizamiento o flujo de lodo, piedras y agua que baja por quebradas",
+      "Una ola gigante del océano",
+      "Una enfermedad",
+      "Un viento suave"
+    ],
+    correcta: 0,
+    explicacion: "Los huaicos arrastran lodo, piedras y agua, especialmente por quebradas."
+},
+{
+    id: 458,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Cuándo ocurre el desborde de un río?",
+    opciones: [
+      "Cuando aumenta su caudal y el agua sale de su cauce",
+      "Cuando deja de llover",
+      "Cuando baja la temperatura",
+      "Cuando se forma un tornado"
+    ],
+    correcta: 0,
+    explicacion: "El río se desborda cuando lleva más agua de la que puede contener su cauce."
+},
+{
+    id: 459,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué son los fenómenos meteorológicos?",
+    opciones: [
+      "Fenómenos que ocurren en la atmósfera y se relacionan con el tiempo",
+      "Fenómenos que ocurren solo bajo tierra",
+      "Cambios en las familias",
+      "Movimientos de los animales"
+    ],
+    correcta: 0,
+    explicacion: "Los fenómenos meteorológicos ocurren en la atmósfera."
+},
+{
+    id: 460,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué caracteriza a una tormenta?",
+    opciones: [
+      "Lluvia, vientos, rayos y truenos",
+      "Ausencia de lluvia durante años",
+      "Movimiento de tierra por una pendiente",
+      "Aumento de insectos"
+    ],
+    correcta: 0,
+    explicacion: "Una tormenta puede presentar lluvia, viento, rayos y truenos."
+},
+{
+    id: 461,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es un tornado?",
+    opciones: [
+      "Columna de aire que gira violentamente y puede extenderse desde las nubes hasta el suelo",
+      "Acumulación de agua en una calle",
+      "Caída de rocas",
+      "Aumento de una enfermedad"
+    ],
+    correcta: 0,
+    explicacion: "Un tornado es una columna de aire en rotación muy intensa."
+},
+{
+    id: 462,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es una granizada?",
+    opciones: [
+      "Caída de bolas o trozos de hielo desde las nubes",
+      "Lluvia de hojas",
+      "Desborde de un río",
+      "Movimiento de placas"
+    ],
+    correcta: 0,
+    explicacion: "La granizada ocurre cuando cae hielo en forma de granos o bolas."
+},
+{
+    id: 463,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es una sequía?",
+    opciones: [
+      "Periodo prolongado con poca o ninguna lluvia",
+      "Lluvia intensa durante una hora",
+      "Caída de granizo",
+      "Olas grandes en el mar"
+    ],
+    correcta: 0,
+    explicacion: "La sequía es un periodo largo de escasez de lluvias."
+},
+{
+    id: 464,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es una ola de calor?",
+    opciones: [
+      "Periodo de temperaturas anormalmente altas durante varios días",
+      "Descenso de rocas por una ladera",
+      "Aumento del caudal de un río",
+      "Caída de ceniza volcánica"
+    ],
+    correcta: 0,
+    explicacion: "Una ola de calor es un periodo de varios días con temperaturas muy elevadas."
+},
+{
+    id: 465,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué son los fenómenos biológicos?",
+    opciones: [
+      "Fenómenos producidos por organismos vivos que pueden afectar a personas, animales o plantas",
+      "Movimientos internos de la Tierra",
+      "Cambios del viento",
+      "Acumulación de agua"
+    ],
+    correcta: 0,
+    explicacion: "Los fenómenos biológicos se relacionan con seres vivos."
+},
+{
+    id: 466,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es una epidemia?",
+    opciones: [
+      "Aumento de una enfermedad que afecta a muchas personas en un periodo determinado",
+      "Presencia de demasiadas rocas",
+      "Falta de agua en un río",
+      "Caída de granizo"
+    ],
+    correcta: 0,
+    explicacion: "Una epidemia es el aumento de casos de una enfermedad en una población y periodo determinados."
+},
+{
+    id: 467,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es una plaga?",
+    opciones: [
+      "Presencia excesiva de animales, insectos u organismos que causan daños",
+      "Una lluvia fuerte",
+      "Un movimiento sísmico",
+      "Una columna de aire"
+    ],
+    correcta: 0,
+    explicacion: "Las plagas pueden dañar cultivos, animales, viviendas o afectar a las personas."
+},
+{
+    id: 468,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué puede causar un desastre natural?",
+    opciones: [
+      "Daños en viviendas, carreteras, cultivos y servicios",
+      "Solo alegría",
+      "Únicamente cambios de horario",
+      "Mejoras automáticas en los caminos"
+    ],
+    correcta: 0,
+    explicacion: "Los desastres pueden afectar a las personas, la infraestructura, la economía y el ambiente."
+},
+{
+    id: 469,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué debemos preparar para una emergencia?",
+    opciones: [
+      "Una mochila de emergencia",
+      "Una maleta llena de juguetes",
+      "Solo ropa de fiesta",
+      "Un recipiente vacío"
+    ],
+    correcta: 0,
+    explicacion: "La mochila de emergencia reúne artículos básicos para atender necesidades durante una situación de peligro."
+},
+{
+    id: 470,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Cuál es un objeto útil en una mochila de emergencia?",
+    opciones: [
+      "Linterna con pilas",
+      "Juguete grande",
+      "Adorno de vidrio",
+      "Videojuego"
+    ],
+    correcta: 0,
+    explicacion: "Una linterna permite iluminar cuando no hay electricidad."
+},
+{
+    id: 471,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Por qué conviene tener agua y alimentos no perecibles en la mochila?",
+    opciones: [
+      "Para contar con provisiones básicas",
+      "Para hacer más pesada la mochila",
+      "Para alimentar animales callejeros",
+      "Para reemplazar los documentos"
+    ],
+    correcta: 0,
+    explicacion: "El agua y los alimentos no perecibles ayudan a cubrir necesidades básicas."
+},
+{
+    id: 472,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué documento o elemento de comunicación conviene proteger en una emergencia?",
+    opciones: [
+      "Documentos importantes y una radio o medio de comunicación",
+      "Revistas viejas",
+      "Juguetes frágiles",
+      "Adornos"
+    ],
+    correcta: 0,
+    explicacion: "Los documentos y la información oficial ayudan a identificarse y mantenerse informado."
+},
+{
+    id: 473,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué debemos hacer antes de un terremoto?",
+    opciones: [
+      "Identificar zonas seguras y preparar la mochila de emergencia",
+      "Esperar sin conocer las salidas",
+      "Colocar muebles pesados junto a la cama",
+      "Bloquear las puertas"
+    ],
+    correcta: 0,
+    explicacion: "La preparación previa permite actuar con mayor seguridad."
+},
+{
+    id: 474,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué debemos hacer durante un terremoto si estamos dentro de una vivienda?",
+    opciones: [
+      "Mantener la calma, protegernos y alejarnos de ventanas",
+      "Usar el ascensor",
+      "Correr hacia las ventanas",
+      "Encender fósforos"
+    ],
+    correcta: 0,
+    explicacion: "Hay que proteger la cabeza y el cuerpo, ubicarse en una zona segura y seguir las indicaciones de seguridad."
+},
+{
+    id: 475,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué debemos hacer después de un terremoto?",
+    opciones: [
+      "Alejarnos de cables caídos y seguir las indicaciones de las autoridades",
+      "Tocar los cables para comprobar si tienen electricidad",
+      "Regresar inmediatamente a un edificio dañado",
+      "Usar ascensores"
+    ],
+    correcta: 0,
+    explicacion: "Después del sismo pueden existir réplicas, daños y cables energizados."
+},
+{
+    id: 476,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué debemos hacer si hay alerta de tsunami?",
+    opciones: [
+      "Evacuar hacia zonas altas y alejarnos de la costa",
+      "Acercarnos a mirar las olas",
+      "Quedarnos en la playa",
+      "Esperar junto al mar"
+    ],
+    correcta: 0,
+    explicacion: "La evacuación hacia zonas altas y seguras es fundamental ante una alerta de tsunami."
+},
+{
+    id: 477,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué debemos hacer durante un huaico?",
+    opciones: [
+      "Alejarnos de quebradas y dirigirnos a una zona alta y segura",
+      "Cruzar el flujo de lodo",
+      "Acercarnos para tomar fotografías",
+      "Refugiarnos en el cauce"
+    ],
+    correcta: 0,
+    explicacion: "El huaico arrastra lodo, piedras y agua; hay que alejarse de su recorrido."
+},
+{
+    id: 478,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Por qué no debemos regresar rápidamente a una zona afectada por un huaico?",
+    opciones: [
+      "Pueden ocurrir nuevos deslizamientos y quedar peligros",
+      "Porque ya no existe ningún riesgo",
+      "Porque el agua siempre es potable",
+      "Porque las carreteras están necesariamente libres"
+    ],
+    correcta: 0,
+    explicacion: "Puede haber nuevos flujos, estructuras inestables y contaminación."
+},
+{
+    id: 479,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué debemos hacer si encontramos cables eléctricos caídos después de una emergencia?",
+    opciones: [
+      "Mantenernos lejos y avisar a un adulto o a las autoridades",
+      "Tocarlos con un palo",
+      "Pasar por encima",
+      "Echarles agua"
+    ],
+    correcta: 0,
+    explicacion: "Los cables caídos pueden seguir energizados y causar electrocución."
+},
+{
+    id: 480,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Cómo podemos ayudar después de un desastre?",
+    opciones: [
+      "Seguir indicaciones de las autoridades y ayudar sin exponernos al peligro",
+      "Entrar en edificios dañados",
+      "Difundir rumores",
+      "Obstruir las rutas de evacuación"
+    ],
+    correcta: 0,
+    explicacion: "La ayuda debe ser organizada y segura."
+},
+{
+    id: 481,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué acción ayuda a prevenir accidentes en casa?",
+    opciones: [
+      "Guardar medicamentos y objetos filosos fuera del alcance de los niños",
+      "Dejar cuchillos en el suelo",
+      "Jugar con enchufes",
+      "Dejar velas encendidas sin vigilancia"
+    ],
+    correcta: 0,
+    explicacion: "Guardar objetos peligrosos reduce el riesgo de accidentes."
+},
+{
+    id: 482,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué debemos hacer si vemos a alguien en peligro?",
+    opciones: [
+      "Avisar inmediatamente a un adulto responsable o a los servicios de emergencia",
+      "Intentar una maniobra peligrosa sin ayuda",
+      "Ignorarlo",
+      "Grabarlo y no ayudar"
+    ],
+    correcta: 0,
+    explicacion: "Pedir ayuda a personas adultas y a los servicios de emergencia es la opción más segura."
+},
+{
+    id: 483,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué es la prevención?",
+    opciones: [
+      "Tomar medidas antes para reducir riesgos y evitar daños",
+      "Actuar solo después de un accidente",
+      "Ignorar las alertas",
+      "Esperar que otros resuelvan todo"
+    ],
+    correcta: 0,
+    explicacion: "Prevenir significa prepararse y tomar medidas para disminuir los riesgos."
+},
+{
+    id: 484,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Cuál es una forma de cuidar el ambiente?",
+    opciones: [
+      "No arrojar basura y cuidar el agua",
+      "Quemar basura",
+      "Talar árboles sin control",
+      "Contaminar los ríos"
+    ],
+    correcta: 0,
+    explicacion: "Cuidar el agua y disponer correctamente de los residuos ayuda a proteger el ambiente."
+},
+{
+    id: 485,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué puede ocurrir cuando se contaminan los ríos?",
+    opciones: [
+      "Se afecta el agua, los animales y la salud de las personas",
+      "El agua se vuelve siempre más limpia",
+      "Desaparecen todos los riesgos",
+      "Aumentan los alimentos"
+    ],
+    correcta: 0,
+    explicacion: "La contaminación del agua perjudica los ecosistemas y puede causar enfermedades."
+},
+{
+    id: 486,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Por qué es importante respetar los derechos de los niños?",
+    opciones: [
+      "Porque todos merecen protección, igualdad y oportunidades para desarrollarse",
+      "Porque solo algunos niños los necesitan",
+      "Porque dependen de sus notas",
+      "Porque son premios para los adultos"
+    ],
+    correcta: 0,
+    explicacion: "Respetar los derechos permite que todos los niños crezcan con dignidad y bienestar."
+},
+{
+    id: 487,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "Si una niña sufre maltrato o sus derechos no son respetados, ¿qué debe hacer?",
+    opciones: [
+      "Contarlo a un adulto de confianza y buscar ayuda de las autoridades competentes",
+      "Guardar silencio siempre",
+      "Pensar que es su culpa",
+      "Responder con violencia"
+    ],
+    correcta: 0,
+    explicacion: "Pedir ayuda a un adulto de confianza y a instituciones de protección es importante."
+},
+{
+    id: 488,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué actitud fortalece la convivencia familiar?",
+    opciones: [
+      "Dialogar, respetarse y colaborar",
+      "Gritar para imponer ideas",
+      "No escuchar a nadie",
+      "Burlarse de los demás"
+    ],
+    correcta: 0,
+    explicacion: "La comunicación y el respeto ayudan a resolver problemas y convivir mejor."
+},
+{
+    id: 489,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Cuál de estas opciones diferencia un fenómeno natural de un desastre?",
+    opciones: [
+      "El desastre ocurre cuando el fenómeno causa daños y afecta a la población",
+      "Todo fenómeno natural es siempre un desastre",
+      "Los desastres solo ocurren en ciudades",
+      "Un fenómeno natural siempre es causado por personas"
+    ],
+    correcta: 0,
+    explicacion: "Un fenómeno natural no siempre es un desastre; depende de sus efectos sobre las personas y el entorno."
+},
+{
+    id: 490,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué tipo de fenómeno es una inundación?",
+    opciones: [
+      "Hidrológico",
+      "Geológico",
+      "Biológico",
+      "Cultural"
+    ],
+    correcta: 0,
+    explicacion: "La inundación se relaciona con la acumulación y movimiento del agua."
+},
+{
+    id: 491,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué tipo de fenómeno es una epidemia?",
+    opciones: [
+      "Biológico",
+      "Meteorológico",
+      "Geológico",
+      "Hidrológico"
+    ],
+    correcta: 0,
+    explicacion: "Una epidemia se relaciona con la propagación de una enfermedad entre seres vivos."
+},
+{
+    id: 492,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué tipo de fenómeno es una sequía?",
+    opciones: [
+      "Climático",
+      "Geológico",
+      "Biológico",
+      "Hidrológico"
+    ],
+    correcta: 0,
+    explicacion: "La sequía es una variación climática caracterizada por la falta prolongada de lluvia."
+},
+{
+    id: 493,
+    curso: "Último bimestre",
+    tema: "Repaso general - Último bimestre",
+    pregunta: "¿Qué tipo de fenómeno es un tornado?",
+    opciones: [
+      "Meteorológico",
+      "Biológico",
+      "Geológico",
+      "Cultural"
+    ],
+    correcta: 0,
+    explicacion: "El tornado ocurre en la atmósfera y se relaciona con el movimiento del aire."
+},
+
 
 
 

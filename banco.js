@@ -6323,7 +6323,7 @@ const bancoPreguntas = [
 {
     id: 494,
     curso: "Inglés",
-    tema: "Word Formation",
+    tema: "Last Bimester",
     pregunta: "Choose the correct meaning: Woodpecker",
     traduccionPregunta: "Elige el significado correcto: Woodpecker",
     opciones: ["Pájaro carpintero", "Pez espada", "Mariposa", "Hormiga"],
@@ -6334,7 +6334,7 @@ const bancoPreguntas = [
 {
     id: 495,
     curso: "Inglés",
-    tema: "Word Formation",
+    tema: "Last Bimester",
     pregunta: "Choose the correct meaning: Breakfast",
     traduccionPregunta: "Elige el significado correcto: Breakfast",
     opciones: ["Almuerzo", "Desayuno", "Cena", "Merienda"],
@@ -6345,7 +6345,7 @@ const bancoPreguntas = [
 {
     id: 496,
     curso: "Inglés",
-    tema: "Word Formation",
+    tema: "Last Bimester",
     pregunta: "Choose the correct meaning: Bedroom",
     traduccionPregunta: "Elige el significado correcto: Bedroom",
     opciones: ["Baño", "Cocina", "Dormitorio", "Jardín"],
@@ -6356,7 +6356,7 @@ const bancoPreguntas = [
 {
     id: 497,
     curso: "Inglés",
-    tema: "Word Formation",
+    tema: "Last Bimester",
     pregunta: "Choose the correct meaning: Toothbrush",
     traduccionPregunta: "Elige el significado correcto: Toothbrush",
     opciones: ["Cepillo de dientes", "Pasta dental", "Jabón", "Toalla"],
@@ -6367,7 +6367,7 @@ const bancoPreguntas = [
 {
     id: 498,
     curso: "Inglés",
-    tema: "Word Formation",
+    tema: "Last Bimester",
     pregunta: "Choose the correct meaning: Basketball",
     traduccionPregunta: "Elige el significado correcto: Basketball",
     opciones: ["Fútbol", "Voleibol", "Básquetbol", "Tenis"],
@@ -6378,7 +6378,7 @@ const bancoPreguntas = [
 {
     id: 499,
     curso: "Inglés",
-    tema: "Word Formation",
+    tema: "Last Bimester",
     pregunta: "Choose the correct meaning: Sunflower",
     traduccionPregunta: "Elige el significado correcto: Sunflower",
     opciones: ["Rosa", "Girasol", "Clavel", "Tulipán"],
@@ -6389,7 +6389,7 @@ const bancoPreguntas = [
 {
     id: 500,
     curso: "Inglés",
-    tema: "Word Formation",
+    tema: "Last Bimester",
     pregunta: "Choose the correct meaning: Raincoat",
     traduccionPregunta: "Elige el significado correcto: Raincoat",
     opciones: ["Sombrero", "Zapatos", "Pantalón", "Impermeable"],
@@ -6400,7 +6400,7 @@ const bancoPreguntas = [
 {
     id: 501,
     curso: "Inglés",
-    tema: "Word Formation",
+    tema: "Last Bimester",
     pregunta: "Choose the correct meaning: Newspaper",
     traduccionPregunta: "Elige el significado correcto: Newspaper",
     opciones: ["Periódico", "Cuaderno", "Libro", "Carta"],
@@ -6411,7 +6411,7 @@ const bancoPreguntas = [
 {
     id: 502,
     curso: "Inglés",
-    tema: "Word Formation",
+    tema: "Last Bimester",
     pregunta: "Choose the correct meaning: Football",
     traduccionPregunta: "Elige el significado correcto: Football",
     opciones: ["Básquetbol", "Fútbol", "Natación", "Ciclismo"],
@@ -6422,7 +6422,7 @@ const bancoPreguntas = [
 {
     id: 503,
     curso: "Inglés",
-    tema: "Word Formation",
+    tema: "Last Bimester",
     pregunta: "What does Classroom mean?",
     traduccionPregunta: "¿Qué significa Classroom?",
     opciones: ["Dormitorio", "Comedor", "Aula", "Biblioteca"],
@@ -6433,7 +6433,7 @@ const bancoPreguntas = [
 {
     id: 504,
     curso: "Inglés",
-    tema: "Word Formation",
+    tema: "Last Bimester",
     pregunta: "Choose the correct meaning: Grandmother",
     traduccionPregunta: "Elige el significado correcto: Grandmother",
     opciones: ["Madre", "Abuela", "Hermana", "Tía"],
@@ -6444,7 +6444,7 @@ const bancoPreguntas = [
 {
     id: 505,
     curso: "Inglés",
-    tema: "Word Formation",
+    tema: "Last Bimester",
     pregunta: "Choose the correct meaning: Moonlight",
     traduccionPregunta: "Elige el significado correcto: Moonlight",
     opciones: ["Luz del sol", "Lluvia", "Luz de la luna", "Estrella"],
@@ -6455,7 +6455,7 @@ const bancoPreguntas = [
 {
     id: 506,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "What is the English word for cocina?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para cocina?",
     opciones: ["Kitchen", "Garden", "Bedroom", "Bathroom"],
@@ -6466,7 +6466,7 @@ const bancoPreguntas = [
 {
     id: 507,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "What is the English word for jardín?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para jardín?",
     opciones: ["Hall", "Laundry", "Garden", "Kitchen"],
@@ -6477,7 +6477,7 @@ const bancoPreguntas = [
 {
     id: 508,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "What is the English word for sala?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para sala?",
     opciones: ["Bedroom", "Hall", "Bathroom", "Garden"],
@@ -6488,7 +6488,7 @@ const bancoPreguntas = [
 {
     id: 509,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "What is the English word for dormitorio?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para dormitorio?",
     opciones: ["Kitchen", "Laundry", "Garden", "Bedroom"],
@@ -6499,7 +6499,7 @@ const bancoPreguntas = [
 {
     id: 510,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "What is the English word for baño?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para baño?",
     opciones: ["Bathroom", "Bedroom", "Garden", "Hall"],
@@ -6510,7 +6510,7 @@ const bancoPreguntas = [
 {
     id: 511,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "What is the English word for lavandería?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para lavandería?",
     opciones: ["Kitchen", "Laundry", "Hall", "Garden"],
@@ -6521,7 +6521,7 @@ const bancoPreguntas = [
 {
     id: 512,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "Where do you cook food?",
     traduccionPregunta: "¿Dónde cocinas los alimentos?",
     opciones: ["Bedroom", "Bathroom", "Kitchen", "Garden"],
@@ -6532,7 +6532,7 @@ const bancoPreguntas = [
 {
     id: 513,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "Where do you sleep?",
     traduccionPregunta: "¿Dónde duermes?",
     opciones: ["Kitchen", "Bedroom", "Laundry", "Hall"],
@@ -6543,7 +6543,7 @@ const bancoPreguntas = [
 {
     id: 514,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "Where do you take a shower?",
     traduccionPregunta: "¿Dónde te duchas?",
     opciones: ["Garden", "Kitchen", "Hall", "Bathroom"],
@@ -6554,7 +6554,7 @@ const bancoPreguntas = [
 {
     id: 515,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "Where do you wash your clothes?",
     traduccionPregunta: "¿Dónde lavas tu ropa?",
     opciones: ["Laundry", "Bedroom", "Garden", "Hall"],
@@ -6565,7 +6565,7 @@ const bancoPreguntas = [
 {
     id: 516,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "Where can you see flowers and plants?",
     traduccionPregunta: "¿Dónde puedes ver flores y plantas?",
     opciones: ["Bathroom", "Garden", "Kitchen", "Bedroom"],
@@ -6576,7 +6576,7 @@ const bancoPreguntas = [
 {
     id: 517,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "What room is used to watch television?",
     traduccionPregunta: "¿Qué habitación se utiliza para ver televisión?",
     opciones: ["Laundry", "Bathroom", "Hall", "Garden"],
@@ -6587,7 +6587,7 @@ const bancoPreguntas = [
 {
     id: 518,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "Choose the correct translation: My house",
     traduccionPregunta: "Elige la traducción correcta: My house",
     opciones: ["Mi casa", "Mi jardín", "Mi escuela", "Mi habitación"],
@@ -6598,7 +6598,7 @@ const bancoPreguntas = [
 {
     id: 519,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "Choose the correct translation: Living room",
     traduccionPregunta: "Elige la traducción correcta: Living room",
     opciones: ["Baño", "Sala de estar", "Cocina", "Lavandería"],
@@ -6609,7 +6609,7 @@ const bancoPreguntas = [
 {
     id: 520,
     curso: "Inglés",
-    tema: "House Tour",
+    tema: "Last Bimester",
     pregunta: "Choose the correct translation: House",
     traduccionPregunta: "Elige la traducción correcta: House",
     opciones: ["Escuela", "Tienda", "Casa", "Parque"],
@@ -6620,7 +6620,7 @@ const bancoPreguntas = [
 {
     id: 521,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for cama?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para cama?",
     opciones: ["Desk", "Pillow", "Closet", "Bed"],
@@ -6631,7 +6631,7 @@ const bancoPreguntas = [
 {
     id: 522,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for almohada?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para almohada?",
     opciones: ["Pillow", "Bed", "Table", "Chair"],
@@ -6642,7 +6642,7 @@ const bancoPreguntas = [
 {
     id: 523,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for escritorio?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para escritorio?",
     opciones: ["Window", "Desk", "Closet", "Rug"],
@@ -6653,7 +6653,7 @@ const bancoPreguntas = [
 {
     id: 524,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for armario?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para armario?",
     opciones: ["Bed", "Pillow", "Closet", "Desk"],
@@ -6664,7 +6664,7 @@ const bancoPreguntas = [
 {
     id: 525,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for escoba?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para escoba?",
     opciones: ["Mop", "Towel", "Brush", "Broom"],
@@ -6675,7 +6675,7 @@ const bancoPreguntas = [
 {
     id: 526,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for trapeador?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para trapeador?",
     opciones: ["Mop", "Broom", "Brush", "Towel"],
@@ -6686,7 +6686,7 @@ const bancoPreguntas = [
 {
     id: 527,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for lavadora?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para lavadora?",
     opciones: ["Refrigerator", "Washing machine", "Oven", "Television"],
@@ -6697,7 +6697,7 @@ const bancoPreguntas = [
 {
     id: 528,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for detergente para ropa?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para detergente para ropa?",
     opciones: ["Soap", "Towel", "Laundry detergent", "Shampoo"],
@@ -6708,7 +6708,7 @@ const bancoPreguntas = [
 {
     id: 529,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for ducha?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para ducha?",
     opciones: ["Sink", "Toilet", "Towel", "Shower"],
@@ -6719,7 +6719,7 @@ const bancoPreguntas = [
 {
     id: 530,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for lavadero?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para lavadero?",
     opciones: ["Sink", "Shower", "Toilet", "Window"],
@@ -6730,7 +6730,7 @@ const bancoPreguntas = [
 {
     id: 531,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for toalla?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para toalla?",
     opciones: ["Pillow", "Towel", "Blanket", "Rug"],
@@ -6741,7 +6741,7 @@ const bancoPreguntas = [
 {
     id: 532,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for inodoro?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para inodoro?",
     opciones: ["Sink", "Shower", "Toilet", "Bathtub"],
@@ -6752,7 +6752,7 @@ const bancoPreguntas = [
 {
     id: 533,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for televisión?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para televisión?",
     opciones: ["Table", "Cabinet", "Window", "TV"],
@@ -6763,7 +6763,7 @@ const bancoPreguntas = [
 {
     id: 534,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for ventana?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para ventana?",
     opciones: ["Window", "Door", "Wall", "Floor"],
@@ -6774,7 +6774,7 @@ const bancoPreguntas = [
 {
     id: 535,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for alfombra?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para alfombra?",
     opciones: ["Curtain", "Rug", "Pillow", "Blanket"],
@@ -6785,7 +6785,7 @@ const bancoPreguntas = [
 {
     id: 536,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for refrigeradora?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para refrigeradora?",
     opciones: ["Oven", "Table", "Refrigerator", "Chair"],
@@ -6796,7 +6796,7 @@ const bancoPreguntas = [
 {
     id: 537,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for mesa?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para mesa?",
     opciones: ["Chair", "Desk", "Bed", "Table"],
@@ -6807,7 +6807,7 @@ const bancoPreguntas = [
 {
     id: 538,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for silla?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para silla?",
     opciones: ["Chair", "Table", "Desk", "Closet"],
@@ -6818,7 +6818,7 @@ const bancoPreguntas = [
 {
     id: 539,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "What is the English word for horno?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para horno?",
     opciones: ["Refrigerator", "Oven", "Sink", "Washing machine"],
@@ -6829,7 +6829,7 @@ const bancoPreguntas = [
 {
     id: 540,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "Where can you find a refrigerator?",
     traduccionPregunta: "¿Dónde puedes encontrar una refrigeradora?",
     opciones: ["Garden", "Bathroom", "Kitchen", "Laundry"],
@@ -6840,7 +6840,7 @@ const bancoPreguntas = [
 {
     id: 541,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "Where can you find a pillow?",
     traduccionPregunta: "¿Dónde puedes encontrar una almohada?",
     opciones: ["Kitchen", "Garden", "Bathroom", "Bedroom"],
@@ -6851,7 +6851,7 @@ const bancoPreguntas = [
 {
     id: 542,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "Where can you find a washing machine?",
     traduccionPregunta: "¿Dónde puedes encontrar una lavadora?",
     opciones: ["Laundry", "Garden", "Hall", "Bedroom"],
@@ -6862,7 +6862,7 @@ const bancoPreguntas = [
 {
     id: 543,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "Where can you find a shower?",
     traduccionPregunta: "¿Dónde puedes encontrar una ducha?",
     opciones: ["Kitchen", "Bathroom", "Garden", "Hall"],
@@ -6873,7 +6873,7 @@ const bancoPreguntas = [
 {
     id: 544,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "Where can you find a grill?",
     traduccionPregunta: "¿Dónde puedes encontrar una parrilla?",
     opciones: ["Bedroom", "Bathroom", "Garden", "Laundry"],
@@ -6884,7 +6884,7 @@ const bancoPreguntas = [
 {
     id: 545,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "Choose the correct translation: Flower pot",
     traduccionPregunta: "Elige la traducción correcta: Flower pot",
     opciones: ["Cerca", "Parrilla", "Cepillo", "Maceta"],
@@ -6895,7 +6895,7 @@ const bancoPreguntas = [
 {
     id: 546,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "Choose the correct translation: Fence",
     traduccionPregunta: "Elige la traducción correcta: Fence",
     opciones: ["Cerca o valla", "Flor", "Mesa", "Puerta"],
@@ -6906,7 +6906,7 @@ const bancoPreguntas = [
 {
     id: 547,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "Choose the correct translation: Scrub brush",
     traduccionPregunta: "Elige la traducción correcta: Scrub brush",
     opciones: ["Toalla", "Cepillo de fregar", "Escoba", "Jabón"],
@@ -6917,7 +6917,7 @@ const bancoPreguntas = [
 {
     id: 548,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "Choose the correct translation: Cabinet",
     traduccionPregunta: "Elige la traducción correcta: Cabinet",
     opciones: ["Ventana", "Alfombra", "Armario", "Cama"],
@@ -6928,7 +6928,7 @@ const bancoPreguntas = [
 {
     id: 549,
     curso: "Inglés",
-    tema: "Rooms and Objects",
+    tema: "Last Bimester",
     pregunta: "Choose the correct translation: Door",
     traduccionPregunta: "Elige la traducción correcta: Door",
     opciones: ["Ventana", "Pared", "Piso", "Puerta"],
@@ -6939,7 +6939,7 @@ const bancoPreguntas = [
 {
     id: 550,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "What is the English word for padre?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para padre?",
     opciones: ["Father", "Brother", "Uncle", "Cousin"],
@@ -6950,7 +6950,7 @@ const bancoPreguntas = [
 {
     id: 551,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "What is the English word for madre?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para madre?",
     opciones: ["Sister", "Mother", "Aunt", "Grandma"],
@@ -6961,7 +6961,7 @@ const bancoPreguntas = [
 {
     id: 552,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "What is the English word for abuelo?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para abuelo?",
     opciones: ["Father", "Uncle", "Grandpa", "Brother"],
@@ -6972,7 +6972,7 @@ const bancoPreguntas = [
 {
     id: 553,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "What is the English word for abuela?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para abuela?",
     opciones: ["Mother", "Aunt", "Sister", "Grandma"],
@@ -6983,7 +6983,7 @@ const bancoPreguntas = [
 {
     id: 554,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "What is the English word for hermano?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para hermano?",
     opciones: ["Brother", "Sister", "Cousin", "Father"],
@@ -6994,7 +6994,7 @@ const bancoPreguntas = [
 {
     id: 555,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "What is the English word for hermana?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para hermana?",
     opciones: ["Mother", "Sister", "Aunt", "Grandma"],
@@ -7005,7 +7005,7 @@ const bancoPreguntas = [
 {
     id: 556,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "What is the English word for tío?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para tío?",
     opciones: ["Cousin", "Brother", "Uncle", "Grandpa"],
@@ -7016,7 +7016,7 @@ const bancoPreguntas = [
 {
     id: 557,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "What is the English word for tía?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para tía?",
     opciones: ["Mother", "Sister", "Grandma", "Aunt"],
@@ -7027,7 +7027,7 @@ const bancoPreguntas = [
 {
     id: 558,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "What is the English word for primo o prima?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para primo o prima?",
     opciones: ["Cousin", "Brother", "Uncle", "Father"],
@@ -7038,7 +7038,7 @@ const bancoPreguntas = [
 {
     id: 559,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "Choose the correct translation: Family",
     traduccionPregunta: "Elige la traducción correcta: Family",
     opciones: ["Amigos", "Familia", "Vecinos", "Compañeros"],
@@ -7049,7 +7049,7 @@ const bancoPreguntas = [
 {
     id: 560,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "Choose the correct translation: Parents",
     traduccionPregunta: "Elige la traducción correcta: Parents",
     opciones: ["Hermanos", "Abuelos", "Padres", "Primos"],
@@ -7060,7 +7060,7 @@ const bancoPreguntas = [
 {
     id: 561,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "Choose the correct translation: Children",
     traduccionPregunta: "Elige la traducción correcta: Children",
     opciones: ["Padres", "Abuelos", "Tíos", "Hijos o niños"],
@@ -7071,7 +7071,7 @@ const bancoPreguntas = [
 {
     id: 562,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "Your mother's mother is your...",
     traduccionPregunta: "La madre de tu madre es tu...",
     opciones: ["Grandma", "Aunt", "Sister", "Cousin"],
@@ -7082,7 +7082,7 @@ const bancoPreguntas = [
 {
     id: 563,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "Your father's father is your...",
     traduccionPregunta: "El padre de tu padre es tu...",
     opciones: ["Uncle", "Grandpa", "Brother", "Cousin"],
@@ -7093,7 +7093,7 @@ const bancoPreguntas = [
 {
     id: 564,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "Your mother's sister is your...",
     traduccionPregunta: "La hermana de tu madre es tu...",
     opciones: ["Grandma", "Sister", "Aunt", "Cousin"],
@@ -7104,7 +7104,7 @@ const bancoPreguntas = [
 {
     id: 565,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "Your aunt's son is your...",
     traduccionPregunta: "El hijo de tu tía es tu...",
     opciones: ["Brother", "Uncle", "Father", "Cousin"],
@@ -7115,7 +7115,7 @@ const bancoPreguntas = [
 {
     id: 566,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "Your father's daughter is your...",
     traduccionPregunta: "La hija de tu padre es tu...",
     opciones: ["Sister", "Aunt", "Grandma", "Mother"],
@@ -7126,7 +7126,7 @@ const bancoPreguntas = [
 {
     id: 567,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "Your mother's son is your...",
     traduccionPregunta: "El hijo de tu madre es tu...",
     opciones: ["Uncle", "Brother", "Grandpa", "Cousin"],
@@ -7137,7 +7137,7 @@ const bancoPreguntas = [
 {
     id: 568,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "Choose the correct meaning: Me",
     traduccionPregunta: "Elige el significado correcto: Me",
     opciones: ["Tú", "Él", "Yo o me", "Ella"],
@@ -7148,7 +7148,7 @@ const bancoPreguntas = [
 {
     id: 569,
     curso: "Inglés",
-    tema: "Family Tree",
+    tema: "Last Bimester",
     pregunta: "Choose the correct meaning: Dad",
     traduccionPregunta: "Elige el significado correcto: Dad",
     opciones: ["Abuelo", "Tío", "Hermano", "Papá"],
@@ -7159,7 +7159,7 @@ const bancoPreguntas = [
 {
     id: 570,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "What is the English word for planeta?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para planeta?",
     opciones: ["Planet", "Country", "City", "District"],
@@ -7170,7 +7170,7 @@ const bancoPreguntas = [
 {
     id: 571,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "What is the English word for continente?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para continente?",
     opciones: ["Country", "Continent", "City", "Locality"],
@@ -7181,7 +7181,7 @@ const bancoPreguntas = [
 {
     id: 572,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "What is the English word for país?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para país?",
     opciones: ["City", "Department", "Country", "Planet"],
@@ -7192,7 +7192,7 @@ const bancoPreguntas = [
 {
     id: 573,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "What is the English word for departamento?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para departamento?",
     opciones: ["District", "Country", "Locality", "Department"],
@@ -7203,7 +7203,7 @@ const bancoPreguntas = [
 {
     id: 574,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "What is the English word for ciudad?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para ciudad?",
     opciones: ["City", "Planet", "Country", "District"],
@@ -7214,7 +7214,7 @@ const bancoPreguntas = [
 {
     id: 575,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "What is the English word for distrito?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para distrito?",
     opciones: ["Country", "District", "Continent", "Planet"],
@@ -7225,7 +7225,7 @@ const bancoPreguntas = [
 {
     id: 576,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "What is the English word for localidad?",
     traduccionPregunta: "¿Cuál es la palabra en inglés para localidad?",
     opciones: ["City", "Department", "Locality", "Country"],
@@ -7236,7 +7236,7 @@ const bancoPreguntas = [
 {
     id: 577,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "Which is the correct English word for Perú?",
     traduccionPregunta: "¿Cuál es la palabra correcta en inglés para Perú?",
     opciones: ["City", "Continent", "District", "Peru"],
@@ -7247,7 +7247,7 @@ const bancoPreguntas = [
 {
     id: 578,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "Which continent is Peru in?",
     traduccionPregunta: "¿En qué continente está Perú?",
     opciones: ["South America", "Europe", "Asia", "Africa"],
@@ -7258,7 +7258,7 @@ const bancoPreguntas = [
 {
     id: 579,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "What is the English name for América del Sur?",
     traduccionPregunta: "¿Cuál es el nombre en inglés para América del Sur?",
     opciones: ["North America", "South America", "Central America", "Europe"],
@@ -7269,7 +7269,7 @@ const bancoPreguntas = [
 {
     id: 580,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "What is the English name for La Libertad?",
     traduccionPregunta: "¿Cuál es el nombre en inglés para La Libertad?",
     opciones: ["City", "Country", "La Libertad", "Continent"],
@@ -7280,7 +7280,7 @@ const bancoPreguntas = [
 {
     id: 581,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "What is the English name for Trujillo?",
     traduccionPregunta: "¿Cuál es el nombre en inglés para Trujillo?",
     opciones: ["Country", "District", "Continent", "Trujillo"],
@@ -7291,7 +7291,7 @@ const bancoPreguntas = [
 {
     id: 582,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "Which comes first in the geographical order?",
     traduccionPregunta: "¿Qué aparece primero en el orden geográfico?",
     opciones: ["Planet", "City", "District", "Locality"],
@@ -7302,7 +7302,7 @@ const bancoPreguntas = [
 {
     id: 583,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "Which comes after Planet?",
     traduccionPregunta: "¿Qué viene después de planeta?",
     opciones: ["Country", "Continent", "District", "Locality"],
@@ -7313,7 +7313,7 @@ const bancoPreguntas = [
 {
     id: 584,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "Which comes after Continent?",
     traduccionPregunta: "¿Qué viene después de continente?",
     opciones: ["City", "District", "Country", "Locality"],
@@ -7324,7 +7324,7 @@ const bancoPreguntas = [
 {
     id: 585,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "Which comes after Country in the notebook's sequence?",
     traduccionPregunta: "¿Qué viene después de país en la secuencia del cuaderno?",
     opciones: ["Planet", "Locality", "Continent", "Department"],
@@ -7335,7 +7335,7 @@ const bancoPreguntas = [
 {
     id: 586,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "Which comes after Department?",
     traduccionPregunta: "¿Qué viene después de departamento?",
     opciones: ["City", "Planet", "Continent", "Country"],
@@ -7346,7 +7346,7 @@ const bancoPreguntas = [
 {
     id: 587,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "Which comes after City?",
     traduccionPregunta: "¿Qué viene después de ciudad?",
     opciones: ["Country", "District", "Planet", "Continent"],
@@ -7357,7 +7357,7 @@ const bancoPreguntas = [
 {
     id: 588,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "Which comes last in the notebook's geographical sequence?",
     traduccionPregunta: "¿Qué aparece al final de la secuencia geográfica del cuaderno?",
     opciones: ["Planet", "Continent", "Locality", "Country"],
@@ -7368,7 +7368,7 @@ const bancoPreguntas = [
 {
     id: 589,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "Peru is a...",
     traduccionPregunta: "Perú es un...",
     opciones: ["City", "District", "Continent", "Country"],
@@ -7379,7 +7379,7 @@ const bancoPreguntas = [
 {
     id: 590,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "Trujillo is a...",
     traduccionPregunta: "Trujillo es una...",
     opciones: ["City", "Planet", "Continent", "Country"],
@@ -7390,7 +7390,7 @@ const bancoPreguntas = [
 {
     id: 591,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "La Libertad is a...",
     traduccionPregunta: "La Libertad es un...",
     opciones: ["Country", "Department", "Planet", "Continent"],
@@ -7401,7 +7401,7 @@ const bancoPreguntas = [
 {
     id: 592,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "What is the correct order from general to particular?",
     traduccionPregunta: "¿Cuál es el orden correcto de lo general a lo particular?",
     opciones: [
@@ -7422,7 +7422,7 @@ const bancoPreguntas = [
 {
     id: 593,
     curso: "Inglés",
-    tema: "From the General to the Particular",
+    tema: "Last Bimester",
     pregunta: "What is the smallest level in the geographical sequence?",
     traduccionPregunta: "¿Cuál es el nivel más pequeño de la secuencia geográfica?",
     opciones: ["Planet", "Continent", "Country", "Locality"],
